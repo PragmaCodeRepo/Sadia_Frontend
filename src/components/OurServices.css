@@ -1,0 +1,133 @@
+
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+.profile-view{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+  }
+  @media screen and (max-width: 640px){
+    .profile-view{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .profile-view{
+      width: 24.33333%;
+    }
+  }
+  
+  .profile-view .title-service{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content-service {
+    
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  .content-service .content-overlay-service {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content-service:hover .content-overlay-service{
+    opacity: 1;
+  }
+  
+  .content-image-service{
+    width: 100%;
+  }
+  
+  .content-details-service {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content-service:hover .content-details-service{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details-service h4{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details-service p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom-service{
+    top: 80%;
+  }
+  .content-service:hover .content-overlay-service {
+    opacity: 1;
+    height: 33rem;
+    border-radius: 20px;
+}
+.ourservicecard{
+  display: flex;
+  justify-content: space-between;
+ 
+  /* width: 1856px; */
+  flex-wrap: wrap;
+
+}
+.content-service {
+  position: relative;
+  width: 90%;
+  max-width: 400px;
+  /* margin: auto; */
+  overflow: hidden;
+  margin-top: 32px;
+  height: 270px;
+  border-radius:12px;
+  box-shadow: 10px 12px 14px 0px rgb(136 143 157 / 41%);
+  cursor: pointer;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.content-image-service {
+  width: 100%;
+  height: 100%;
+  
+  
+}
+

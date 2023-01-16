@@ -1,0 +1,67 @@
+.whole{
+    display: flex;
+    /* justify-content: space-between; */
+    justify-content: space-between;
+    gap: -4rem;
+}
+#singleProfileImage{
+    border-bottom-left-radius: 12%;
+    border-bottom-right-radius: 12%;
+}
+.single-profile-name{
+    font-family: Spartan;
+    font-style: bold;
+    color: #241757;
+    font-size: 33px;
+    font-weight: 400;
+    text-align: left;
+}
+.designationspan{
+    color:  #5380FF;
+}
+.singleProfileContent{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* gap: 1rem; */
+}
+.singleProfilePracticesName{
+    text-align: left;
+   font-family: Spartan;
+    color: #241757;
+    font-size: 16px;
+    font-weight: 400;
+}
+.singleprofile-cityand-state{
+    font-family: Spartan;
+    color: #241757;
+    text-align: left;
+    font-size: 20px;
+    font-weight: 400;
+}
+.singleprofile-cityand-state svg{
+    fill: #241757;
+}
+.singleprofile-speciality{
+    text-align: left;
+    color: #241757;
+    font-size: 18px;
+    font-weight: 400;
+}
+.singleprofile-mobilenumber{
+    text-align: left;
+    color:  #5380FF;
+    font-family: Spartan;
+    font-size: 20px;
+    
+}
+.singleprofile-mobilenumber svg{
+    fill: #241757;
+
+}
+.linkdin svg{
+    fill: #241757;
+    height: auto;
+    width: 30px;
+}
+

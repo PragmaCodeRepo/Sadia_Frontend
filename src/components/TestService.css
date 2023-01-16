@@ -1,0 +1,80 @@
+.card{
+    width: 405px;
+    height: 260px;
+}
+.card-img-overlay {
+    /* background-color: rgba(#000, 0.4); */
+    background: linear-gradient(rgb(0 0 0 / 58%), #2f30308a);
+    /* background: linear-gradient(rgb(24 22 24 / 75%), #2f30308a); */
+    /* background: linear-gradient(rgba(225, 218, 225, 0.208), #2f30308a) */
+    /* rgb(24 22 24 / 75%), #2f30308a); */
+    /* rgba(111, 108, 111, 0.282), #2f30308a */
+  }
+.card-img{
+    
+    /* background: linear-gradient(rgb(225 218 225 / 80%), #839de58a) */
+    height: 260px;
+    width: 380px;
+
+}
+.testcard{
+    box-shadow: 10px 12px 14px 0px rgb(136 143 157 / 41%);
+  cursor: pointer;
+  animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
+  animation-duration: 2s; /* don't forget to set a duration! */
+}
+.testcard:hover{
+    transform: scale(1.1) ;
+    transition: all .2s ease-in-out;
+    
+}
+.card-title{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+    text-align: center;
+}
+.card-subtitle{
+    color: #fff;
+    font-size: 0.8em;
+    text-align: center;
+}
+.testservicerow{
+    /* margin: 1rem; */
+}
+.ourtestservices-title{
+    font-family: Noto Serif;
+    font-style: bold;
+    color:  #241757;
+    font-size: 50px;
+    margin-left: 17.3rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-weight: 500;
+
+
+}
+.ourtestservices-sub-title{
+    font-family: Noto Serif;
+    font-style: bold;
+    color:  #241757;
+    font-size: 18px;
+
+}
+@media (max-width: 480px){
+    .ourtestservices-title{
+        font-family: Noto Serif;
+        font-style: bold;
+        color:  #241757;
+        font-size: 50px;
+        margin-left: 1rem;
+        margin-bottom: 2rem;
+        margin-top: 4rem;
+        font-weight: 500;
+    
+    
+    }
+
+}

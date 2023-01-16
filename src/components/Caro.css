@@ -1,0 +1,79 @@
+.swiper {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+  
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  
+  .swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+.content{
+    font-family: Spartan;
+    font-style: Medium;
+    font-size: 18px;
+    text-align: center;
+    color: #A3AAB9;
+    cursor: grab;
+}
+.content-name{
+    font-family: Spartan;
+    font-style: Bolder;
+    font-size: 26px;
+    text-align: center;
+    color: #5380FF;
+}
+
+
+/* .content svg{
+    width: 5rem;
+    fill: #5380FF;
+
+} */
+.content-name svg{
+    fill: #FFAC33;
+}
+.doublequote svg{
+    
+    fill: #5380FF;
+    width: 46px;
+    height: 60px;
+}
+.testimonial-title{
+    font-family: Noto Serif;
+    font-style: Display SemiBold;
+    font-size: 57px;
+ text-align: center;
+ color: #241757;
+ padding-top: 3rem;
+ padding-top: 21px;
+}
+.swiper-button-prev:after, .swiper-rtl .swiper-button-next:after {
+    content: 'prev';
+    margin-top: -1.8rem;
+}
+prev:after {
+    content: 'next';
+}

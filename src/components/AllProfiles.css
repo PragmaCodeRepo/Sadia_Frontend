@@ -1,0 +1,238 @@
+.body{
+  background-color: #1a1a1a;
+}
+
+
+.AllProfileImage:hover{
+    cursor: pointer;
+}
+@import url(https://fonts.googleapis.com/css?family=Raleway);
+
+
+.profile-view{
+    padding: 1em 0;
+    float: left;
+    width: 50%;
+    
+    
+  }
+  @media screen and (max-width: 640px){
+    .profile-view{
+      display: block;
+      width: 100%;
+    }
+  }
+  
+  @media screen and (min-width: 900px){
+    .profile-view{
+      width: 33.3333%;
+    }
+  }
+  
+  .profile-view .title--profile{
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+  
+  .content--profile {
+    position: relative;
+    width: 90%;
+    max-width: 400px;
+    margin: auto;
+    overflow: hidden;
+    cursor: pointer;
+  }
+  
+  .content--profile .content-overlay--profile {
+    background: rgba(0,0,0,0.7);
+    position: absolute;
+    height: 99%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    opacity: 0;
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    -moz-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+  }
+  
+  .content--profile:hover .content-overlay--profile{
+    opacity: 1;
+  }
+  
+  .content-image--profile{
+    width: 100%;
+  }
+  
+  .content-details--profile {
+    position: absolute;
+    text-align: center;
+    padding-left: 1em;
+    padding-right: 1em;
+    width: 100%;
+    top: 50%;
+    left: 50%;
+    opacity: 0;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    -webkit-transition: all 0.3s ease-in-out 0s;
+    -moz-transition: all 0.3s ease-in-out 0s;
+    transition: all 0.3s ease-in-out 0s;
+  }
+  
+  .content--profile:hover .content-details--profile{
+    top: 50%;
+    left: 50%;
+    opacity: 1;
+  }
+  
+  .content-details--profile h4{
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 0.15em;
+    margin-bottom: 0.5em;
+    text-transform: uppercase;
+  }
+  
+  .content-details--profile p{
+    color: #fff;
+    font-size: 0.8em;
+  }
+  
+  .fadeIn-bottom--profile{
+    top: 80%;
+  }
+  .content--profile:hover .content-overlay--profile {
+    opacity: 1;
+    height: 33rem;
+    border-radius: 20px;
+}
+
+
+
+
+
+
+/* test */
+@media screen and (max-width: 567px) {
+  .card-text {
+    margin-bottom: 0.5em;
+  }
+}
+
+.card {
+  margin: 1%;
+  flex-direction: row;
+  
+  
+}
+
+  
+.card-body {
+  padding: 0.5em 1em;
+}
+.card1.card img {
+  max-width: 12em;
+  height: 100%;
+  border-bottom-left-radius: calc(0.25rem - 1px);
+  border-top-left-radius: calc(0.25rem - 1px);
+}
+
+.profile-title{
+  /* font-family: Spartan; */
+  font-style: bold;
+  font-size: 28px;
+  color: #241757;
+  font-weight: 40px;
+  letter-spacing: 3px;
+
+}
+.profile-title:hover{
+  text-decoration: underline;
+ text-decoration-color: #241757;
+}
+.profile-speciality{
+  font-family: Spartan;
+  font-style: Semibold;
+  font-size: 22px;
+  color: #241757;
+  
+
+
+}
+.profile-city{
+  font-family: Spartan;
+  color: grey;
+  font-style: small;
+  font-size: 17px;
+  margin-top: -7px;
+
+
+}
+.profile-city svg{
+  fill: #5380ff;
+  height: auto;
+  width: 20px;
+}
+.card2:hover{
+  cursor: pointer;
+  
+  
+  
+}
+/* 
+.gradient-border {
+  --borderWidth: 3px;
+  background: #1D1F20;
+  position: relative;
+  border-radius: var(--borderWidth);
+}
+
+.gradient-border:after {
+  content: '';
+  position: absolute;
+  top: calc(-1 * var(--borderWidth));
+  left: calc(-1 * var(--borderWidth));
+  height: calc(100% + var(--borderWidth) * 2);
+  width: calc(100% + var(--borderWidth) * 2);
+  background: linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82);
+  border-radius: calc(2 * var(--borderWidth));
+  z-index: -1;
+  animation: animatedgradient 3s ease alternate infinite;
+  background-size: 300% 300%;
+}
+
+
+@keyframes animatedgradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+} */
+.rating{
+  height: 11px;
+  margin-top: -7px;
+  /* font-size: 25px; */
+  
+}
+
+.rating svg{
+  /* fill: #FFAC33; */
+  fill: #5380ff;
+  height: auto;
+  width: 22px;
+  
+}
+.text-muted svg{
+  fill: #5380ff;
+
+}

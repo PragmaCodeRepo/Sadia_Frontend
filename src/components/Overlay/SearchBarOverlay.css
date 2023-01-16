@@ -1,0 +1,100 @@
+#searchbaroverlay {
+    position: relative;
+    /* width: 767px; */
+    /* height: 70px; */
+    /* background: #ffffff; */
+    box-shadow: 0px 44px 30px rgba(8, 8, 9, 0.25);
+    border-radius: 5px;
+    /* margin-top: 24rem; */
+    /* margin-left: -14.2rem; */
+    background-color: #5380ff;
+    /* margin-top: 25rem; */
+    
+  }
+ 
+  
+  #category-dropdownoverlay {
+    border-color: #fff;
+    border-left: #fff;
+    border-top: #fff;
+    border-bottom: #fff;
+    color: grey;
+    font-weight: bold;
+    
+  }
+  #zipcode-boxoverlay {
+    border-color: #fff;
+    border-left: #fff;
+    border-top: #fff;
+    border-bottom: #fff;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    text-align: center;
+    font-weight: bold;
+    
+  }
+  #search-buttonoverlay {
+    border-color: #fff;
+  border-left: #fff;
+  border-top: #fff;
+  border-bottom: #fff;
+  border-right: #fff;
+  background: #5380ff;
+  color: white;
+  margin-right: -2rem;
+  width: 15rem;
+  height: 4.35rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  width: 17.2rem;
+  margin-left: -12px;
+  font-size: 20px;
+  }
+  
+  #search-buttonoverlay:hover {
+    background: #241757;
+    
+  }
+  
+  #category-dropdownoverlay:active {
+    font-weight: bold;
+    outline: none;
+  }
+  #category-dropdownoverlay:focus {
+    outline: none;
+    /* font-weight: bold; */
+  }
+  #zipcode-boxoverlay:active {
+    outline: none;
+    background-color: #fff;
+    
+  }
+  #zipcode-boxoverlay:focus {
+    outline: none;
+    
+  }
+
+.se{
+    width: 800px;
+    /* height: auto; */
+    /* display: flex;
+    justify-content: center; */
+    /* background: transparent; */
+    /* border: none; */
+}
+
+.styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_:focus, .styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_:active {
+    border:none;
+    outline: none;
+}
+
+.styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
+    padding: 2em;
+    background-color: white;
+    max-width: 600px;
+    position: relative;
+    margin: auto;
+    transition: opacity 0.85s;
+    background: none;
+    padding-right: 55rem;
+}

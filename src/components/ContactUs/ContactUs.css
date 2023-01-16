@@ -1,0 +1,73 @@
+.aboutus1stpage{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.pragma-title-aboutus{
+    font-family: Noto Serif;
+    font-style: display medium;
+    font-size: 60px;
+    line-height: 82px;
+    color: #241757;
+
+}
+.pragma-subtitle-aboutus{
+    display: flex;
+    flex-direction: column;
+    font-family: spartan;
+    font-style: Mixed;
+    font-size: 40px;
+    line-height: 60px;
+    color: #000000;
+
+}
+.pragma-smalltitle-aboutus{
+    display: flex;
+    flex-direction: column;
+    font-family: Spartan;
+    font-style: Medium;
+    font-size: 20px;
+    line-height: 40px;
+    color: #81849B;
+
+}
+/* right side */
+.aboutus1page-right{
+    
+}
+
+
+/* 2nd page */
+.aboutus2nd{
+    margin-top: 5rem;
+}
+.aboutusimages{
+    display: flex;
+    flex-direction: row;
+    
+}
+.aboutusimages2{
+    margin-top: 8rem;
+}
+.aboutusimages4{
+    margin-top: 8rem;
+}
+
+/* 3rd */
+.aboutus-content-heading{
+    font-family: Noto Serif;
+    font-style: bold;
+    font-size: 40px;
+    line-height: 54px;
+    color: #133876;
+    font-weight: 400;
+}
+.aboutus-more-content{
+    font-family: Spartan ;
+    font-size: 18px;
+    line-height: 30px;
+    color:  #81849B;
+    font-weight: 400;
+    
+}

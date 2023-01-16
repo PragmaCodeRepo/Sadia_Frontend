@@ -1,0 +1,105 @@
+.title{
+    font-family: Noto Serif;
+    font-size: 50px;
+    color: #241757;
+    /* width: 94rem; */
+    background: #F4FAFF;
+    display: flex;
+    justify-content: center;
+    animation:backInLeft;
+    animation-duration: 2s;
+    margin-top: 1.8rem;
+    
+}
+.Howwework{
+    background-color: #F4FAFF;
+    height: 50vh;
+    margin-top: 3rem;
+}
+.three-circle{
+    
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 13rem;
+
+}
+.first-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #5380FF;
+    animation:backInLeft;
+    animation-duration: 2s;
+    cursor: pointer;
+
+
+}
+.first-circle:hover{
+    background-color: rgb(124, 180, 241);
+}
+.second-circle:hover{
+    background-color: rgb(124, 180, 241);
+}
+.third-circle:hover{
+    background-color: rgb(124, 180, 241);
+}
+.second-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #5380FF;
+    animation:backInLeft;
+    animation-duration: 2s;
+    cursor: pointer;
+
+}
+.third-circle{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    background-color: #5380FF;
+    animation:backInLeft;
+    animation-duration: 2s;
+    cursor: pointer;
+
+}
+.svg-image{
+    position: absolute;
+    /* width: 40px;
+    height: 41px; */
+    margin-left: 23px;
+    margin-top: 18px;
+    align-items: center;
+}
+.LineIndicator1{
+    margin-left: 5rem;
+    width: 25rem;
+}
+
+.search-for-resource{
+    font-family: Spartan;
+    /* font-style: Bold; */
+    font-size: 18px;
+    padding-top: 9px;
+    /* font-weight: 17px; */
+    /* text-align: center; */
+    color: #241757;
+    
+   
+
+}
+.search{
+    
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7px;
+    font-family: Spartan;
+    font-style: SemiBold;
+    font-size: 18px;
+    color: #241757;
+    font-weight: bolder;
+    /* margin-left: 1rem; */
+    animation:backInLeft;
+    animation-duration: 2s;
+    
+}
