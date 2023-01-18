@@ -1,46 +1,24 @@
 import React from "react";
-import {Button} from "react-bootstrap";
+import { Button } from "react-bootstrap";
 
-import Card from 'react-bootstrap/Card';
+import Card from "react-bootstrap/Card";
 import "./UserViewer.css";
 import { MdLocationOn } from "react-icons/md";
 import { RiStethoscopeLine } from "react-icons/ri";
-import { BsFillTelephoneFill } from "react-icons/bs";
 import { TiSocialLinkedin } from "react-icons/ti";
+import NavBarr from "./NavBarr";
+import single_profile_banner from "../assets/single_profile_banner.png";
+import {BsTelephone} from "react-icons/bs"
+import {AiOutlineMail} from "react-icons/ai"
 
 const UserViewer = (props) => {
   function createMarkup() {
-    return {__html: props.mapaddress};
+    return { __html: props.mapaddress };
   }
   return (
     <>
-      {/* <div className="container">
-        <h3>
-          {props.first_name} {props.last_name}
-          <br />
-        </h3>
-        email address={props.email_address}
-        <br />
-        mobile_number={props.mobile_number}
-        <br />
-        speciality={props.speciality}
-        <br />
-        designation={props.designation}
-        <br />
-        education={props.education}
-        <br />
-        address={props.address}
-        <br />
-        city={props.city}
-        <br />
-        zipcode={props.zip_code}
-        <br />
-        <img src={props.image} alt="" />
-        <br />
-      </div> */}
-
       {/* card testing */}
-      <div className="whole container mt-5">
+      {/* <div className="whole container mt-5">
         <div className="left">
         <Card style={{ width: '25rem',height:"40rem" }}>
       <Card.Img variant="top" src={props.image} style={{height:"293px"}} id="singleProfileImage" />
@@ -64,16 +42,42 @@ const UserViewer = (props) => {
         </div>
         <div className="right">
          {/* <h1>{props.map_link}</h1>  */}
-        {/* <iframe src={props.map_link} /> */}
-        <div dangerouslySetInnerHTML={createMarkup() } />
+      {/* <iframe src={props.map_link} /> */}
+      {/* <div dangerouslySetInnerHTML={createMarkup() } />
 
         </div>
+      {/* </div> */}
+      <div className="NavbarSingleProfile">
+        <NavBarr />
       </div>
-      
-    
- 
 
-      
+      <div className="background-single-profile">
+        <div className="bannertext">{props.designation}</div>
+
+        <img
+          src={single_profile_banner}
+          alt=""
+          className="single_profile_banner"
+          style={{ width: "100%",height:"22rem"}}
+        />
+      </div>
+      <div className="single-profile-card container">
+        <div className="imageplusemail">
+          <div>
+            <img src={props.image} alt="" className="single-profile-image" />
+          </div>
+          <div className="single-profile-mail"><AiOutlineMail/>&nbsp; {props.email_address}</div>
+          <div className="single-profile-phone"> <BsTelephone/>&nbsp;{props.mobile_number}</div>
+        </div>
+
+        <div className="single=profile-card-content">
+          <div className="card-content-sec ">
+            <span className="single-profile-name">{props.first_name} {props.last_name}</span>, &nbsp;<span className="single-profile-practice-name">{props.practice_names}</span>
+          </div>
+        </div>
+      </div>
+
+      {/* <div dangerouslySetInnerHTML={createMarkup()} /> */}
     </>
   );
 };

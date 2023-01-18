@@ -204,6 +204,7 @@ section {
 .copyright-text {
   text-align: center;
   color: #fff;
+  margin-top: -0.4rem;
 }
 .pragma_text-with-logo {
   display: flex;

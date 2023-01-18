@@ -1,67 +1,91 @@
-.whole{
+.single_profile_bannerr{
+    position: absolute;
+    opacity: 0.5;
+    /* background-size: cover; */
+    width: 100%;
+    height: 18rem;
+   
+    
+}
+.background-single-profile{
+    /* background-color: rgb(224, 253, 253); */
+    color:  #241757;
+    /* position: absolute; */
+    
+    
+
+}
+.NavbarSingleProfile{
+    box-shadow: 0px 4px 24px 14px rgba(0, 0, 0, 0.1);
+}
+.bannertext{
+    color:  #241757;
+    position: absolute;
+width: 480px;
+height: 35px;
+left: 595px;
+top: 204px;
+
+font-family: 'Noto Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 60px;
+line-height: 35px;
+
+}
+.single-profile-image{
+    height: 12rem;
+    width: 13rem;
+    border-radius: 50%;
+    border: solid5px red;
+}
+.imageplusemail{
     display: flex;
-    /* justify-content: space-between; */
+    flex-direction: row;
     justify-content: space-between;
-    gap: -4rem;
 }
-#singleProfileImage{
-    border-bottom-left-radius: 12%;
-    border-bottom-right-radius: 12%;
-}
-.single-profile-name{
-    font-family: Spartan;
-    font-style: bold;
+.single-profile-mail{
+    margin-top: 4rem;
     color: #241757;
-    font-size: 33px;
+    margin-left:31rem;
+    font-size: 18px;
     font-weight: 400;
-    text-align: left;
+
 }
-.designationspan{
-    color:  #5380FF;
-}
-.singleProfileContent{
-    display: flex;
-    flex-direction: column;
-    /* justify-content: space-between; */
-    /* gap: 1rem; */
-}
-.singleProfilePracticesName{
-    text-align: left;
-   font-family: Spartan;
-    color: #241757;
-    font-size: 16px;
-    font-weight: 400;
-}
-.singleprofile-cityand-state{
-    font-family: Spartan;
-    color: #241757;
-    text-align: left;
-    font-size: 20px;
-    font-weight: 400;
-}
-.singleprofile-cityand-state svg{
-    fill: #241757;
-}
-.singleprofile-speciality{
-    text-align: left;
+.single-profile-phone{
+    margin-top: 4rem;
     color: #241757;
     font-size: 18px;
     font-weight: 400;
+
 }
-.singleprofile-mobilenumber{
-    text-align: left;
-    color:  #5380FF;
+.single-profile-mail svg{
+    fill: #5380ff;
+    font-family: Noto Serif;
+    height: 25px;
+    width: auto;
+}
+.single-profile-phone svg{
+    fill: #5380ff;
+    height: 21px;
+    width: auto;
+}
+.card-content-sec{
+    margin-top: 2rem;
+}
+.single-profile-name{
+    color: #241757;
     font-family: Spartan;
-    font-size: 20px;
-    
-}
-.singleprofile-mobilenumber svg{
-    fill: #241757;
+    font-style: Bold;
+    font-size: 30px;
+    font-weight: 400;
 
 }
-.linkdin svg{
-    fill: #241757;
-    height: auto;
-    width: 30px;
-}
+.single-profile-practice-name{
+    color: #5380ff;
+    font-family: Spartan;
+    font-style: Bold;
+    font-size: 30px;
+    font-weight: 400;
 
+}

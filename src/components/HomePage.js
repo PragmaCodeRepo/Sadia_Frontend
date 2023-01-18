@@ -99,7 +99,7 @@ const HomePage = () => {
       {/* Overlay testing */}
 
       {/* <NoDataFound/> */}
-      <Popup />
+      {/* <Popup /> */}
     </>
   );
 };

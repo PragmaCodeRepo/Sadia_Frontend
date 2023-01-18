@@ -27,6 +27,7 @@ const Footer = () => {
 
             <a href="#" >FAQ</a>
           </p>
+          
         </div>
 
         <div class="footer-center">

@@ -29,7 +29,8 @@ const AboutUs = () => {
                 <span>Divorce Process</span>
               </div>
               <div className="pragma-smalltitle-aboutus">
-                
+              <span>Our solutions are designed to bring together a team of divorce professionals that hold the highest standards in ethics and services delivery</span><br/>
+            <div className="map-aboutus"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.6461963837514!2d-88.34103548426374!3d41.8143815773777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ee4bc0c771b93%3A0xe86874f5bc4483be!2s472%20Mount%20Ct%2C%20North%20Aurora%2C%20IL%2060542%2C%20USA!5e0!3m2!1sen!2sin!4v1673873081924!5m2!1sen!2sin" ></iframe></div> 
                 <span className="telephone-icon"><BsFillTelephoneFill/> &nbsp;630-926-0774 </span>
                 <span className="telephone-icon" > <AiTwotoneMail/> &nbsp;Sadianazir@yahoo.com</span>
               </div>
@@ -38,7 +39,7 @@ const AboutUs = () => {
 
           {/* Right side */}
 
-          <div className="aboutus1page-right">
+          <div className="aboutus1page-right mt-5">
             <img src={Aboutusvector} alt="" />
           </div>
         </div>
