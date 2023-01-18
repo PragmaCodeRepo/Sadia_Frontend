@@ -92,7 +92,7 @@ const AboutUs = () => {
           <div className="sadia-mam ">
             <div className="sadia-mam-bio">
               <div className="sadia-mam-bio-conent">
-                Pranjal is a business leader with over 20 years of experience in
+                Sadia is a business leader with over 20 years of experience in
                 strategy, finance, systems, technology, and operations.
                 <br />
                 Sadia has a degree in Finance and masters in International Tax.

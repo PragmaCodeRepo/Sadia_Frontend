@@ -72,6 +72,8 @@ line-height: 35px;
 }
 .card-content-sec{
     margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
 }
 .single-profile-name{
     color: #241757;
@@ -81,11 +83,39 @@ line-height: 35px;
     font-weight: 400;
 
 }
-.single-profile-practice-name{
+.single-profile-designation-name{
     color: #5380ff;
     font-family: Spartan;
     font-style: Bold;
     font-size: 30px;
     font-weight: 400;
+
+}
+.single-profile-practices-names{
+
+font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+color: #241757;
+}
+.single-profile-city{
+    font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 25px;
+color: #241757;
+
+}
+.single-profile-state{
+    font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 25px;
+color: #241757;
+text-transform: capitalize;
 
 }

@@ -11,6 +11,7 @@ import single_profile_banner from "../assets/single_profile_banner.png";
 import {BsTelephone} from "react-icons/bs"
 import {AiOutlineMail} from "react-icons/ai"
 
+
 const UserViewer = (props) => {
   function createMarkup() {
     return { __html: props.mapaddress };
@@ -52,7 +53,7 @@ const UserViewer = (props) => {
       </div>
 
       <div className="background-single-profile">
-        <div className="bannertext">{props.designation}</div>
+        <div className="bannertext">{props.speciality}</div>
 
         <img
           src={single_profile_banner}
@@ -72,7 +73,9 @@ const UserViewer = (props) => {
 
         <div className="single=profile-card-content">
           <div className="card-content-sec ">
-            <span className="single-profile-name">{props.first_name} {props.last_name}</span>, &nbsp;<span className="single-profile-practice-name">{props.practice_names}</span>
+            <span className="single-profile-name">{props.first_name} {props.last_name}, &nbsp;<span className="single-profile-designation-name">{props.designation}</span> </span>
+            <span className="single-profile-practices-names mt-1 mb-1">{props.practice_names}</span>
+            <span className="single-profile-city" > {props.city} , &nbsp;<span className="single-profile-designation-state">{props.state}</span> </span>
           </div>
         </div>
       </div>
