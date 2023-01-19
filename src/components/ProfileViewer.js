@@ -48,6 +48,7 @@ const Profile = () => {
     context.practice_names=data.practice_names;
     context.state = data.state;
     context.mapaddress=data.mapaddress;
+    context.rating=data.rating;
     
 
   }
