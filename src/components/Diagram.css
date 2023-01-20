@@ -1,4 +1,4 @@
-.title{
+.titleHowwework{
     font-family: Noto Serif;
     font-size: 50px;
     color: #241757;
@@ -8,9 +8,40 @@
     justify-content: center;
     animation:backInLeft;
     animation-duration: 2s;
-    margin-top: 1.8rem;
+    /* margin-top: 1.8rem; */
+    position: relative;
+    padding-top: 3rem;
     
 }
+@media (max-width: 480px) {
+.titleHowwework{
+    font-family: Noto Serif;
+    font-size: 40px;
+    color: #241757;
+    /* width: 94rem; */
+    background: #F4FAFF;
+    display: flex;
+    justify-content: center;
+    animation:backInLeft;
+    animation-duration: 2s;
+    /* margin-top: 1.8rem; */
+    position: relative;
+    padding-top: 3rem;
+    
+}
+}
+
+@media (max-width: 480px){
+    .search{
+        margin-left: 50px;
+        margin-right: 3px;
+        margin-top: 2px;
+        justify-content: space-between;
+    }
+
+}
+
+
 .Howwework{
     background-color: #F4FAFF;
     height: 50vh;
@@ -20,7 +51,7 @@
     
     display: flex;
     justify-content: space-evenly;
-    padding-top: 13rem;
+    padding-top: 80px;
 
 }
 .first-circle{
@@ -70,10 +101,29 @@
     margin-left: 23px;
     margin-top: 18px;
     align-items: center;
+    position: relative;
 }
 .LineIndicator1{
     margin-left: 5rem;
     width: 25rem;
+    margin-top: -24px;
+}
+.LineIndicator2{
+    margin-left: 77px;
+    margin-top: -49px;
+    width: 408px;
+}
+@media (max-width: 480px){
+    .LineIndicator1{
+        margin-left: 5rem;
+        width: 77px;
+        margin-top: -24px;
+    }
+    .LineIndicator2{
+        margin-left: px;
+        margin-top: -32px;
+        width: 0px;
+    }
 }
 
 .search-for-resource{

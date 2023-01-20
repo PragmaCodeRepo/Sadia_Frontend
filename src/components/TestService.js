@@ -33,7 +33,7 @@ const TestService = () => {
     <div className="container">
   <div className="row testservicerow" style={{marginTop:"1rem"}}>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={Marriage_Counsellor} alt="Bologna"/>
@@ -56,7 +56,7 @@ const TestService = () => {
             </Overlay>
     </div>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={Lawyers} alt="Bologna"/>
@@ -71,7 +71,7 @@ const TestService = () => {
       </div>
     </div>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={ChildSupport} alt="Bologna"/>
@@ -88,9 +88,9 @@ const TestService = () => {
     <br/>
     <br/>
     <div className="container" >
-    <div className="row " style={{marginTop:"1rem"}}>
+    <div className="row " >
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={Mediation} alt="Bologna"/>
@@ -105,7 +105,7 @@ const TestService = () => {
       </div>
     </div>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={LifeCoaches} alt="Bologna"/>
@@ -120,7 +120,7 @@ const TestService = () => {
       </div>
     </div>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard" onClick={() => {
+      <div className="card testcard mt-4" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src="https://thumbs.dreamstime.com/b/financial-plan-25087121.jpg" alt="Bologna"/>

@@ -23,7 +23,19 @@ section {
   text-align: left;
   font: bold 16px sans-serif;
   padding: 55px 50px;
-  height: 350px;
+  height: 391px;
+}
+@media (max-width: 480px){
+  .footer-distributed {
+    background: #133876;
+    box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.12);
+    box-sizing: border-box;
+    width: 100%;
+    text-align: left;
+    font: bold 16px sans-serif;
+    padding: 55px 50px;
+    height: 687px;
+  }
 }
 
 .footer-distributed .footer-left,
@@ -143,7 +155,7 @@ section {
 .footer-distributed .footer-company-about {
   line-height: 20px;
   color: #92999f;
-  font-size: 13px;
+  font-size: 17px;
   font-weight: normal;
   margin: 0;
 }
@@ -151,7 +163,7 @@ section {
 .footer-distributed .footer-company-about span {
   display: block;
   color: #ffffff;
-  font-size: 14px;
+  font-size: 17px;
   font-weight: bold;
   margin-bottom: 20px;
 }
@@ -189,7 +201,7 @@ section {
   .footer-distributed .footer-right {
     display: block;
     width: 100%;
-    margin-bottom: 40px;
+    /* margin-bottom: 40px; */
     text-align: center;
   }
 
@@ -223,3 +235,8 @@ h3:hover {
   cursor: pointer;
 }
 
+@media (max-width: 480px){
+  .mail-section{
+    margin-left: 32px;
+  }
+}

@@ -21,7 +21,7 @@
 .bannertext{
     color:  #241757;
     position: absolute;
-width: 480px;
+width:551px;
 height: 35px;
 left: 595px;
 top: 204px;
@@ -207,8 +207,10 @@ margin-bottom: 18px;
 }
 .single-profile-image{
     /* border: 2.5px solid #5380ff; */
+    border: 3px solid #0d34a0;
 }
 .color{
     background-color: red;
 }
+
 

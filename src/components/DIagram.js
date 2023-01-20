@@ -11,7 +11,7 @@ const Diagram = () => {
   return (
     <>
     <div className='Howwework'>
-     <div className='title'><h1>How does Pragma work?</h1></div>
+     <div className='titleHowwework '>How does Pragma work?</div>
      <div className='three-circle'>
         <div className='first-circle'>
          <div ><img src={image} alt="" className='svg-image' style={{marginLeft: "27px",
@@ -25,7 +25,7 @@ const Diagram = () => {
         </div>
         <div className='second-circle'>
         <div ><img src={image1} alt="" className='svg-image'/></div>
-        <img src={Lineindicator2} alt=" " className="LineIndicator1"/>
+        <img src={Lineindicator2} alt=" " className="LineIndicator2"/>
          
         </div>
         <div className='third-circle'>
@@ -38,9 +38,9 @@ const Diagram = () => {
         
      </div>
         <span className='search'>
-            <span >Search resource</span>
-            <span style={{marginLeft:"-5rem"}}>Contact  resource</span>
-            <span style={{marginLeft:"-2.3rem"}}> Peace  of mind</span>
+            <span  className='seachresouces'>Search resource</span>
+            <span >Contact  resource</span>
+            <span > Peace  of mind</span>
         </span>
     </div>
     </>

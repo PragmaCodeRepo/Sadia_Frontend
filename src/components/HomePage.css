@@ -36,9 +36,16 @@
     width: 100%;
     height: auto;
     background-position:   center center;
+    position: relative;
       
     }
     }
+    @media (max-width: 480px){
+    ::placeholder{
+      font-size: 9px;
+
+    }
+  }
 
 
 .title-quote {
@@ -73,6 +80,11 @@
   
 
 
+}
+@media (max-width: 480px){
+#root{
+  overflow-x: hidden;
+}
 }
 }
 @media (min-width: 481px) and (max-width: 1024px){
@@ -109,12 +121,12 @@
 @media (max-width: 480px){
   #searchbar {
     position: absolute;
-    width: 386px;
+    width: 415px;
     height: 20px;
     background: #ffffff;
     box-shadow: 0px 44px 30px rgb(8 8 9 / 25%);
     border-radius: 5px;
-    margin-top: 32rem;
+    margin-top: 29rem;
     /* margin-left: 33.5rem; */
     background-color: transparent;
     margin-left: 15px;
@@ -145,6 +157,7 @@
     border-bottom: #fff;
     color: grey;
     font-weight: bold;
+    font-size: 9px;
     
     
   }
@@ -227,6 +240,7 @@
   }
 
 }
+
 
 
 #search-button:hover {
@@ -465,4 +479,5 @@
   
   
 }
+
 

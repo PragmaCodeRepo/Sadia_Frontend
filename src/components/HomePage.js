@@ -77,7 +77,7 @@ const HomePage = () => {
 
           <div className="col ">
             <button type="submit" id="search-button" onClick={submitHandler}>
-              <img src={search_icon} alt="" style={{ marginRight: "2rem" }} />
+              <img  id="search-iconn" src={search_icon} alt="" style={{ marginRight: "10px" }}  />
               Search
             </button>
           </div>

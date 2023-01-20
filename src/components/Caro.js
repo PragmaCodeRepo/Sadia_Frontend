@@ -28,7 +28,7 @@ const Caro = () => {
         className="mySwiper"
       >
         <SwiperSlide>
-          <div className="content">
+          <div className="content mx-5">
           <div className="doublequote"> <RiDoubleQuotesL/></div>
           <br/>
             I was going through a difficult time in my life with a dysfunctional
@@ -43,9 +43,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               JohnMiles
@@ -54,7 +52,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -68,9 +66,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               Pranjal
@@ -79,7 +75,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -93,9 +89,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <div className="doublequote"> <RiDoubleQuotesL/></div>
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
@@ -105,7 +99,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -119,9 +113,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               yashu
@@ -130,7 +122,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -144,9 +136,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+           
             <span className="content-name">
             <BsStarFill /> <BsStarFill /><BsStarFill /><BsStarFill /><br/>
               JohnMiles
@@ -155,7 +145,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -169,9 +159,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               vish
@@ -180,7 +168,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
 
             I was going through a difficult time in my life with a dysfunctional
@@ -195,9 +183,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               nandita
@@ -206,7 +192,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -220,9 +206,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               pranjal
@@ -231,7 +215,7 @@ const Caro = () => {
           </div>
         </SwiperSlide>
         <SwiperSlide>
-        <div className="content">
+        <div className="content mx-5">
         <div className="doublequote"> <RiDoubleQuotesL/></div>
             I was going through a difficult time in my life with a dysfunctional
             marriage and Mark helped me to make sense of my situation.
@@ -245,9 +229,7 @@ const Caro = () => {
             to write this.
             <br />
             <br />
-            <br />
-            <br />
-            <br />
+            
             <span className="content-name">
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               vishal

@@ -58,7 +58,7 @@ const UserViewer = (props) => {
       </div>
 
       <div className="background-single-profile">
-        <div className="bannertext">{props.speciality}</div>
+        <div className="bannertext">Profile of {props.first_name} {props.last_name}</div>
 
         <img
           src={single_profile_banner}

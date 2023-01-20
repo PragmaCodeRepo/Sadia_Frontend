@@ -43,7 +43,7 @@ const Footer = () => {
             <p>+1.555.555.5555</p>
           </div>
 
-          <div>
+          <div className="mail-section">
             <i class="fa fa-envelope"></i>
             <p>
               <a href="mailto:support@company.com">support@pragma.com</a>
@@ -52,7 +52,7 @@ const Footer = () => {
         </div>
 
         <div class="footer-right">
-          <p class="footer-company-about">
+          <p class="footer-company-about mt-5">
             <span>About the company</span>
             A suite of products and services designed to provide focused and relevant information for the divorce process .
           </p>
