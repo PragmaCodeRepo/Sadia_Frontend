@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="row" id="searchbar">
+        <div className="row container" id="searchbar">
           <input
             type="number"
             placeholder=" Enter zip code"

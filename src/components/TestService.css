@@ -2,6 +2,12 @@
     width: 405px;
     height: 260px;
 }
+@media (max-width: 390px){
+    .card{
+        width: 330px;
+        height: 260px;
+    }
+}
 .card-img-overlay {
     /* background-color: rgba(#000, 0.4); */
     background: linear-gradient(rgb(0 0 0 / 58%), #2f30308a);
@@ -68,11 +74,12 @@
         font-family: Noto Serif;
         font-style: bold;
         color:  #241757;
-        font-size: 50px;
+        font-size: 45px;
         margin-left: 1rem;
         margin-bottom: 2rem;
         margin-top: 4rem;
         font-weight: 500;
+        text-align: center;
     
     
     }

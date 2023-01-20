@@ -91,7 +91,7 @@ const Caro = () => {
             <br />
             
             <span className="content-name">
-            <div className="doublequote"> <RiDoubleQuotesL/></div>
+            
             <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /><br/>
               Manish
               

@@ -56,7 +56,7 @@ const TestService = () => {
             </Overlay>
     </div>
     <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-      <div className="card testcard mt-4" onClick={() => {
+      <div className="card testcard mt-3" onClick={() => {
                 setOverlay(true);
               }}>
          <img className="card-img" src={Lawyers} alt="Bologna"/>
