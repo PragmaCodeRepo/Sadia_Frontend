@@ -45,7 +45,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        <div className="row container" id="searchbar">
+        {/* <div className="row container" id="searchbar">
           <input
             type="number"
             placeholder=" Enter zip code"
@@ -80,6 +80,46 @@ const HomePage = () => {
               <img  id="search-iconn" src={search_icon} alt="" style={{ marginRight: "10px" }}  />
               Search
             </button>
+          </div>
+        </div> */}
+
+        <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+
+        <div class="wrapper">
+          <div class="search_box">
+            <div class="dropdown">
+              {/* <div class="default_option">All</div>  
+            <ul>
+              <li>All</li>
+              <li>Recent</li>
+              <li>Popular</li>
+            </ul> */}
+              <select
+                name="dropdown"
+                onChange={(e) => setdropdown(e.target.value)}
+                // className=""
+                // id="category-dropdown"
+                required
+              >
+                <option value="select" selected>
+                  Select Category
+                </option>
+
+                <option value="Marriage">Marriage</option>
+                <option value="Life Coaches">Life Coaches</option>
+                <option value="Child support services">
+                  Child support services
+                </option>
+                <option value="Therapist Services">Therapist Services</option>
+                <option value="Financial analyses">Financial analyses</option>
+                <option value="Attorneys"> Attorneys</option>
+                <option value="Mediation services"> Mediation services</option>
+              </select>
+            </div>
+            <div class="search_field">
+              <input type="text" class="input" placeholder="Zipcode" onChange={(e) => setZipcode(e.target.value)} />
+              <i class="fas fa-search" onClick={submitHandler}></i>
+            </div>
           </div>
         </div>
       </div>

@@ -1,7 +1,11 @@
-.card{
-    width: 405px;
+.testcard{
+    width: 370px;
     height: 260px;
+    margin-left: 14px;
+    
 }
+
+
 @media (max-width: 390px){
     .card{
         width: 330px;
@@ -28,6 +32,14 @@
   cursor: pointer;
   animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
+}
+@media (max-width: 480px){
+    .testcard:hover{
+        transform: none ;
+        transition: none;
+        
+    }
+
 }
 .testcard:hover{
     transform: scale(1.1) ;
