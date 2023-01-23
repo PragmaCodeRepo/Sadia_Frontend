@@ -10,7 +10,8 @@
     .testcard{
         width: 330px;
         height: 260px;
-        margin-left: 34px;
+        margin-left: 27px;
+
     }
 }
 @media (max-width: 390px){

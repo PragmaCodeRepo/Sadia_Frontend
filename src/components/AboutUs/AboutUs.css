@@ -32,7 +32,14 @@
 }
 
 /* right side */
-.aboutus1page-right {
+
+@media (max-width: 480px){
+ 
+  .aboutusvectorimg{
+    width: 100px;
+    /* margin-left: -55px; */
+
+  }
 }
 
 /* 2nd page */
@@ -92,11 +99,30 @@
   width: 20rem;
   height: 24rem;
 }
+
+@media (max-width: 480px){
+  .anjit-sir-pic-block {
+    background: #5380ff;
+  
+    width: 15rem;
+    height: 19rem;
+  }
+  .anjit-sir-pic {
+    margin-top: 3rem;
+    margin-left: 4rem;
+    width: 15rem;
+    height: 19rem;
+  }
+ 
+
+
+}
 .anjit-sir-bio {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin-left: 20rem;
+ 
 }
 .anjit-sir-bio-conent {
   font-family: spartan;
@@ -174,4 +200,59 @@
 }
 .telephone-icon svg{
   fill: #5380ff;
+}
+
+@media (max-width: 480px){
+  .anjit-sir-bio{
+    margin-left: 0rem;
+    margin-top: 24rem;
+    margin-left: -193px;
+
+  }
+  .anjit-sir-sub-title{
+    margin-top: 0rem;
+  }
+  .anjit-sir-name{
+    margin-top: 5px;
+  }
+}
+@media (max-width: 480px){
+  .sadia-mam-bio {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    /* margin-left: 20rem; */
+    margin-top: 31rem;
+    margin-left: 1rem;
+}
+.sadia-mam-pic-block {
+  background: #5380ff;
+  width: 122rem;
+  height: 21rem;
+  margin-right: 3rem;
+}
+.sadia-mam-pic-block {
+  background: #5380ff;
+  width: 122rem;
+  height: 21rem;
+  margin-right: 0rem;
+  margin-left: -4rem;
+}
+.sadia-mam-pic {
+  margin-top: 5rem;
+  margin-left: -7rem;
+  width: 15rem;
+  height: 20rem;
+}
+.sadia-mam-bio-conent {
+  font-family: spartan;
+  font-style: Regular;
+  font-size: 18px;
+  line-height: 35px;
+  width: 243px;
+  color: #81849b;
+}
+.sadia-mam-sub-title {
+  margin-top: 0rem;
+}
 }

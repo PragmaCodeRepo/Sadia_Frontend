@@ -509,7 +509,7 @@
 }
 
 .wrapper .search_box .dropdown {
-  width: 150px;
+  width: 250px;
   border-right: 2px solid #dde2f1;
   color: #9fa3b1;
   position: relative;
@@ -604,13 +604,14 @@ select {
   cursor: pointer;
   width: -webkit-fill-available;
   background: white;
-  width: 141px;
+  /* width: 141px; */
+  width: auto;
   appearance: none;
 }
 select:active {
-  font-weight: 300;
+  font-weight: normal;
   outline: none;
-  text-align: center;
+  /* text-align: center; */
 }
 select:focus {
   outline: none;
@@ -626,4 +627,13 @@ select:focus {
 ::placeholder{
   font-size: 15px;
   font-style: bolder;
+}
+.search_box svg{
+   
+    height: auto;
+    width: 25px;
+    margin-left: -25px;
+    position: relative;
+    fill: #5078ef;
+
 }

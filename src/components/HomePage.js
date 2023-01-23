@@ -17,6 +17,7 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import TestService from "./TestService";
 import NavBarr from "./NavBarr";
+import {RiArrowDropDownLine} from "react-icons/ri"
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -101,8 +102,9 @@ const HomePage = () => {
                 // id="category-dropdown"
                 required
               >
+              
                 <option value="select" selected>
-                  Select Category
+                  Select Category 
                 </option>
 
                 <option value="Marriage">Marriage</option>
@@ -114,8 +116,12 @@ const HomePage = () => {
                 <option value="Financial analyses">Financial analyses</option>
                 <option value="Attorneys"> Attorneys</option>
                 <option value="Mediation services"> Mediation services</option>
+                
               </select>
+              <RiArrowDropDownLine/>
+              
             </div>
+            
             <div class="search_field">
               <input type="text" class="input" placeholder="Zipcode" onChange={(e) => setZipcode(e.target.value)} />
               <i class="fas fa-search" onClick={submitHandler}></i>
