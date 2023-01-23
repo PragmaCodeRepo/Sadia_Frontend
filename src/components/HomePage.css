@@ -600,9 +600,11 @@
 
 select {
   border: none;
-  width: -webkit-fill-available;
   color: #6f768d;
   cursor: pointer;
+  width: -webkit-fill-available;
+  background: white;
+  width: 141px;
 }
 select:active {
   font-weight: bold;
