@@ -605,6 +605,7 @@ select {
   width: -webkit-fill-available;
   background: white;
   width: 141px;
+  appearance: none;
 }
 select:active {
   font-weight: bold;
