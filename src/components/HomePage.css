@@ -608,8 +608,9 @@ select {
   appearance: none;
 }
 select:active {
-  font-weight: bold;
+  font-weight: 300;
   outline: none;
+  text-align: center;
 }
 select:focus {
   outline: none;

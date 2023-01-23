@@ -1,15 +1,22 @@
 .testcard{
     width: 370px;
     height: 260px;
-    margin-left: 14px;
+    /* margin-left: 14px; */
     
 }
 
 
-@media (max-width: 390px){
-    .card{
+@media (max-width: 480px){
+    .testcard{
         width: 330px;
         height: 260px;
+        margin-left: 34px;
+    }
+}
+@media (max-width: 390px){
+    .testcard{
+        
+        margin-left: 14px;
     }
 }
 .card-img-overlay {
