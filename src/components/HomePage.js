@@ -39,10 +39,11 @@ const HomePage = () => {
         {/* A client focused approach providing families with all the tools needed to move through divorce */}
         <div className="title">
           <div className="title-quote">
-            End-to-End solutions to{" "}
-            <span className="double-shade">help you </span> <br />
-            through your divorce <br />{" "}
-            <span className="double-shade"> process </span>
+          A client focused approach{" "}
+            <span className="double-shade">providing families </span> <br />
+           <span className="double-shade"> with all the tool</span> needed to 
+             <br />{" "}
+            <span className="double-shade"> move divorce    </span>
           </div>
         </div>
 

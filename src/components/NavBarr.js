@@ -11,7 +11,7 @@ const NavBarr = () => {
   return (
     <>
         {[ 'xl', ].map((expand) => (
-        <Navbar key={expand} bg="light" expand={expand} className="mb-0" >
+        <Navbar key={expand} bg="light" expand={expand} className="mb-0 " >
           <Container fluid>
             <Navbar.Brand href="/">
             <img

@@ -34,7 +34,7 @@
 @media (max-width: 480px){
     .search{
         margin-left: 50px;
-        margin-right: 3px;
+        margin-right: 14px;
         margin-top: 2px;
         justify-content: space-between;
     }

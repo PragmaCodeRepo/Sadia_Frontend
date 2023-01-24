@@ -9,6 +9,7 @@
   background-position:   center center ;
   background-attachment: fixed;
   background-repeat: no-repeat; 
+  height: 840px;
   
   /* scale: Fill; */
   
@@ -30,13 +31,14 @@
     .banner {
       
      
-      background: linear-gradient(rgb(225 218 225 / 80%), #839de58a),
-    url("../assets/LifeCoaches.png");
-    background-size: cover;
+      /* background: linear-gradient(rgb(225 218 225 / 80%), #839de58a),
+    url("../assets/LifeCoaches.png"); */
+    /* background-size: cover; */
     width: 100%;
-    height: auto;
-    background-position:   center center;
+    height: 600px;
+    /* background-position:   center center; */
     position: relative;
+    background: #f3f7f9;
       
     }
     }
@@ -54,7 +56,8 @@
   margin-top: 4rem;
   font-family: "Noto Serif";
   font-style: normal;
-  font-weight: 900;
+  font-weight: 700;
+  /* font-size: 45px; */
   font-size: 45px;
   /* text-align: center; */
   letter-spacing: 0.02em;
@@ -68,11 +71,12 @@
   text-align: center;
 }
 @media (max-width: 480px){
+  @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap');
  .title-quote{
   position: absolute;
-  margin-top: 4rem;
-  font-weight: 900;
-  font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 600;
+  font-size: 28px;
   letter-spacing: 0.02em;
   text-transform: capitalize;
   /* padding-top: 2rem; */
@@ -281,7 +285,7 @@
   /* overflow: scroll; */
 }
 .banner {
-  height: 840px;
+  /* height: 840px; */
 }
 .ourservices-title {
   font-family: Noto Serif;
@@ -505,6 +509,7 @@
   .wrapper .search_box{
     width: 362px;
     margin-top: 150px;
+    box-shadow: 0 12px 6px -10px #b3c6ff;
   }
 }
 
