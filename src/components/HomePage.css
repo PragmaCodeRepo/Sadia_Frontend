@@ -508,7 +508,7 @@
 @media (max-width: 480px){
   .wrapper .search_box{
     width: 362px;
-    margin-top: 150px;
+    margin-top: 250px;
     box-shadow: 0 12px 6px -10px #b3c6ff;
   }
 }
