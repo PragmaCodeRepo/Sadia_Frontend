@@ -24,10 +24,10 @@
     display:block;
     text-decoration:none;
     width:250px;
-    background:#E47425;
+    background:#5380ff;
     margin:10px auto 0px;
     padding:15px 20px 15px;
-    border-bottom:5px solid #F96700;
+    border-bottom:5px solid #5380ff;
   }
   .thankyou-wrapper a:hover{
     font:26px Arial, Helvetica, sans-serif;
@@ -36,8 +36,15 @@
     display:block;
     text-decoration:none;
     width:250px;
-    background:#F96700;
+    background:#5380ff;
     margin:10px auto 0px;
     padding:15px 20px 15px;
-    border-bottom:5px solid #F96700;
+    border-bottom:5px solid #5380ff;
   }
+  @media (max-width: 480px){
+    .thankyou-image{
+      width: 99%;
+    }
+
+  }
+  

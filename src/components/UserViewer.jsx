@@ -4,21 +4,23 @@ import { Button } from "react-bootstrap";
 import Card from "react-bootstrap/Card";
 import "./UserViewer.css";
 import { MdLocationOn } from "react-icons/md";
-import { RiStethoscopeLine } from "react-icons/ri";
-import { TiSocialLinkedin } from "react-icons/ti";
 import NavBarr from "./NavBarr";
 import single_profile_banner from "../assets/single_profile_banner.png";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiStar } from "react-icons/hi";
 import Footer from "./Footer";
+import { SlSocialLinkedin } from "react-icons/sl";
+
 
 
 import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
+import { Link, } from "react-router-dom";
 
 const UserViewer = (props) => {
   const [isActive, setisActive] = useState(false);
   const [toggleState, setToggleState] = useState(1);
+
 
 
   function createMarkup() {
@@ -41,6 +43,7 @@ const UserViewer = (props) => {
     // }
 
   };
+ 
 
   
   
@@ -73,6 +76,8 @@ const UserViewer = (props) => {
           <div>
             <img src={props.image} alt="" className="single-profile-image" />
           </div>
+          
+         <div className="mail-plus-phone-plus-linkdin">
 
           <div className="single-profile-mail">
             <AiOutlineMail />
@@ -83,6 +88,12 @@ const UserViewer = (props) => {
             <BsTelephone />
             &nbsp;{props.mobile_number}
           </div>
+
+         {/* <Link to={props.linkdin_profile}></Link> */}
+         <a href={props.linkdin_profile}><div className="linkdin-icon"><SlSocialLinkedin/> </div></a>
+          </div>
+
+
         </div>
 
         <div className="single=profile-card-content">
@@ -112,7 +123,7 @@ const UserViewer = (props) => {
         </div>
         
          <div className="single-Profile-2nd-section">
-          <div className="buttons">
+          <div className="buttons mt-5">
            
             <button className="buttonn mt-3" >Introduction</button>
             <button className={`buttonn mt-3 ${isActive && "button-css"}`} onClick={(e) => changestyle(e)} name='education'>
@@ -122,7 +133,7 @@ const UserViewer = (props) => {
             <button className="buttonn mt-3">Office Location</button>
           </div>
           <div className="Introduction mt-5">
-            <div className="intro-text"> {props.introduction}</div>
+            <div className="intro-text container"> {props.introduction}</div>
           </div>
           <div className={`Education ${isActive && 'cont2'}`}>
             <div className="education-text"> {props.education}</div>

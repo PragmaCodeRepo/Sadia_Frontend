@@ -74,7 +74,7 @@ margin-left: -90px;
     resize: none;
   }
   .formbold-form-input:focus {
-    border-color: #6a64f1;
+    border-color: #5380ff;
     box-shadow: 0px 3px 8px rgba(0, 0, 0, 0.05);
   }
 
@@ -121,3 +121,55 @@ margin-left: -90px;
     font-size: 42px;
     color: dodgerblue;
   }
+  .contactus-shadow{
+    box-shadow: 0px 9px 84px rgba(0, 72, 211, 0.11);
+  }
+
+  .contactus-title{
+      display: flex;
+      /* text-align: center; */
+      justify-content: flex-end;
+      flex-direction: column;
+      /* justify-content: center; */
+      align-items: center;
+  
+  }
+  .contactus-main-title{
+    font-family: 'Noto Serif';
+font-style: normal;
+font-weight: 700;
+font-size: 40px;
+
+
+text-align: center;
+text-transform: capitalize;
+
+color: #241757;
+
+  }
+
+  .contactus-sub-title{
+    font-family: 'Spartan';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+
+/* or 178% */
+
+text-align: center;
+text-transform: capitalize;
+
+color: #8d8e96;
+  }
+
+  @media (max-width: 480px){
+    .contactus-banner-image {
+      position: relative;
+      /* background: linear-gradient(rgba(55, 55, 55, 0.8), #0e0e0e8a), url(http://localhost:3000/static/media/Contactusbanner.7a8cd9a….png); */
+      background-size: cover;
+      height: 0vh;
+      width: 0%;
+      
+      /* opacity: 0.5; */
+  }
+  }  

@@ -72,7 +72,7 @@
 .bannertext{
     color:  #241757;
     position: absolute;
-width:90%;
+width:100%;
 height: 35px;
 /* left: 595px; */
 top: 204px;
@@ -86,12 +86,26 @@ font-size: 30px;
 line-height: 35px;
 
 }
-.single-profile-image{
-    height: 12rem;
-    width: 13rem;
+
+.single-profile-image {
+    /* width: 167px; */
+    /* height: 160px; */
+    /* border-radius: 50%; */
+    /* border: 2px solid #5380ff; */
+    /* filter: drop-shadow(0 0 8px #5380ff); */
+    /* position: absolute; */
+    margin-top: -2rem;
+    border: 5px solid #7a5eeb;
+    padding: 0.5px;
     border-radius: 50%;
+    border-top-color: #5380ff;
+    border-left-color: #5380ff;
+    width: 170px;
+    height: 160px;
     
 }
+
+
 .imageplusemail{
     display: flex;
     flex-direction: row;
@@ -295,86 +309,27 @@ hr{
 }
 
 
-
- /* tabs  */
- .bloc-tabs {
+.mail-plus-phone-plus-linkdin{
     display: flex;
-    
-  }
-  .tabs {
-  
-    padding: 15px;
-    text-align: center;
-    width: 50%;
-    background: #dddddd87;
+    justify-content: space-between;
+    gap: 11px;
+    flex: wrap;
+    flex-wrap: wrap;
+}
+.linkdin-icon svg{
+    height: auto;
+    width: 24px;
+    fill: #5380ff;
+    margin-top: 8px;
     cursor: pointer;
-    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
-    box-sizing: content-box;
-    position: relative;
-    outline: none;
-    margin: 10px;
-    color: #241757;
-    border-radius: 15px;
-    background-color: rgb(227, 225, 225);
-    font-size: 17px;
-    /* font-weight: 300; */
-    font-style: bolder;
+}
+
+@media (max-width: 480px){
+    .linkdin-icon svg{
+        margin-left: -64px;
+
+    }
+}
+
     
-  }
-  .tabs:not(:last-child){
-    /* border-right: 1px solid rgba(0, 0, 0, 0.274); */
-  }
   
-  .active-tabs  {
-    background: #5380ff;
-    border-bottom: 1px solid transparent;
-    
-  }
-  
-  .active-tabs::before {
-    content: "";
-    display: block;
-    position: absolute;
-    top: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: calc(100% + 2px);
-    height: 5px;
-    /* background: rgb(88, 147, 241); */
-    
-    
-  }
-  
-  
-  
-  button {
-    border: none;
-    
-    
-  }
-  .content-tabs {
-    flex-grow : 1;
-  }
-  .content {
-    background: white;
-    padding: 20px;
-    width: 100%;
-    height: 100%;
-    display: none;
-  }
-  .content h2 {
-    padding: 0px 0 5px 0px;
-  }
-  .content hr {
-    width: 100px;
-    height: 2px;
-    background: #222;
-    margin-bottom: 5px;
-  }
-  .content p {
-    width: 100%;
-    height: 100%;
-  }
-  .active-content {
-    display: block;
-  } 
