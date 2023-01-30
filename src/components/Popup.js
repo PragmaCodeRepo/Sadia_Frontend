@@ -1,6 +1,7 @@
 import React,{useState} from 'react'
 import Overlay from "react-overlay-component";
 import Caro from './Caro';
+import Thankyou from './ContactUs/Thankyou';
 import NoDataFound from './NoDataFound';
 import SearchBarOverlay from './Overlay/SearchBarOverlay';
 
@@ -37,7 +38,7 @@ const Popup = (props) => {
 
     <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
         {/* <Caro/> */}
-        <NoDataFound/>
+        <Thankyou/>
 
         {/* <button
             className="danger"

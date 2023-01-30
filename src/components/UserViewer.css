@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .single_profile_bannerr{
     position: absolute;
     opacity: 0.5;
@@ -5,6 +6,56 @@
     width: 100%;
     height: 18rem;
    
+    
+}
+@media (max-width: 480px){
+    .single_profile_bannerr{
+        width: 100%;
+        height: 16rem;
+       
+        
+    }
+    .bannertext {
+        color: #241757;
+        position: absolute;
+        width: 397px;
+        height: 35px;
+        /* left: 595px; */
+        top: 204px;
+        font-family: 'Noto Serif';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 41px;
+        /* line-height: 35px; */
+        margin-left: 3rem;
+    }
+    .buttons {
+        display: flex;
+        /* flex-direction: row; */
+        /* justify-content: space-between; */
+        flex: wrap;
+        flex-wrap: wrap;
+        
+    }
+    .single-profile-card{
+        margin-left: 6rem;
+    }
+    .card-content-sec {
+        margin-top: 25px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 78px;
+    }
+    .imageplusemail {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-left: 82px;
+    }
+    
+   
+
     
 }
 .background-single-profile{
@@ -21,15 +72,17 @@
 .bannertext{
     color:  #241757;
     position: absolute;
-width:551px;
+width:90%;
 height: 35px;
-left: 595px;
+/* left: 595px; */
 top: 204px;
+text-align: center;
+
 
 font-family: 'Noto Serif';
 font-style: normal;
 font-weight: 700;
-font-size: 60px;
+font-size: 30px;
 line-height: 35px;
 
 }
@@ -37,23 +90,24 @@ line-height: 35px;
     height: 12rem;
     width: 13rem;
     border-radius: 50%;
-    border: solid5px red;
+    
 }
 .imageplusemail{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .single-profile-mail{
-    margin-top: 4rem;
+    margin-top: 10px;
     color: #241757;
-    margin-left:31rem;
+    /* margin-left:31rem; */
     font-size: 18px;
     font-weight: 400;
 
 }
 .single-profile-phone{
-    margin-top: 4rem;
+    margin-top: 10px;
     color: #241757;
     font-size: 18px;
     font-weight: 400;
@@ -71,7 +125,7 @@ line-height: 35px;
     width: auto;
 }
 .card-content-sec{
-    margin-top: 2rem;
+    margin-top: 25px;
     display: flex;
     flex-direction: column;
 }
@@ -131,10 +185,12 @@ text-transform: capitalize;
 font-size: 18px;
 
 }
-.buttons{
+.buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+    justify-content: center;
+    gap: 18px;
 }
 .buttonn{
 width: 241px;
@@ -144,32 +200,42 @@ border-radius: 5px;
 color: #241757;
 font-size: 18px;
 font-style: bolder;
+
 }
 .buttonn:hover{
-    background-color: #5380ff;
+    /* background-color: #5380ff; */
 
 }
 .Introduction{
-    height: 280px;
-    margin-top: 50px;
-    background: #F4FAFF;
+    height: auto;
+    /* margin-top: 50px; */
+    /* background: #F4FAFF; */
+    background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
 letter-spacing: 1.5px;
 color: #241757;
+font-family: 'Montserrat', sans-serif;
+font-style: bolder;
+font-size: 17px;
+
 }
 .intro-text{
     margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 .Education{
     height: 70px;
     margin-top: 50px;
-    background: #F4FAFF;
+    /* background: #F4FAFF; */
+    background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
 letter-spacing: 1.5px;
 color: #241757;
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
 }
 .education-text{
     margin-top: 20px;
@@ -180,11 +246,14 @@ color: #241757;
     text-align: center;
     height: 70px;
     margin-top: 50px;
-    background: #F4FAFF;
+    /* background: #F4FAFF; */
+    background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
 letter-spacing: 1.5px;
 color: #241757;
+font-family: 'Montserrat', sans-serif;
+font-size: 17px;
 }
 .speciality-text{
     margin-top: 20px;
@@ -193,7 +262,8 @@ color: #241757;
 .office-location{
     height: 350px;
     margin-top: 50px;
-    background: #F4FAFF;
+    /* background: #F4FAFF; */
+    background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
 letter-spacing: 1.5px;
@@ -201,16 +271,110 @@ color: #241757;
 margin-bottom: 18px;
 }
 .office-map{
-    margin-top: 50px;
+    margin-top: 10px;
     align-items: center;
-    margin-left: 95px;
+    /* margin-left: 95px; */
 }
-.single-profile-image{
-    /* border: 2.5px solid #5380ff; */
-    border: 3px solid #0d34a0;
-}
+
 .color{
     background-color: red;
 }
 
 
+hr{
+    color: #0d34a0;
+}
+.cont2{
+    background: #5380ff;
+    
+}
+
+
+.button-css {
+    background-color: #5380ff;
+}
+
+
+
+ /* tabs  */
+ .bloc-tabs {
+    display: flex;
+    
+  }
+  .tabs {
+  
+    padding: 15px;
+    text-align: center;
+    width: 50%;
+    background: #dddddd87;
+    cursor: pointer;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.274); */
+    box-sizing: content-box;
+    position: relative;
+    outline: none;
+    margin: 10px;
+    color: #241757;
+    border-radius: 15px;
+    background-color: rgb(227, 225, 225);
+    font-size: 17px;
+    /* font-weight: 300; */
+    font-style: bolder;
+    
+  }
+  .tabs:not(:last-child){
+    /* border-right: 1px solid rgba(0, 0, 0, 0.274); */
+  }
+  
+  .active-tabs  {
+    background: #5380ff;
+    border-bottom: 1px solid transparent;
+    
+  }
+  
+  .active-tabs::before {
+    content: "";
+    display: block;
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: calc(100% + 2px);
+    height: 5px;
+    /* background: rgb(88, 147, 241); */
+    
+    
+  }
+  
+  
+  
+  button {
+    border: none;
+    
+    
+  }
+  .content-tabs {
+    flex-grow : 1;
+  }
+  .content {
+    background: white;
+    padding: 20px;
+    width: 100%;
+    height: 100%;
+    display: none;
+  }
+  .content h2 {
+    padding: 0px 0 5px 0px;
+  }
+  .content hr {
+    width: 100px;
+    height: 2px;
+    background: #222;
+    margin-bottom: 5px;
+  }
+  .content p {
+    width: 100%;
+    height: 100%;
+  }
+  .active-content {
+    display: block;
+  } 

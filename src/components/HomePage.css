@@ -18,13 +18,21 @@
 @media (min-width: 481px) and (max-width: 1024px){
   .banner {
     background: linear-gradient(rgb(225 218 225 / 80%), #839de58a),
-    url("../assets/LifeCoach_new.jpg");
+    url("../assets/new_bg_1.png");
     /* background-size: cover; */
+    height: 36rem;
     width: 100%;
-    height: auto;
+    
     background-position:   center center;
     background-size: cover;
+    position: relative;
+
     
+  }
+
+  
+  #root{
+    overflow-x: hidden;
   }
   }
   @media (max-width: 480px){
@@ -53,7 +61,7 @@
 .title-quote {
   position: absolute;
   /* margin-left: 28rem; */
-  margin-top: 4rem;
+  margin-top: 7rem;
   font-family: "Noto Serif";
   font-style: normal;
   font-weight: 700;
@@ -64,6 +72,7 @@
   text-transform: capitalize;
   padding-top: 2rem;
   color: #241757;
+  
   /* animation: heartBeat;
   animation-duration: 1.5s; */
 
@@ -92,19 +101,16 @@
 }
 }
 @media (min-width: 481px) and (max-width: 1024px){
-  .title-quote{
+  .title-quote {
     position: absolute;
-    margin-top: 12rem;
+    margin-top: 4rem;
     font-weight: 900;
-    font-size: 35px;
+    font-size: 30px;
     letter-spacing: 0.02em;
     text-transform: capitalize;
     /* padding-top: 2rem; */
     color: #241757;
-    
-  
-  
-  }
+}
 
 }
 
@@ -491,7 +497,7 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
 .wrapper {
   position: absolute;
-  top: 50%;
+  top: 57%;
   left: 50%;
   transform: translate(-50%, -50%);
 }

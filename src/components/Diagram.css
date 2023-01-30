@@ -42,6 +42,7 @@
 }
 
 
+
 .Howwework{
     background-color: #F4FAFF;
     height: 50vh;
@@ -105,14 +106,27 @@
 }
 .LineIndicator1{
     margin-left: 5rem;
-    width: 25rem;
+    width: 26rem;
     margin-top: -24px;
 }
 .LineIndicator2{
     margin-left: 77px;
     margin-top: -49px;
-    width: 408px;
+    width: 415px;
 }
+@media (min-width: 1025px) and (max-width: 1500px){
+    .LineIndicator1{
+        margin-left: 5rem;
+        width: 19rem;
+        margin-top: -24px;
+    }
+    .LineIndicator2{
+        margin-left: 77px;
+        margin-top: -49px;
+        width: 349px;
+    }
+}
+    
 @media (max-width: 480px){
     .LineIndicator1{
         margin-left: 5rem;

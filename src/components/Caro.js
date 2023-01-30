@@ -138,7 +138,7 @@ const Caro = () => {
             <br />
            
             <span className="content-name">
-            <BsStarFill /> <BsStarFill /><BsStarFill /><BsStarFill /><br/>
+            <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill /> <br/>
               JohnMiles
               
             </span>

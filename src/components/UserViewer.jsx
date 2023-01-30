@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Button } from "react-bootstrap";
 
 import Card from "react-bootstrap/Card";
@@ -11,54 +11,54 @@ import single_profile_banner from "../assets/single_profile_banner.png";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
 import { HiStar } from "react-icons/hi";
-import Footer from "./Footer"
+import Footer from "./Footer";
+
+
+import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
 
 const UserViewer = (props) => {
-  const [isActive, setisActive] = useState(false)
-  const buttonHandler=()=>{
-    setisActive(true)
-  }
+  const [isActive, setisActive] = useState(false);
+  const [toggleState, setToggleState] = useState(1);
+
+
   function createMarkup() {
     return { __html: props.mapaddress };
   }
+  function Tabs() {
+    const toggleTab = (index) => {
+      setToggleState(index);
+    };
+  }
+  const toggleTab = (index) => {
+    setToggleState(index);
+  };
+  const changestyle = (e) => {
+    setisActive(!isActive);
+    let btnName = e.target.name
+    
+    // if (isActive === true) {
+    //   setstyle("cont2");
+    // }
+
+  };
+
+  
+  
+
   return (
     <>
-      {/* card testing */}
-      {/* <div className="whole container mt-5">
-        <div className="left">
-        <Card style={{ width: '25rem',height:"40rem" }}>
-      <Card.Img variant="top" src={props.image} style={{height:"293px"}} id="singleProfileImage" />
-      <Card.Body>
-        <Card.Title>Card Title</Card.Title>
-        <div className="singleProfileContent">
-        <div className="single-profile-name">{props.first_name} {props.last_name},<span className="designationspan">{props.designation}</span></div>
-        <div className="singleProfilePracticesName"> {props.practice_names}</div>
-        <div className="singleprofile-cityand-state"><MdLocationOn/>&nbsp;&nbsp; {props.city},{props.state},{props.zip_code}</div>
-        <div className="singleprofile-speciality"><RiStethoscopeLine/> &nbsp; &nbsp;{props.speciality}</div>
-        <div className="singleprofile-mobilenumber"><BsFillTelephoneFill/>&nbsp; &nbsp;(+120){props.mobile_number} | <span className="linkdin"><TiSocialLinkedin/></span></div>
-        </div>
-
-        <Card.Text>
-          
-        </Card.Text>
-        
-      </Card.Body>
-    </Card>
-
-        </div>
-        <div className="right">
-         {/* <h1>{props.map_link}</h1>  */}
-      {/* <iframe src={props.map_link} /> */}
-      {/* <div dangerouslySetInnerHTML={createMarkup() } />
-
-        </div>
-      {/* </div> */}
+      
       <div className="NavbarSingleProfile">
         <NavBarr />
       </div>
 
       <div className="background-single-profile">
-        <div className="bannertext">Profile of {props.first_name} {props.last_name}</div>
+        <div className="bannertext">
+          Profile of{" "}
+          <span className="double-shade">
+            {props.first_name} {props.last_name}
+          </span>
+        </div>
 
         <img
           src={single_profile_banner}
@@ -67,13 +67,13 @@ const UserViewer = (props) => {
           style={{ width: "100%", height: "22rem" }}
         />
       </div>
+
       <div className="single-profile-card container">
         <div className="imageplusemail">
-        <div className="blank-div">
           <div>
             <img src={props.image} alt="" className="single-profile-image" />
           </div>
-          </div>
+
           <div className="single-profile-mail">
             <AiOutlineMail />
             &nbsp; {props.email_address}
@@ -110,24 +110,25 @@ const UserViewer = (props) => {
             </span>
           </div>
         </div>
-        <div className="single-Profile-2nd-section">
+        
+         <div className="single-Profile-2nd-section">
           <div className="buttons">
-            {/* <Button variant="light mx-5 mt-5">Primary</Button>{' '}
-          <Button variant="light mx-5 mt-5">Primary</Button>{' '}
-          <Button variant="light mx-5 mt-5">Primary</Button>{' '} */}
-            <button className={`buttonn mt-5 ${isActive && "color"} `} onClick={buttonHandler}>Introduction</button>
-            <button className="buttonn mt-5">Education</button>
-            <button className="buttonn mt-5">Speciality</button>
-            <button className="buttonn mt-5">Office Location</button>
+           
+            <button className="buttonn mt-3" >Introduction</button>
+            <button className={`buttonn mt-3 ${isActive && "button-css"}`} onClick={(e) => changestyle(e)} name='education'>
+              Education
+            </button>
+            <button className="buttonn mt-3  ">Speciality</button>
+            <button className="buttonn mt-3">Office Location</button>
           </div>
-          <div className="Introduction ">
+          <div className="Introduction mt-5">
             <div className="intro-text"> {props.introduction}</div>
           </div>
-          <div className="Education ">
+          <div className={`Education ${isActive && 'cont2'}`}>
             <div className="education-text"> {props.education}</div>
           </div>
           <div className="Speciality ">
-            <div className="speciality-text"> {props.speciality}</div>
+            <div className="speciality-text "> {props.speciality}</div>
           </div>
           <div className="office-location container">
             <div className="office-map  ">
@@ -135,10 +136,75 @@ const UserViewer = (props) => {
               <div dangerouslySetInnerHTML={createMarkup()} />
             </div>
           </div>
-        </div>
-        
+        </div> 
       </div>
-      <Footer/>
+     
+
+      {/* <div className="container mt-5">
+      <div className="bloc-tabs">
+        <button
+          className={toggleState === 1 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(1)}
+        >
+          Introduction
+        </button>
+        <button
+          className={toggleState === 2 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(2)}
+          style={{cursor:"pointer"}}>
+          Education
+        </button>
+        <button
+          className={toggleState === 3 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(3)}
+          style={{cursor:"pointer"}}>
+          Speciality
+        </button>
+        <button
+          className={toggleState === 4 ? "tabs active-tabs" : "tabs"}
+          onClick={() => toggleTab(4)}
+         style={{cursor:"pointer"}}>
+          Office location
+        </button>
+      </div>
+
+      <div className="content-tabs">
+        <div
+          className={toggleState === 1 ? "content  active-content" : "content"}
+        >
+           <div className="Introduction">
+            <div className="intro-text"> {props.introduction}</div>
+          </div>
+        </div>
+
+        <div
+          className={toggleState === 2 ? "content  active-content" : "content"}
+        >
+          <div className={`Education ${isActive && 'cont2'}`}>
+            <div className="education-text"> {props.education}</div>
+          </div>
+        </div>
+
+        <div
+          className={toggleState === 3 ? "content  active-content" : "content"}
+        >
+          <div className="Speciality ">
+            <div className="speciality-text "> {props.speciality}</div>
+          </div>
+        </div>
+        <div
+          className={toggleState === 4 ? "content  active-content" : "content"}
+        >
+        <div className="office-location container">
+            <div className="office-map  ">
+              {" "}
+              <div dangerouslySetInnerHTML={createMarkup()} />
+            </div>
+          </div>
+          </div>
+      </div>
+    </div> */}
+      <Footer />
     </>
   );
 };

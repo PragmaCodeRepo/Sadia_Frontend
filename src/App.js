@@ -6,6 +6,7 @@ import HomePage from "./components/HomePage";
 import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AnimatedCursor from "react-animated-cursor";
+import Thankyou from "./components/ContactUs/Thankyou";
 
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
           <Route path=":id" element={<ProfileViewer />}></Route>
         </Route>
         <Route path="/aboutus" element={<AboutUs />}></Route>
+        <Route path="/thankyou" element={<Thankyou/>}></Route>
         <Route path="/contactus" element={<ContactUs />}></Route>
         <Route path="/zipcodeprofile">
           <Route path=":code" element={<ZipcodeProfile />} />

@@ -46,7 +46,8 @@
   height: 4.35rem;
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
-  width: 17.2rem;
+  /* width: 17.2rem; */
+  width: 13.2rem;
   margin-left: -12px;
   font-size: 20px;
   }
@@ -97,4 +98,14 @@
     transition: opacity 0.85s;
     background: none;
     padding-right: 55rem;
+}
+
+
+.styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
+  padding: 2em;
+  background-color: transparent;
+  max-width: 868px;
+  position: relative;
+  margin: auto;
+  transition: opacity 0.85s;
 }

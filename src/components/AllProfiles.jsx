@@ -42,9 +42,9 @@ const AllProfiles = ({
       <div
         className="card2 card mb-2 gradient-border"
         style={{
-          maxWidth: "1200px",
-          width: "1100px",
-          height: "200px",
+          // maxWidth: "1200px",
+          // width: "1100px",
+          // height: "200px",
           background: "transparent",
           borderTop: "transparent",
           borderLeft: "transparent",
@@ -56,18 +56,19 @@ const AllProfiles = ({
           <div className="col-sm-4 col-5">
             <img
               src={image}
-              className="img-fluid rounded-start"
+              className="img-fluid rounded-start "
               style={{
+                
                 borderRadius: "50%",
                 height: "164px",
                 marginTop: "-5px",
-                marginLeft: "-11rem",
+                // marginLeft: "-11rem",
               }}
               alt="..."
             />
           </div>
           <div className="col-sm-8 col-7">
-            <div className="card-body" style={{ marginLeft: "-20rem" }}>
+            <div className="card-body " style={{ marginLeft: "-20rem" }}>
               {/* <h5 className="card-title">{first_name}</h5> */}
               <p className="card-text">
                 <p className="profile-title">

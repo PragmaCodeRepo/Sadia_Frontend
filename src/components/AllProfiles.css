@@ -236,3 +236,26 @@
   fill: #5380ff;
 
 }
+@media (max-width: 480px){
+  .card-text{
+    margin-left: 19rem;
+  }
+  .profile-title {
+    /* font-family: Spartan; */
+    font-style: bold;
+    font-size: 22px;
+    color: #241757;
+    font-weight: 40px;
+    letter-spacing: 3px;
+}
+.profile-speciality {
+  font-family: Spartan;
+  font-style: Semibold;
+  font-size: 20px;
+  color: #241757;
+}
+.rating{
+  font-size: 12px;
+}
+  
+}
