@@ -2,8 +2,13 @@ import React from "react";
 import "./Footer.css";
 import logo_with_rectangle from "../assets/logo_with_rectangle.png";
 import { Link } from "react-router-dom";
-
+import {  useNavigate } from 'react-router-dom';
 const Footer = () => {
+  const navigate = useNavigate();
+  const helphandler=()=>{
+    navigate("/contactus")
+  }
+  
   return (
     <>
       <footer class="footer-distributed">
@@ -25,22 +30,22 @@ const Footer = () => {
 
             {/* <a href="#" >About Us</a> */}
 
-            <a href="#" >FAQ</a>
+            <a href="/faq" className="faq-footer" >FAQ</a>
           </p>
           
         </div>
 
         <div class="footer-center">
-          <div>
+          {/* <div>
             <i class="fa fa-map-marker"></i>
             <p>
               <span>472 Mount Ct.</span> North Aurora, IL
             </p>
-          </div>
+          </div> */}
 
           <div>
             <i class="fa fa-phone"></i>
-            <p>+1.555.555.5555</p>
+            <p>+1 630-926-0774</p>
           </div>
 
           <div className="mail-section">
@@ -73,6 +78,14 @@ const Footer = () => {
         <hr className="horizontal-line" />
         <div className="copyright-text">Copyright © 2022 certified</div>
       </footer>
+      <div class="help-button-wrapper" onClick={helphandler}>
+  
+
+  <button class="help-button">
+    <span>?</span>
+    Get Help
+  </button>
+</div>
     </>
   );
 };

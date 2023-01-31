@@ -22,6 +22,7 @@ const Thankyou = () => {
             </div>
             <div class="clr"></div>
         </div>
+        
     </section>
     <Footer/>
 

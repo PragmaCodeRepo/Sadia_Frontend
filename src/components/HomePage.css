@@ -66,7 +66,7 @@
   font-style: normal;
   font-weight: 700;
   /* font-size: 45px; */
-  font-size: 45px;
+  font-size: 50px;
   /* text-align: center; */
   letter-spacing: 0.02em;
   text-transform: capitalize;
@@ -517,6 +517,16 @@
     margin-top: 250px;
     box-shadow: 0 12px 6px -10px #b3c6ff;
   }
+}
+@media (max-height: 700px){
+  .wrapper{
+    top: 65%;
+  }
+  .title-quote{
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+
 }
 
 .wrapper .search_box .dropdown {

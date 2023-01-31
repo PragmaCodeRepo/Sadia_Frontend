@@ -19,6 +19,7 @@ import TestService from "./TestService";
 import NavBarr from "./NavBarr";
 import {RiArrowDropDownLine} from "react-icons/ri"
 
+
 const HomePage = () => {
   const navigate = useNavigate();
   const [zipcode, setZipcode] = useState("");
@@ -37,13 +38,14 @@ const HomePage = () => {
         {/* <img src={new_bg} alt="" className="banner-image" /> */}
         {/* End-to-end solutions to help clients through their divorce process  */}
         {/* A client focused approach providing families with all the tools needed to move through divorce */}
+        {/* Navigating divorce, together towards a better tomorrow */}
         <div className="title">
           <div className="title-quote">
-          A client focused approach{" "}
-            <span className="double-shade">providing families </span> <br />
-           <span className="double-shade"> with all the tool</span> needed to 
+         <span className="double-shade">Navigate</span>  divorce together{" "}
+            <br/><span > towards a <span className="double-shade">  better</span>  </span> <br />
+           <span >  <span className="double-shade" >tomorrow</span> </span> 
              <br />{" "}
-            <span className="double-shade"> move divorce    </span>
+            {/* <span className="double-shade"> move divorce    </span> */}
           </div>
         </div>
 
@@ -143,6 +145,7 @@ const HomePage = () => {
 
       <Caro />
       <Footer />
+      
       {/* Overlay testing */}
 
       {/* <NoDataFound/> */}

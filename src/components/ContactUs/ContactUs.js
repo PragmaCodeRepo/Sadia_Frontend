@@ -8,6 +8,7 @@ import Thankyou from './Thankyou';
 import Popup from '../Popup';
 import { Link, useNavigate } from 'react-router-dom';
 import Nav from "react-bootstrap/Nav";
+import Footer from '../Footer';
 
 
 const ContactUs = () => {
@@ -179,6 +180,7 @@ const ContactUs = () => {
     </div>
   </div>
 </div>
+<Footer/>
 
 
      

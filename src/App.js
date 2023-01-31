@@ -7,6 +7,7 @@ import AboutUs from "./components/AboutUs/AboutUs";
 import ContactUs from "./components/ContactUs/ContactUs";
 import AnimatedCursor from "react-animated-cursor";
 import Thankyou from "./components/ContactUs/Thankyou";
+import FAQ from "./components/FAQ";
 
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         </Route>
         <Route path="/aboutus" element={<AboutUs />}></Route>
         <Route path="/thankyou" element={<Thankyou/>}></Route>
+        <Route path="/faq" element={<FAQ/>}></Route>
         <Route path="/contactus" element={<ContactUs />}></Route>
         <Route path="/zipcodeprofile">
           <Route path=":code" element={<ZipcodeProfile />} />
