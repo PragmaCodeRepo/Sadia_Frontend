@@ -309,3 +309,15 @@ h3:hover {
 .help-list a {
   color: #212121;
 }
+.faq-image{
+  width: 100px;
+  border-radius: 50%;
+
+}
+.faq-image:hover{
+  cursor: pointer;
+  transform: scale(1);
+    transition: transform 100ms ease;
+    opacity: 0.4;
+
+}

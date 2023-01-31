@@ -3,10 +3,14 @@ import "./Footer.css";
 import logo_with_rectangle from "../assets/logo_with_rectangle.png";
 import { Link } from "react-router-dom";
 import {  useNavigate } from 'react-router-dom';
+import faq from "./../assets/faq.jpg"
 const Footer = () => {
   const navigate = useNavigate();
   const helphandler=()=>{
     navigate("/contactus")
+  }
+  const faqhandler=()=>{
+    navigate("/faq")
   }
   
   return (
@@ -32,6 +36,9 @@ const Footer = () => {
 
             <a href="/faq" className="faq-footer" >FAQ</a>
           </p>
+          <div >
+            <img src={faq} alt="" className="faq-image" onClick={faqhandler}/>
+           </div>
           
         </div>
 
@@ -42,7 +49,7 @@ const Footer = () => {
               <span>472 Mount Ct.</span> North Aurora, IL
             </p>
           </div> */}
-
+           
           <div>
             <i class="fa fa-phone"></i>
             <p>+1 630-926-0774</p>

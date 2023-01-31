@@ -518,9 +518,9 @@
     box-shadow: 0 12px 6px -10px #b3c6ff;
   }
 }
-@media (max-height: 700px){
+@media (max-height: 800px){
   .wrapper{
-    top: 65%;
+    top: 60%;
   }
   .title-quote{
     margin-top: 2rem;
@@ -528,6 +528,9 @@
   }
 
 }
+
+
+
 
 .wrapper .search_box .dropdown {
   width: 250px;
