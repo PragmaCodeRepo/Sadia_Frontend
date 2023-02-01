@@ -133,7 +133,7 @@ const UserViewer = (props) => {
             <button className="buttonn mt-3">Office Location</button>
           </div>
           <div className="Introduction mt-5">
-            <div className="intro-text container"> {props.introduction}</div>
+            <div className="intro-text container mt-5 mb-5"> {props.introduction}</div>
           </div>
           <div className={`Education ${isActive && 'cont2'}`}>
             <div className="education-text"> {props.education}</div>
@@ -141,7 +141,7 @@ const UserViewer = (props) => {
           <div className="Speciality ">
             <div className="speciality-text "> {props.speciality}</div>
           </div>
-          <div className="office-location container">
+          <div className="office-location container mt-5 mb-5">
             <div className="office-map  ">
               {" "}
               <div dangerouslySetInnerHTML={createMarkup()} />

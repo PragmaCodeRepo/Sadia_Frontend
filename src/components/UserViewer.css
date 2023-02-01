@@ -18,7 +18,7 @@
     .bannertext {
         color: #241757;
         position: absolute;
-        width: 397px;
+        /* width: auto; */
         height: 35px;
         /* left: 595px; */
         top: 204px;
@@ -27,8 +27,9 @@
         font-weight: 300;
         font-size: 41px;
         /* line-height: 35px; */
-        margin-left: 3rem;
+        /* margin-left: 3rem; */
     }
+    
     .buttons {
         display: flex;
         /* flex-direction: row; */

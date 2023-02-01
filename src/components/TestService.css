@@ -10,7 +10,7 @@
     .testcard{
         width: 330px;
         height: 260px;
-        margin-left: 27px;
+        margin-left: 37px;
 
     }
 }
@@ -35,6 +35,7 @@
     .testcard{
         
         margin-left: 14px;
+        width: 322px;
     }
 }
 .card-img-overlay {

@@ -94,6 +94,12 @@
 
 
 }
+@media (max-width: 390px){
+  .title-quote{
+    font-size: 37px;
+  }
+
+}
 @media (max-width: 480px){
 #root{
   overflow-x: hidden;
