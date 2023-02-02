@@ -11,36 +11,72 @@ import { AiOutlineMail } from "react-icons/ai";
 import { HiStar } from "react-icons/hi";
 import Footer from "./Footer";
 import { SlSocialLinkedin } from "react-icons/sl";
+import {useRef} from 'react';
 
 
 
-import { Tab, Tabs, TabList, TabPanel } from 'react-tabs';
-import { Link, } from "react-router-dom";
 
 const UserViewer = (props) => {
-  const [isActive, setisActive] = useState(false);
+  const ref = useRef(null);
+  const refedu = useRef(null);
+  const refspe = useRef(null);
+  const refintroduction = useRef(null);
+  const [isActiveEdu, setisActiveEdu] = useState(false);
+  const [isActiveIntro, setisActiveIntro] = useState(false);
+  const [isActiveSpeciality, setisActiveSpeciality] = useState(false);
+  const [isActiveOfficelocation, setisActiveOfficelocation] = useState(false);
   const [toggleState, setToggleState] = useState(1);
 
-
+  
 
   function createMarkup() {
     return { __html: props.mapaddress };
   }
-  function Tabs() {
-    const toggleTab = (index) => {
-      setToggleState(index);
-    };
-  }
-  const toggleTab = (index) => {
-    setToggleState(index);
-  };
-  const changestyle = (e) => {
-    setisActive(!isActive);
-    let btnName = e.target.name
+  
+  const changestyleEdu = (e) => {
+    refedu.current?.scrollIntoView({behavior: 'smooth'});
+    setisActiveEdu(!isActiveEdu);
+    setisActiveIntro(false)
+    setisActiveOfficelocation(false)
+    setisActiveSpeciality(false)
     
-    // if (isActive === true) {
-    //   setstyle("cont2");
-    // }
+    
+    
+
+  };
+  const changestyleIntro = (e) => {
+    refintroduction.current?.scrollIntoView({behavior: 'smooth'});
+    setisActiveIntro(!isActiveIntro);
+    setisActiveEdu(false)
+    setisActiveOfficelocation(false)
+    setisActiveSpeciality(false)
+
+    
+    
+    
+
+  };
+  const changestyleSpeciality = (e) => {
+    refspe.current?.scrollIntoView({behavior: 'smooth'});
+    
+    setisActiveSpeciality(!isActiveSpeciality);
+    setisActiveEdu(false)
+    setisActiveIntro(false)
+    setisActiveOfficelocation(false)
+    
+    
+    
+
+  };
+  const changestyleOfficelocation = (e) => {
+    ref.current?.scrollIntoView({behavior: 'smooth'});
+    setisActiveOfficelocation(!isActiveOfficelocation);
+    setisActiveEdu(false)
+    setisActiveIntro(false)
+    setisActiveSpeciality(false)
+    
+    
+    
 
   };
  
@@ -125,23 +161,23 @@ const UserViewer = (props) => {
          <div className="single-Profile-2nd-section">
           <div className="buttons mt-5">
            
-            <button className="buttonn mt-3" >Introduction</button>
-            <button className={`buttonn mt-3 ${isActive && "button-css"}`} onClick={(e) => changestyle(e)} name='education'>
+            <button className={`buttonn mt-3 ${isActiveIntro && "button-css"}`} onClick={(e) => changestyleIntro(e)} >Introduction</button>
+            <button className={`buttonn mt-3 ${isActiveEdu && "button-css"}`} onClick={(e) => changestyleEdu(e)} name='education'>
               Education
             </button>
-            <button className="buttonn mt-3  ">Speciality</button>
-            <button className="buttonn mt-3">Office Location</button>
+            <button className={`buttonn mt-3 ${isActiveSpeciality && "button-css"}`} onClick={(e) => changestyleSpeciality(e)}>Speciality</button>
+            <button className={`buttonn mt-3 ${isActiveOfficelocation && "button-css"}`} onClick={(e) => changestyleOfficelocation(e)}>Office Location</button>
           </div>
-          <div className="Introduction mt-5">
+          <div className={`Introduction mt-5 ${isActiveIntro && 'cont2'}`} ref={refintroduction}>
             <div className="intro-text container mt-5 mb-5"> {props.introduction}</div>
           </div>
-          <div className={`Education ${isActive && 'cont2'}`}>
+          <div className={`Education ${isActiveEdu && 'cont2'}`} ref={refedu}>
             <div className="education-text"> {props.education}</div>
           </div>
-          <div className="Speciality ">
+          <div className={`Speciality ${isActiveSpeciality && 'cont2'}`} ref={refspe}>
             <div className="speciality-text "> {props.speciality}</div>
           </div>
-          <div className="office-location container mt-5 mb-5">
+          <div className={`office-location ${isActiveOfficelocation && 'cont2'}`} ref={ref}>
             <div className="office-map  ">
               {" "}
               <div dangerouslySetInnerHTML={createMarkup()} />
@@ -149,6 +185,7 @@ const UserViewer = (props) => {
           </div>
         </div> 
       </div>
+      
      
 
       {/* <div className="container mt-5">

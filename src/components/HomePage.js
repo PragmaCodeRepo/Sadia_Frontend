@@ -18,7 +18,7 @@ import Offcanvas from "react-bootstrap/Offcanvas";
 import TestService from "./TestService";
 import NavBarr from "./NavBarr";
 import {RiArrowDropDownLine} from "react-icons/ri"
-
+import Spinner from "./Spinner";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -145,6 +145,7 @@ const HomePage = () => {
 
       <Caro />
       <Footer />
+      
       
       {/* Overlay testing */}
 

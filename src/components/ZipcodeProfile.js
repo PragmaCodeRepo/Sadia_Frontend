@@ -9,9 +9,10 @@ import Popup from "./Popup";
 import NavBarr from "./NavBarr";
 import Footer from "./Footer";
 import ReactPaginate from "react-paginate";
+import Spinner from "./Spinner";
 
 const Profile = () => {
-  const { profiles } = useContext(ProfileContext);
+  const { profiles, isProfilesFound } = useContext(ProfileContext);
   const { code } = useParams();
   const zipcode = code.split("-")[0];
   const speciality = code.split("-")[1];
@@ -38,24 +39,26 @@ const Profile = () => {
     .map((curElem) => {
       return (
         <div className=" text-center outcome container">
-          <AllProfiles
-            key={curElem.id}
-            id={curElem.id}
-            image={curElem.image}
-            first_name={curElem.first_name}
-            last_name={curElem.last_name}
-            speciality={curElem.speciality}
-            designation={curElem.designation}
-            address={curElem.address}
-            zip_code={curElem.zip_code}
-            practices_names={curElem.practices_names}
-            city={curElem.city}
-            state={curElem.state}
-            rating={curElem.rating}
-            introduction={curElem.introduction}
-            education={curElem.education}
-            onProfileShow={profileShowHandler.bind(null, curElem)}
-          />
+          {isProfilesFound && (
+            <AllProfiles
+              key={curElem.id}
+              id={curElem.id}
+              image={curElem.image}
+              first_name={curElem.first_name}
+              last_name={curElem.last_name}
+              speciality={curElem.speciality}
+              designation={curElem.designation}
+              address={curElem.address}
+              zip_code={curElem.zip_code}
+              practices_names={curElem.practices_names}
+              city={curElem.city}
+              state={curElem.state}
+              rating={curElem.rating}
+              introduction={curElem.introduction}
+              education={curElem.education}
+              onProfileShow={profileShowHandler.bind(null, curElem)}
+            />
+          )}
         </div>
       );
     });
@@ -68,9 +71,10 @@ const Profile = () => {
     <>
       <NavBarr />
       <div style={{ background: "#f3f7f9" }}>
-        {data.length === 0 && <NoDataFound />}
+        {!isProfilesFound && <Spinner />}
+        {data.length === 0 && isProfilesFound && <NoDataFound />}
         {/* pagination */}
-        {data.length !== 0 && (
+        {isProfilesFound && data.length !== 0 && (
           <div class="slider">
             <div class="caption">
               Top-Rated and Highly Recommended&nbsp;
@@ -86,9 +90,9 @@ const Profile = () => {
           </div>
         )}
 
-        {data.length !== 0 && displayUsers}
+        {data.length !== 0 && isProfilesFound && displayUsers}
 
-        {data.length !== 0 && (
+        {data.length !== 0 && isProfilesFound && (
           <ReactPaginate
             previousLabel={"Previous"}
             nextLabel={"Next"}

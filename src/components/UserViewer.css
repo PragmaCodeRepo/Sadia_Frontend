@@ -15,6 +15,10 @@
        
         
     }
+    .Introduction{
+        font-size: 14px;
+        letter-spacing: 0;
+    }
     .bannertext {
         color: #241757;
         position: absolute;
@@ -53,6 +57,11 @@
         justify-content: space-between;
         flex-wrap: wrap;
         margin-left: 82px;
+    }
+    .office-map{
+        margin-top: 10px;
+        align-items: center;
+        /* margin-left: 95px; */
     }
     
    
@@ -103,7 +112,15 @@ line-height: 35px;
     border-left-color: #5380ff;
     width: 170px;
     height: 160px;
+    filter: grayscale(100%);
+    -webkit-filter: grayscale(0);
     
+    
+}
+.single-profile-image:hover{
+    filter: none;
+    
+    -webkit-filter: grayscale(100%);
 }
 
 
@@ -228,11 +245,11 @@ font-style: bolder;
     background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
-letter-spacing: 1.5px;
+/* letter-spacing: 1.5px; */
 color: #241757;
 font-family: 'Montserrat', sans-serif;
 font-style: bolder;
-font-size: 17px;
+font-size: 14px;
 
 }
 .intro-text{
@@ -277,7 +294,7 @@ font-size: 17px;
 .office-location{
     height: 350px;
     margin-top: 50px;
-    /* background: #F4FAFF; */
+    background: #F4FAFF;
     background-color: #96adf12e;
 border: 1px solid #E0E0E0;
 border-radius: 15px;
@@ -286,9 +303,11 @@ color: #241757;
 margin-bottom: 18px;
 }
 .office-map{
-    margin-top: 10px;
+    margin-top: 20px;
     align-items: center;
     /* margin-left: 95px; */
+    display: flex;
+    justify-content: center;
 }
 
 .color{
@@ -300,13 +319,15 @@ hr{
     color: #0d34a0;
 }
 .cont2{
-    background: #5380ff;
+    background: #2e61efb8;
+    color: #fff;
     
 }
 
 
 .button-css {
     background-color: #5380ff;
+    color: #fff;
 }
 
 
