@@ -1,0 +1,22 @@
+.Introduction-video-title{
+    text-align: center;
+    font-size: 40px;
+    font-family: Noto serif;
+    font-weight: 600;
+    color: #241757;
+}
+.intro-video-box{
+    padding-top: 78px;
+    /* box-shadow: 24px 32px 8px rgb(43 127 253 / 5%) */
+}
+.videoo{
+    /* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 15px 20px 0 rgba(0, 0, 0, 0.19); */
+    /* box-shadow: 0 59px 84px 0 rgb(0 0 0 / 20%), 0 15px 20px 0 rgb(0 0 0 / 19%); */
+    /* frame */
+    /* width: 70vh;
+    height: 68vh; */
+  border: 10px solid #fafafa;
+  /* outline: 3px solid #333; */
+  box-shadow: 15px 15px #7a99ef4a;
+   
+}

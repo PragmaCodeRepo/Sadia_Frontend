@@ -25,9 +25,9 @@ const TestService = () => {
     <div className="ourtestservices-title">
           Our Services
           <br />
-          <p className="ourtestservices-sub-title">
+          {/* <p className="ourtestservices-sub-title">
             Find a right resource for all your divorce needs
-          </p>
+          </p> */}
         </div>
 
     <div className="container">

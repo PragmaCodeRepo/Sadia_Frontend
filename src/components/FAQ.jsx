@@ -1,6 +1,9 @@
 import React from 'react'
+
 import { Link, useNavigate } from 'react-router-dom';
 import "./FAQ.css"
+import Footer from './Footer';
+import NavBarr from './NavBarr';
 
 const FAQ = () => {
     const navigate = useNavigate();
@@ -10,6 +13,7 @@ const FAQ = () => {
     }
   return (
     <>
+    <NavBarr/>
        <main>
     <div class="container">
       <h2 class="faq-heading mt-5 mb-5">Frequently asked questions</h2>
@@ -41,6 +45,7 @@ const FAQ = () => {
       </p>
     </div>
   </main>
+ 
     </>
   )
 }

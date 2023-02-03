@@ -17,8 +17,12 @@ import NavDropdown from "react-bootstrap/NavDropdown";
 import Offcanvas from "react-bootstrap/Offcanvas";
 import TestService from "./TestService";
 import NavBarr from "./NavBarr";
-import {RiArrowDropDownLine} from "react-icons/ri"
+import { RiArrowDropDownLine } from "react-icons/ri";
 import Spinner from "./Spinner";
+
+import VideoPlayer from "./Video/VideoPlayer";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -26,10 +30,18 @@ const HomePage = () => {
   const [dropdown, setdropdown] = useState("");
   const submitHandler = (e) => {
     e.preventDefault();
-    console.log(zipcode);
-    console.log(dropdown);
-    navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
+
+    if (zipcode === "" || dropdown === "Select Category") {
+      notify();
+
+      // alert("your response is blank please enter category and your zipcode ");
+      // window.location.reload();
+    } else if (zipcode.length < 5) {
+      alert("Zipcode must be 5 digit");
+    } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
   };
+  const notify = () =>
+    toast("your response is blank please enter category and your zipcode!");
 
   return (
     <>
@@ -41,10 +53,18 @@ const HomePage = () => {
         {/* Navigating divorce, together towards a better tomorrow */}
         <div className="title">
           <div className="title-quote">
-         <span className="double-shade">Navigate</span>  divorce together{" "}
-            <br/><span > towards a <span className="double-shade">  better</span>  </span> <br />
-           <span >  <span className="double-shade" >tomorrow</span> </span> 
-             <br />{" "}
+            <span className="double-shade">Navigate</span> divorce together{" "}
+            <br />
+            <span>
+              {" "}
+              towards a <span className="double-shade"> better</span>{" "}
+            </span>{" "}
+            <br />
+            <span>
+              {" "}
+              <span className="double-shade">tomorrow</span>{" "}
+            </span>
+            <br />{" "}
             {/* <span className="double-shade"> move divorce    </span> */}
           </div>
         </div>
@@ -105,9 +125,8 @@ const HomePage = () => {
                 // id="category-dropdown"
                 required
               >
-              
                 <option value="select" selected>
-                  Select Category 
+                  Select Category
                 </option>
 
                 <option value="Marriage">Marriage</option>
@@ -119,14 +138,18 @@ const HomePage = () => {
                 <option value="Financial analyses">Financial analyses</option>
                 <option value="Attorneys"> Attorneys</option>
                 <option value="Mediation services"> Mediation services</option>
-                
               </select>
-              <RiArrowDropDownLine/>
-              
+              <RiArrowDropDownLine />
             </div>
-            
+
             <div class="search_field">
-              <input type="text" class="input" placeholder="Zipcode" onChange={(e) => setZipcode(e.target.value)} />
+              <input
+                type="text"
+                class="input"
+                placeholder="Zipcode"
+                onChange={(e) => setZipcode(e.target.value)}
+                required
+              />
               <i class="fas fa-search" onClick={submitHandler}></i>
             </div>
           </div>
@@ -139,14 +162,28 @@ const HomePage = () => {
       <TestService />
 
       {/* How Pragma Works */}
-      <Diagram />
+      {/* <Diagram /> */}
+      <VideoPlayer />
 
       {/* Testimonial Section */}
 
-      <Caro />
+      {/* <Caro /> */}
       <Footer />
-      
-      
+
+      {/* custom alert */}
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+
       {/* Overlay testing */}
 
       {/* <NoDataFound/> */}

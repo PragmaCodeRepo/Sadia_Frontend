@@ -52,13 +52,13 @@ const Footer = () => {
            
           <div>
             <i class="fa fa-phone"></i>
-            <p>+1 630-926-0774</p>
+            <p>+1 331-707-2779</p>
           </div>
 
           <div className="mail-section">
             <i class="fa fa-envelope"></i>
             <p>
-              <a href="mailto:support@company.com">support@pragma.com</a>
+              <a href="mailto:support@company.com">support@pragma.how</a>
             </p>
           </div>
         </div>

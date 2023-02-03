@@ -8,85 +8,58 @@ import NavBarr from "./NavBarr";
 import single_profile_banner from "../assets/single_profile_banner.png";
 import { BsTelephone } from "react-icons/bs";
 import { AiOutlineMail } from "react-icons/ai";
+
 import { HiStar } from "react-icons/hi";
 import Footer from "./Footer";
 import { SlSocialLinkedin } from "react-icons/sl";
-import {useRef} from 'react';
-
-
-
+import { useRef } from "react";
 
 const UserViewer = (props) => {
   const ref = useRef(null);
-  const refedu = useRef(null);
   const refspe = useRef(null);
-  const refintroduction = useRef(null);
+  const refedu = useRef(null);
+
   const [isActiveEdu, setisActiveEdu] = useState(false);
   const [isActiveIntro, setisActiveIntro] = useState(false);
   const [isActiveSpeciality, setisActiveSpeciality] = useState(false);
   const [isActiveOfficelocation, setisActiveOfficelocation] = useState(false);
   const [toggleState, setToggleState] = useState(1);
 
-  
-
   function createMarkup() {
     return { __html: props.mapaddress };
   }
-  
-  const changestyleEdu = (e) => {
-    refedu.current?.scrollIntoView({behavior: 'smooth'});
-    setisActiveEdu(!isActiveEdu);
-    setisActiveIntro(false)
-    setisActiveOfficelocation(false)
-    setisActiveSpeciality(false)
-    
-    
-    
 
+  const changestyleEdu = (e) => {
+    refedu.current?.scrollIntoView({ behavior: "smooth" });
+    setisActiveEdu(!isActiveEdu);
+    setisActiveIntro(false);
+    setisActiveOfficelocation(false);
+    setisActiveSpeciality(false);
   };
   const changestyleIntro = (e) => {
-    refintroduction.current?.scrollIntoView({behavior: 'smooth'});
     setisActiveIntro(!isActiveIntro);
-    setisActiveEdu(false)
-    setisActiveOfficelocation(false)
-    setisActiveSpeciality(false)
-
-    
-    
-    
-
+    setisActiveEdu(false);
+    setisActiveOfficelocation(false);
+    setisActiveSpeciality(false);
   };
   const changestyleSpeciality = (e) => {
-    refspe.current?.scrollIntoView({behavior: 'smooth'});
-    
-    setisActiveSpeciality(!isActiveSpeciality);
-    setisActiveEdu(false)
-    setisActiveIntro(false)
-    setisActiveOfficelocation(false)
-    
-    
-    
+    refspe.current?.scrollIntoView({ behavior: "smooth" });
 
+    setisActiveSpeciality(!isActiveSpeciality);
+    setisActiveEdu(false);
+    setisActiveIntro(false);
+    setisActiveOfficelocation(false);
   };
   const changestyleOfficelocation = (e) => {
-    ref.current?.scrollIntoView({behavior: 'smooth'});
+    ref.current?.scrollIntoView({ behavior: "smooth" });
     setisActiveOfficelocation(!isActiveOfficelocation);
-    setisActiveEdu(false)
-    setisActiveIntro(false)
-    setisActiveSpeciality(false)
-    
-    
-    
-
+    setisActiveEdu(false);
+    setisActiveIntro(false);
+    setisActiveSpeciality(false);
   };
- 
-
-  
-  
 
   return (
     <>
-      
       <div className="NavbarSingleProfile">
         <NavBarr />
       </div>
@@ -112,24 +85,25 @@ const UserViewer = (props) => {
           <div>
             <img src={props.image} alt="" className="single-profile-image" />
           </div>
-          
-         <div className="mail-plus-phone-plus-linkdin">
 
-          <div className="single-profile-mail">
-            <AiOutlineMail />
-            &nbsp; {props.email_address}
+          <div className="mail-plus-phone-plus-linkdin">
+            <div className="single-profile-mail">
+              <AiOutlineMail />
+              &nbsp; {props.email_address}
+            </div>
+            <div className="single-profile-phone">
+              {" "}
+              <BsTelephone />
+              &nbsp;{props.mobile_number}
+            </div>
+
+            {/* <Link to={props.linkdin_profile}></Link> */}
+            <a href={props.linkdin_profile}>
+              <div className="linkdin-icon">
+                <SlSocialLinkedin />{" "}
+              </div>
+            </a>
           </div>
-          <div className="single-profile-phone">
-            {" "}
-            <BsTelephone />
-            &nbsp;{props.mobile_number}
-          </div>
-
-         {/* <Link to={props.linkdin_profile}></Link> */}
-         <a href={props.linkdin_profile}><div className="linkdin-icon"><SlSocialLinkedin/> </div></a>
-          </div>
-
-
         </div>
 
         <div className="single=profile-card-content">
@@ -157,36 +131,63 @@ const UserViewer = (props) => {
             </span>
           </div>
         </div>
-        
-         <div className="single-Profile-2nd-section">
+
+        <div className="single-Profile-2nd-section">
           <div className="buttons mt-5">
-           
-            <button className={`buttonn mt-3 ${isActiveIntro && "button-css"}`} onClick={(e) => changestyleIntro(e)} >Introduction</button>
-            <button className={`buttonn mt-3 ${isActiveEdu && "button-css"}`} onClick={(e) => changestyleEdu(e)} name='education'>
+            <button
+              className={`buttonn mt-3 ${isActiveIntro && "button-css"}`}
+              onClick={(e) => changestyleIntro(e)}
+            >
+              Introduction
+            </button>
+            <button
+              className={`buttonn mt-3 ${isActiveEdu && "button-css"}`}
+              onClick={(e) => changestyleEdu(e)}
+              name="education"
+            >
               Education
             </button>
-            <button className={`buttonn mt-3 ${isActiveSpeciality && "button-css"}`} onClick={(e) => changestyleSpeciality(e)}>Speciality</button>
-            <button className={`buttonn mt-3 ${isActiveOfficelocation && "button-css"}`} onClick={(e) => changestyleOfficelocation(e)}>Office Location</button>
+            <button
+              className={`buttonn mt-3 ${isActiveSpeciality && "button-css"}`}
+              onClick={(e) => changestyleSpeciality(e)}
+            >
+              Speciality
+            </button>
+            <button
+              className={`buttonn mt-3 ${
+                isActiveOfficelocation && "button-css"
+              }`}
+              onClick={(e) => changestyleOfficelocation(e)}
+            >
+              Office Location
+            </button>
           </div>
-          <div className={`Introduction mt-5 ${isActiveIntro && 'cont2'}`} ref={refintroduction}>
-            <div className="intro-text container mt-5 mb-5"> {props.introduction}</div>
+          <div className={`Introduction mt-5 ${isActiveIntro && "cont2"}`}>
+            <div className="intro-text container mt-5 mb-5">
+              {" "}
+              {props.introduction}
+            </div>
           </div>
-          <div className={`Education ${isActiveEdu && 'cont2'}`} ref={refedu}>
+          <div className={`Education ${isActiveEdu && "cont2"}`} ref={refedu}>
             <div className="education-text"> {props.education}</div>
           </div>
-          <div className={`Speciality ${isActiveSpeciality && 'cont2'}`} ref={refspe}>
+          <div
+            className={`Speciality ${isActiveSpeciality && "cont2"}`}
+            ref={refspe}
+          >
             <div className="speciality-text "> {props.speciality}</div>
           </div>
-          <div className={`office-location ${isActiveOfficelocation && 'cont2'}`} ref={ref}>
+          <div
+            className={`office-location ${isActiveOfficelocation && "cont2"}`}
+            ref={ref}
+          >
             <div className="office-map  ">
               {" "}
               <div dangerouslySetInnerHTML={createMarkup()} />
             </div>
           </div>
-        </div> 
+        </div>
       </div>
-      
-     
 
       {/* <div className="container mt-5">
       <div className="bloc-tabs">
