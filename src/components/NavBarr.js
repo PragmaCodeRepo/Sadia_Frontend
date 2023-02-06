@@ -22,17 +22,23 @@ const NavBarr = () => {
             className="d-inline-block align-top nav-img"
           />{" "}<span id="nav-title">Pragma</span></Navbar.Brand>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-${expand}`} />
-            <Navbar.Offcanvas
+            <Navbar.Offcanvas style={{width:"50%"}}
               id={`offcanvasNavbar-expand-${expand}`}
               aria-labelledby={`offcanvasNavbarLabel-expand-${expand}`}
               placement="end"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${expand}`}>
-                 Pragma
+                <img
+            alt=""
+            src={Logo}
+            width="35"
+            height="30"
+            className="d-inline-block align-top nav-img"
+          /> &nbsp;Pragma
                 </Offcanvas.Title>
               </Offcanvas.Header>
-              <Offcanvas.Body>
+              <Offcanvas.Body >
                 <Nav className="justify-content-end flex-grow-1 pe-3">
                   <Nav.Link href="/" id="Home"  >Home</Nav.Link>
                   <Nav.Link href="/aboutus" id="aboutus" >About us</Nav.Link>

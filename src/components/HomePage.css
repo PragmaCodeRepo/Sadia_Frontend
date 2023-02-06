@@ -358,8 +358,8 @@
   color: #5380ff;
 }
 .double-shade:hover{
-  animation: rotateInDownLeft ;
-  animation-duration: 2s;
+  /* animation: rotateInDownLeft ; */
+  /* animation-duration: 2s; */
 }
 /* New Card which we created on 19 */
 @import url(https://fonts.googleapis.com/css?family=Raleway);
