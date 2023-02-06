@@ -173,7 +173,7 @@ const HomePage = () => {
 
       {/* Testimonial Section */}
 
-      <Caro />
+      {/* <Caro /> */}
       <Footer />
 
       {/* custom alert */}
