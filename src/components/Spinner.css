@@ -29,13 +29,15 @@
 .smiley {
 	width: 8em;
 	height: 8em;
-    margin-left: 40%;
+    margin-left: 46%;
     margin-top: 20%;
 }
 @media (max-width: 480px){
     .smiley{
-        margin-top: 50%;
+        margin-top: 20rem;
+		margin-left: 37%;
     }
+
 }
 .smiley__eye1,
 .smiley__eye2,

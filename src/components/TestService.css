@@ -89,16 +89,26 @@
     /* margin: 1rem; */
 }
 .ourtestservices-title{
-    text-align: center;
+    /* text-align: center;
     font-family: Noto Serif;
     font-style: bold;
     color:  #241757;
     font-size: 40px;
-    /* margin-left: 17.3rem; */
+    
     margin-bottom: 2rem;
     margin-top: 4rem;
     font-weight: 600;
-    letter-spacing: 0.5px;
+    letter-spacing: 0.5px; */
+    text-align: center;
+    font-family: Noto Serif;
+    font-style: Display SemiBold;
+    font-size: 57px;
+    text-align: center;
+    color: #241757;
+    padding-top: 3rem;
+    padding-top: 21px;
+    margin-top: 4rem;
+    margin-bottom: 2rem;
 
 
 }

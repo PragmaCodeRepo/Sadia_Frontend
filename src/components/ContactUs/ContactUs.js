@@ -50,7 +50,7 @@ const ContactUs = () => {
     </div>
     <div className='contactus-title'>
       <span className='contactus-main-title mt-5'>Contact Us</span>
-      <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span>
+      {/* <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span> */}
     </div>
     
 
@@ -101,22 +101,12 @@ const ContactUs = () => {
       </div>
       
       
-      <div class="formbold-mb-5">
-        <label for="phone" class="formbold-form-label"> Your Message</label>
-        <input
-          type="text"
-          name="user_message"
-          id="phone"
-          placeholder="Enter your message"
-          class="formbold-form-input"
-          required
-        />
-      </div>
+      
       
 
       <div class="formbold-mb-5 formbold-pt-3">
         <label class="formbold-form-label formbold-form-label-2">
-          Address Details
+            City,State & Zipcode
         </label>
         <div class="flex flex-wrap formbold--mx-3">
           {/* <div class="w-full sm:w-half formbold-px-3">
@@ -167,6 +157,18 @@ const ContactUs = () => {
           
           
         </div>
+        <div class="formbold-mb-5">
+        <label for="phone" class="formbold-form-label"> Your Message</label>
+        <input
+          type="text"
+          name="user_message"
+          id="phone"
+          placeholder="Enter your message"
+          class="formbold-form-input yourmessage"
+          
+          required
+        />
+      </div>
         
       </div>
       

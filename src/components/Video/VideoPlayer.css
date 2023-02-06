@@ -1,15 +1,15 @@
-.Introduction-video-title{
-    text-align: center;
-    font-family: Noto serif;
-    /* font-style: bold; */
-    color: #241757;
-    letter-spacing: 5px;
+/* .Introduction-video-title{
     
-    text-transform: uppercase;
-    font-size: 40px;
-    font-weight: bold;
-    text-overflow: inherit;
-}
+    text-align: center;
+    font-family: Noto Serif;
+    font-style: Display SemiBold;
+    font-size: 57px;
+    text-align: center;
+    color: #241757;
+    padding-top: 3rem;
+    padding-top: 21px;
+    
+} */
 .intro-video-box{
     padding-top: 78px;
     /* box-shadow: 24px 32px 8px rgb(43 127 253 / 5%) */
@@ -32,11 +32,46 @@
     .videoo{
         /* max-width: 100%; */
         margin-left: 3rem;
+        border: none;
     }
+    .Introduction-video-title{
+        font-size: 40px;
+    }
+    
 }
 @media (min-width: 481px) and (max-width: 1024px){
     .videoo{
         margin-left: 10rem;
 
     }
+}
+
+.Introduction-video-title{
+    text-align: center;
+    font-family: Noto Serif;
+    font-style: Display SemiBold;
+    font-size: 50px;
+    color:   #241757;;
+	width: 21.5ch;
+	white-space: nowrap;
+	overflow: hidden;
+	border-right: 3px solid #241757;
+	animation: cursor 1s step-start infinite, 
+    text 5s steps(18) alternate infinite;
+    
+}
+
+@keyframes cursor {
+	0%, 100% { 
+    border-color: #212121; 
+  }
+}
+
+@keyframes text {
+	0% { 
+    width: 0; 
+  }
+	100% { 
+    width: 21.5ch; 
+  }
 }

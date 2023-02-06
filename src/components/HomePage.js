@@ -37,11 +37,15 @@ const HomePage = () => {
       // alert("your response is blank please enter category and your zipcode ");
       // window.location.reload();
     } else if (zipcode.length < 5) {
-      alert("Zipcode must be 5 digit");
+      // alert("Zipcode must be 5 digit");
+      notifyzip();
     } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
   };
   const notify = () =>
     toast("your response is blank please enter category and your zipcode!");
+
+    const notifyzip = () =>
+    toast("Zipcode must be 5 digit!");  
 
   return (
     <>
@@ -172,7 +176,7 @@ const HomePage = () => {
 
       {/* custom alert */}
       <ToastContainer
-        position="top-center"
+        position="bottom-left"
         autoClose={5000}
         hideProgressBar={false}
         newestOnTop={false}
