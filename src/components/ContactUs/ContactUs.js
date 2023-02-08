@@ -56,16 +56,20 @@ const ContactUs = () => {
      </div>
      
     </div>
-    <div className='contactus-title'>
-      <span className='contactus-main-title mt-5'>Contact Us</span>
-      {/* <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span> */}
-    </div>
+    
     
 
 
     {/* contactus form */}
     <div className='formbox'>
     
+    <div className='contactus-title'>
+      <span className='contactus-main-title mt-5'>Contact Us</span>
+      <span className='contactus-subtitle'>for Immediate Assistance </span>
+      <span className='contactus-subtitle' style={{color:"#5380ff",fontStyle:"bold"}}>+1 331-707-2779</span>
+      <span className='contactus-subtitle'>or fill out the form below</span>
+      {/* <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span> */}
+    </div>
     <div class="formbold-main-wrapper">
     
    
@@ -76,7 +80,7 @@ const ContactUs = () => {
     <form ref={form} onSubmit={sendEmail}>
     
       <div class="formbold-mb-5">
-        <label for="name" class="formbold-form-label"> Full Name </label>
+        <label for="name" class="formbold-form-label"> Full Name <span style={{color:"red"}}>*</span> </label>
         <input
           type="text"
           name="user_name"
@@ -89,7 +93,7 @@ const ContactUs = () => {
     
       </div>
       <div class="formbold-mb-5">
-        <label for="email" class="formbold-form-label"> Email Address </label>
+        <label for="email" class="formbold-form-label"> Email Address <span style={{color:"red"}}>*</span> </label>
         <input
           type="email"
           name="user_email"
@@ -100,7 +104,7 @@ const ContactUs = () => {
         />
       </div>
       <div class="formbold-mb-5">
-        <label for="phone" class="formbold-form-label"> Phone Number </label>
+        <label for="phone" class="formbold-form-label"> Phone Number <span style={{color:"red"}}>*</span> </label>
         <input
           type="text"
           name="phone"
@@ -116,21 +120,11 @@ const ContactUs = () => {
       
 
       <div class="formbold-mb-5 formbold-pt-3">
-        <label class="formbold-form-label formbold-form-label-2">
+        {/* <label class="formbold-form-label formbold-form-label-2">
             City,State & Zipcode
         </label>
         <div class="flex flex-wrap formbold--mx-3">
-          {/* <div class="w-full sm:w-half formbold-px-3">
-            <div class="formbold-mb-5">
-              <input
-                type="text"
-                name="user_address"
-                id="area"
-                placeholder="Enter area"
-                class="formbold-form-input"
-              />
-            </div>
-          </div> */}
+          
           <div class="w-full sm:w-half formbold-px-3">
             <div class="formbold-mb-5">
               <input
@@ -162,14 +156,14 @@ const ContactUs = () => {
                 placeholder="Post Code"
                 class="formbold-form-input"
               />
-            </div>
+            </div> */}
             
-          </div>
+          {/* </div> */}
           
           
-        </div>
+        {/* </div> */}
         <div class="formbold-mb-5">
-        <label for="phone" class="formbold-form-label"> Your Message</label>
+        <label for="phone" class="formbold-form-label"> Your Message <span style={{color:"red"}}>*</span></label>
         <input
           type="text"
           name="user_message"
@@ -185,7 +179,7 @@ const ContactUs = () => {
       
 
       <div>
-        <button class="formbold-btn">Submit</button>
+        <button class="formbold-btn">Book My Consult</button>
       </div>
       {/* <span style={{textAlign:"center"}} className="Thankyou-alert">{done && "thanks for contacting us!" }</span> */}
       {done &&thankyou()}
@@ -193,6 +187,7 @@ const ContactUs = () => {
     </div>
   </div>
 </div>
+
 <Footer/>
 
 
