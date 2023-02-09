@@ -23,6 +23,7 @@ import Spinner from "./Spinner";
 import VideoPlayer from "./Video/VideoPlayer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+import AxiosTest from "./AxiosTest";
 
 const HomePage = () => {
   const navigate = useNavigate();
@@ -175,7 +176,7 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
-
+     {/* <AxiosTest/> */}
       {/* custom alert */}
       <ToastContainer
         position="top-right"
