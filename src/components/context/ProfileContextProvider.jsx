@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import ProfileContext from "./ProfileContext";
 import axios from "axios"
 
-
+axios.defaults.baseURL="http://192.241.128.245";
 
 const ProfileContextProvider = (props) => {
   const [profiles, setProfiles] = useState([]);
@@ -22,7 +22,9 @@ const ProfileContextProvider = (props) => {
   // };
   const profileData=()=>{
     console.log("ok")
-    axios.get("http://192.241.128.245/api/Profiles/")
+    // axios.get("http://192.241.128.245/api/Profiles/")
+    axios.get("/api/Profiles/")
+
     .then((response)=>{
       setProfiles(response.data)
 
