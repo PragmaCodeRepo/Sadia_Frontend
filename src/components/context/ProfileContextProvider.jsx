@@ -3,7 +3,6 @@ import ProfileContext from "./ProfileContext";
 import axios from "axios"
 
 
-axios.defaults.headers.common['Authorization']='Auth Token';
 
 const ProfileContextProvider = (props) => {
   const [profiles, setProfiles] = useState([]);
