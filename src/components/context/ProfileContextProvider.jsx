@@ -2,6 +2,9 @@ import React, { useState, useEffect } from "react";
 import ProfileContext from "./ProfileContext";
 import axios from "axios"
 
+
+axios.defaults.headers.common['Authorization']='Auth Token';
+
 const ProfileContextProvider = (props) => {
   const [profiles, setProfiles] = useState([]);
   const [isFound, setIsFound] = useState(false);
