@@ -3,7 +3,7 @@ import ProfileContext from "./ProfileContext";
 import axios from "axios"
 
 // axios.defaults.baseURL="http://192.241.128.245";
-axios.defaults.baseURL="https://api2.pragma.how";
+axios.defaults.baseURL="https://api.pragma.how";
 
 
 const ProfileContextProvider = (props) => {
