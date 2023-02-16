@@ -2,7 +2,7 @@
 import NavBarr from '../NavBarr'
 import "./ContactUs.css";
 import Contactusbanner from "../../assets/Contactusbanner.png";
-import React, { useRef,useState } from 'react';
+import React, { useRef,useState,useEffect } from 'react';
 import emailjs from '@emailjs/browser';
 import Thankyou from './Thankyou';
 import Popup from '../Popup';
@@ -11,9 +11,13 @@ import Nav from "react-bootstrap/Nav";
 import Footer from '../Footer';
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-
+import ReactGA from "react-ga";
 
 const ContactUs = () => {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname);
+ 
+  },[])
   
   const navigate = useNavigate();
   const form = useRef();

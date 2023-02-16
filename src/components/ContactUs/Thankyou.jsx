@@ -1,10 +1,14 @@
-import React from "react";
+import React,{useEffect} from "react";
 import "./Thankyou.css";
 import NavBarr from "../NavBarr";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
-
+import ReactGA from "react-ga";
 const Thankyou = () => {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname);
+ 
+  },[])
   return (
     <>
       <NavBarr />
