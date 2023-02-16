@@ -16,6 +16,7 @@
     "react-animated-cursor": "^2.5.2",
     "react-bootstrap": "^2.6.0",
     "react-dom": "^18.2.0",
+    "react-ga": "^3.3.1",
     "react-html5video": "^2.5.1",
     "react-icons": "^4.7.1",
     "react-overlay-component": "^1.0.6",

@@ -10,10 +10,13 @@ import Thankyou from "./components/ContactUs/Thankyou";
 import FAQ from "./components/FAQ";
 import { useEffect,useState } from "react";
 import Spinner from "./components/Spinner";
+import ReactGA from "react-ga";
 
 
 function App() {
   // const countEl=document.getElementById('count');
+  const TRACKING_ID="UA-257352567-1"
+  ReactGA.initialize(TRACKING_ID)
   const [loading, setloading] = useState(false)
   useEffect(()=>{
    setloading(true)

@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import Navbar from "react-bootstrap/Navbar";
 import Logo from "../assets/logo_bg.png";
@@ -24,8 +24,13 @@ import VideoPlayer from "./Video/VideoPlayer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AxiosTest from "./AxiosTest";
+import ReactGA from "react-ga";
 
 const HomePage = () => {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname);
+ 
+  },[])
   
 
   const navigate = useNavigate();
@@ -82,43 +87,7 @@ const HomePage = () => {
           </div>
         </div>
 
-        {/* <div className="row container" id="searchbar">
-          <input
-            type="number"
-            placeholder=" Enter zip code"
-            onChange={(e) => setZipcode(e.target.value)}
-            className="col"
-            id="zipcode-box"
-          ></input>
-          <select
-            name="dropdown"
-            onChange={(e) => setdropdown(e.target.value)}
-            className="col"
-            id="category-dropdown"
-            required
-          >
-            <option value="select" selected>
-              Select Category
-            </option>
-
-            <option value="Marriage">Marriage</option>
-            <option value="Life Coaches">Life Coaches</option>
-            <option value="Child support services">
-              Child support services
-            </option>
-            <option value="Therapist Services">Therapist Services</option>
-            <option value="Financial analyses">Financial analyses</option>
-            <option value="Attorneys"> Attorneys</option>
-            <option value="Mediation services"> Mediation services</option>
-          </select>
-
-          <div className="col ">
-            <button type="submit" id="search-button" onClick={submitHandler}>
-              <img  id="search-iconn" src={search_icon} alt="" style={{ marginRight: "10px" }}  />
-              Search
-            </button>
-          </div>
-        </div> */}
+        
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
