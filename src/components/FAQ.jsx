@@ -40,8 +40,8 @@ const FAQ = () => {
       </details>
 
       <h2 class="faq-heading">Still have questions?</h2>
-      <p class="faq-aftertext">If you cannot find answer to your question in our FAQ, you can always<br/>
-        <span className='contactus-link-faq' onClick={faqHandler}>contact us</span>. We will answer shortly!
+      <p class="faq-aftertext">If you cannot find an answer to your question in  FAQ's, you can always<br/>
+        <span className='contactus-link-faq' onClick={faqHandler}>contact us</span>. 
       </p>
     </div>
   </main>

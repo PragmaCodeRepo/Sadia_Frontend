@@ -1,33 +1,35 @@
-import React from 'react'
+import React from "react";
 import "./Thankyou.css";
 import NavBarr from "../NavBarr";
-import Footer from '../Footer';
+import Footer from "../Footer";
+import { Link } from "react-router-dom";
 
 const Thankyou = () => {
   return (
     <>
-    <NavBarr/>
-    <section class="login-main-wrapper" >
-      <div class="main-container">
-          <div class="login-process">
-              <div class="login-main-container">
-                  <div class="thankyou-wrapper">
-                      <h1><img src="http://montco.happeningmag.com/wp-content/uploads/2014/11/thankyou.png" alt="thanks" className='thankyou-image' /></h1>
-                        <p>for contacting us, we will get in touch with you soon... </p>
-                        <a href="/">Back to home</a>
-                        <div class="clr"></div>
-                    </div>
-                    <div class="clr"></div>
-                </div>
-            </div>
-            <div class="clr"></div>
+      <NavBarr />
+
+      <div class="content" style={{ height: "10rem" }}>
+        <div class="wrapper-1 ">
+          <div class="wrapper-2">
+            {/* <h1>Thank you !</h1> */}
+            <p>Thankyou for contacting us.We will contact you within 24 hour. </p>
+            {/* <p>you should receive a confirmation email soon </p> */}
+            <Link to="/">
+              <button class="go-home">Home</button>
+            </Link>
+          </div>
         </div>
-        
-    </section>
-    <Footer/>
+      </div>
 
+      <div style={{height:"20rem"}}></div><Footer/>
+
+      <link
+        href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro"
+        rel="stylesheet"
+      ></link>
     </>
-  )
-}
+  );
+};
 
-export default Thankyou
+export default Thankyou;

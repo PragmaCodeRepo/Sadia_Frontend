@@ -26,6 +26,8 @@ import "react-toastify/dist/ReactToastify.css";
 import AxiosTest from "./AxiosTest";
 
 const HomePage = () => {
+  
+
   const navigate = useNavigate();
   const [zipcode, setZipcode] = useState("");
   const [dropdown, setdropdown] = useState("");
@@ -48,10 +50,14 @@ const HomePage = () => {
     toast("your response is empty please enter category and your zip code");
 
     const notifyzip = () =>
-    toast("Zipcode must be 5 digits ");  
+    toast("Zipcode must be 5 digits "); 
+    
+    
+   
 
   return (
     <>
+    
       <NavBarr />
       <div className="banner">
         {/* <img src={new_bg} alt="" className="banner-image" /> */}
@@ -138,9 +144,7 @@ const HomePage = () => {
 
                 <option value="Life Coach">Life Coach</option>
                 <option value="Therapist">Therapist</option>
-                <option value="Child support services">
-                  Child support services
-                </option>
+               
                 <option value="Child Specialist ">Child Specialist </option>
                 <option value="Divorce Attorney">Divorce Attorney</option>
                 <option value="Divorce Mediator"> Divorce Mediator</option>
@@ -176,6 +180,9 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
+      
+      
+      
      {/* <AxiosTest/> */}
       {/* custom alert */}
       <ToastContainer

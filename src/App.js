@@ -13,6 +13,7 @@ import Spinner from "./components/Spinner";
 
 
 function App() {
+  // const countEl=document.getElementById('count');
   const [loading, setloading] = useState(false)
   useEffect(()=>{
    setloading(true)
@@ -22,9 +23,19 @@ function App() {
    },3000)
 
   },[])
+  // function updateVisitCount() {
+  //   fetch('https://api.countapi.xyz/update/pragma/pranjal/?amount=1')
+  //   .then(res => res.json())
+  //   .then(res => {
+  //     countEl.innerHTML = res.value;
+  
+  //   })
+  //   console.log("hh")
+  // }
   return (
     
     <CartProvider>
+    {/* {updateVisitCount()} */}
     {
       loading?<Spinner/>:
       <Routes>
@@ -43,9 +54,12 @@ function App() {
         <Route path="*" component={"Invalid Path"} />
       </Routes>
     }
-      
+    {/* <p>This page was viewed</p>
+<h1 id="count">0</h1>
+<p>times</p> */}
       
     </CartProvider>
+    
   );
 }
 

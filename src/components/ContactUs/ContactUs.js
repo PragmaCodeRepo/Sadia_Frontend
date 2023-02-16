@@ -64,8 +64,8 @@ const ContactUs = () => {
     <div className='formbox'>
     
     <div className='contactus-title'>
-      <span className='contactus-main-title mt-5'>Contact Us</span>
-      <span className='contactus-subtitle'>for Immediate Assistance </span>
+      <span className='contactus-main-title mt-5'>Contact us</span>
+      <span className='contactus-subtitle'>for immediate assistance </span>
       <span className='contactus-subtitle' style={{color:"#5380ff",fontStyle:"bold"}}>+1 331-707-2779</span>
       <span className='contactus-subtitle'>or fill out the form below</span>
       {/* <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span> */}

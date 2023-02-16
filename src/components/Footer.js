@@ -5,6 +5,9 @@ import { Link } from "react-router-dom";
 import {  useNavigate } from 'react-router-dom';
 import faq from "./../assets/faq.jpg"
 const Footer = () => {
+  const newDate = new Date()
+	const currentYear = newDate.getFullYear()
+  
   const navigate = useNavigate();
   const helphandler=()=>{
     navigate("/contactus")
@@ -12,6 +15,7 @@ const Footer = () => {
   const faqhandler=()=>{
     navigate("/faq")
   }
+  
   
   return (
     <>
@@ -26,15 +30,15 @@ const Footer = () => {
 
           <p class="footer-links">
             {/* <a href="#" >Home</a> */}
-            <Link to="/">Home</Link>
-            <Link to="/contactus">Contact us</Link>
-            <Link to="/aboutus">About us</Link>
+            <Link to="/" id="footerlink">Home</Link>
+            <Link to="/contactus" id="footerlink">Contact us</Link>
+            <Link to="/aboutus" id="footerlink">About us</Link>
 
             {/* <a href="#" >Contact Us</a> */}
 
             {/* <a href="#" >About Us</a> */}
 
-            <a href="/faq" className="faq-footer" >FAQ</a>
+            {/* <a href="/faq" className="faq-footer" >FAQ</a> */}
           </p>
           <div >
             <img src={faq} alt="" className="faq-image" onClick={faqhandler}/>
@@ -83,7 +87,9 @@ const Footer = () => {
           </div>
         </div>
         <hr className="horizontal-line" />
-        <div className="copyright-text">Copyright © 2022 certified</div>
+
+
+        <div className="copyright-text">Copyright © {currentYear} certified</div>
       </footer>
       <div class="help-button-wrapper" onClick={helphandler}>
   

@@ -311,6 +311,7 @@ h3:hover {
 }
 .faq-image{
   width: 100px;
+  height: 100px;
   border-radius: 50%;
 
 }
@@ -320,4 +321,13 @@ h3:hover {
     transition: transform 100ms ease;
     opacity: 0.4;
 
+}
+#footerlink:hover{
+  color: lightseagreen;
+}
+#footerlink{
+  color: white;
+}
+.footer-distributed .footer-icons a:hover{
+  color:lightseagreen
 }
