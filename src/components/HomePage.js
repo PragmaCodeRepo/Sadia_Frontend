@@ -124,7 +124,8 @@ const HomePage = () => {
 
             <div class="search_field">
               <input
-                type="number"
+                type="text" 
+                inputmode="numeric"
                 class="input"
                 placeholder="Zipcode"
                 onChange={(e) => setZipcode(e.target.value)}

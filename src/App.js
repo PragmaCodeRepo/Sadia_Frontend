@@ -11,6 +11,7 @@ import FAQ from "./components/FAQ";
 import { useEffect,useState } from "react";
 import Spinner from "./components/Spinner";
 import ReactGA from "react-ga";
+import Partner from "./components/Partner/Partner";
 
 
 function App() {
@@ -50,6 +51,7 @@ function App() {
         <Route path="/thankyou" element={<Thankyou/>}></Route>
         <Route path="/faq" element={<FAQ/>}></Route>
         <Route path="/contactus" element={<ContactUs />}></Route>
+        <Route path="/Partner" element={<Partner/>}></Route>
         <Route path="/zipcodeprofile">
           <Route path=":code" element={<ZipcodeProfile />} />
         </Route>
