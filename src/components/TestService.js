@@ -9,8 +9,13 @@ import LifeCoaches from "../assets/LifeCoach_new.jpg";
 import Financial from "../assets/Financial.png";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
 import Bar from "./Overlay/Bar";
+import Button from 'react-bootstrap/Button';
+import Modal from 'react-bootstrap/Modal';
 
 const TestService = () => {
+  const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+    const handleShow = () => setShow(true);
   const [isOpen, setOverlay] = useState(false);
 
   const closeOverlay = () => setOverlay(false);
@@ -36,9 +41,11 @@ const TestService = () => {
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div
               className="card testcard mt-3"
-              onClick={() => {
-                setOverlay(true);
-              }}
+              // onClick={() => {
+                
+              //   setOverlay(true);
+              // }}
+              onClick={handleShow}
             >
               <img
                 className="card-img"
@@ -52,24 +59,30 @@ const TestService = () => {
                 <div className="link d-flex"></div>
               </div>
             </div>
-            <Overlay
+            {/* <Overlay
             className='over-lay'
               configs={configs}
               isOpen={isOpen}
               closeOverlay={closeOverlay}
-              style={{backgroundColor:"red"}}
+              
             >
               {" "}
-              {/* <SearchBarOverlay /> */}
+              <SearchBarOverlay />
               <Bar/>
-            </Overlay>
+            </Overlay> */}
+            <Modal show={show} onHide={handleClose} style={{marginTop:"17%",marginLeft:"-6rem"}} >
+       
+        <Modal.Body style={{backgroundColor:"#cdcde7",width:"54rem"}}><SearchBarOverlay/></Modal.Body>
+        
+      </Modal>
           </div>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div
               className="card testcard mt-3"
-              onClick={() => {
-                setOverlay(true);
-              }}
+              // onClick={() => {
+              //   setOverlay(true);
+              // }}
+              onClick={handleShow}
             >
               <img className="card-img" src={Lawyers} alt="Bologna" />
               <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -83,9 +96,10 @@ const TestService = () => {
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div
               className="card testcard mt-3"
-              onClick={() => {
-                setOverlay(true);
-              }}
+              // onClick={() => {
+              //   setOverlay(true);
+              // }}
+              onClick={handleShow}
             >
               <img className="card-img" src={ChildSupport} alt="Bologna" />
               <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -103,9 +117,10 @@ const TestService = () => {
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
                 <div
                   className="card testcard mt-4"
-                  onClick={() => {
-                    setOverlay(true);
-                  }}
+                  // onClick={() => {
+                  //   setOverlay(true);
+                  // }}
+                  onClick={handleShow}
                 >
                   <img className="card-img" src={Mediation} alt="Bologna" />
                   <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -119,9 +134,10 @@ const TestService = () => {
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
                 <div
                   className="card testcard mt-4"
-                  onClick={() => {
-                    setOverlay(true);
-                  }}
+                  // onClick={() => {
+                  //   setOverlay(true);
+                  // }}
+                  onClick={handleShow}
                 >
                   <img className="card-img" src={LifeCoaches} alt="Bologna" />
                   <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -135,9 +151,10 @@ const TestService = () => {
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
                 <div
                   className="card testcard mt-4"
-                  onClick={() => {
-                    setOverlay(true);
-                  }}
+                  // onClick={() => {
+                  //   setOverlay(true);
+                  // }}
+                  onClick={handleShow}
                 >
                   <img
                     className="card-img"

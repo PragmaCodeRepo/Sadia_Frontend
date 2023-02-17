@@ -39,7 +39,7 @@ const SearchBarOverlay = () => {
             <option value="Child support services">
               Child support services
             </option>
-            <option value="Therapist Services">Therapist Services</option>
+            <option value="Therapist">Therapist </option>
             <option value="Financial analyses">Financial analyses</option>
             <option value="Attorneys"> Attorneys</option>
             <option value="Mediation services"> Mediation services</option>

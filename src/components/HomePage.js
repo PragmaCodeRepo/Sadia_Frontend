@@ -25,6 +25,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import AxiosTest from "./AxiosTest";
 import ReactGA from "react-ga";
+import Modall from "./Overlay/Modall";
 
 const HomePage = () => {
   useEffect(()=>{
@@ -150,6 +151,7 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
+      <Modall/>
       
       
       
