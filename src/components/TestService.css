@@ -1,95 +1,86 @@
-.testcard{
-    width: 370px;
+.testcard {
+  width: 370px;
+  height: 260px;
+  /* margin-left: 14px; */
+}
+
+@media (max-width: 480px) {
+  .testcard {
+    width: 330px;
+    height: 260px;
+    margin-left: 25px;
+  }
+}
+@media (min-width: 481px) and (max-width: 1024px) {
+  .testcard {
+    width: 300px;
     height: 260px;
     /* margin-left: 14px; */
-    
+  }
+  .LineIndicator1 {
+    margin-left: 5rem;
+    width: 13rem;
+    margin-top: -24px;
+  }
+  .LineIndicator2 {
+    margin-left: 77px;
+    margin-top: -49px;
+    width: 240px;
+  }
 }
-
-
-@media (max-width: 480px){
-    .testcard{
-        width: 330px;
-        height: 260px;
-        margin-left: 25px;
-
-    }
-}
-@media (min-width: 481px) and (max-width: 1024px){
-    .testcard {
-        width: 300px;
-        height: 260px;
-        /* margin-left: 14px; */
-    }
-    .LineIndicator1 {
-        margin-left: 5rem;
-        width: 13rem;
-        margin-top: -24px;
-    }
-    .LineIndicator2 {
-        margin-left: 77px;
-        margin-top: -49px;
-        width: 240px;
-    }
-}
-@media (max-width: 390px){
-    .testcard{
-        
-        margin-left: 14px;
-        width: 322px;
-    }
+@media (max-width: 390px) {
+  .testcard {
+    margin-left: 14px;
+    width: 322px;
+  }
 }
 .card-img-overlay {
-    /* background-color: rgba(#000, 0.4); */
-    background: linear-gradient(rgb(0 0 0 / 58%), #2f30308a);
-    /* background: linear-gradient(rgb(24 22 24 / 75%), #2f30308a); */
-    /* background: linear-gradient(rgba(225, 218, 225, 0.208), #2f30308a) */
-    /* rgb(24 22 24 / 75%), #2f30308a); */
-    /* rgba(111, 108, 111, 0.282), #2f30308a */
-  }
-.card-img{
-    
-    /* background: linear-gradient(rgb(225 218 225 / 80%), #839de58a) */
-    height: 260px;
-    width: 380px;
-
+  /* background-color: rgba(#000, 0.4); */
+  background: linear-gradient(rgb(0 0 0 / 58%), #2f30308a);
+  /* background: linear-gradient(rgb(24 22 24 / 75%), #2f30308a); */
+  /* background: linear-gradient(rgba(225, 218, 225, 0.208), #2f30308a) */
+  /* rgb(24 22 24 / 75%), #2f30308a); */
+  /* rgba(111, 108, 111, 0.282), #2f30308a */
 }
-.testcard{
-    box-shadow: 10px 12px 14px 0px rgb(136 143 157 / 41%);
+.card-img {
+  /* background: linear-gradient(rgb(225 218 225 / 80%), #839de58a) */
+  height: 260px;
+  width: 380px;
+}
+.testcard {
+  box-shadow: 10px 12px 14px 0px rgb(136 143 157 / 41%);
   cursor: pointer;
   animation: zoomIn; /* referring directly to the animation's @keyframe declaration */
   animation-duration: 2s; /* don't forget to set a duration! */
 }
-@media (max-width: 480px){
-    .testcard:hover{
-        transform: none ;
-        transition: none;
-        
-    }
-
+@media (max-width: 480px) {
+  .testcard:hover {
+    transform: none;
+    transition: none;
+  }
 }
-.testcard:hover{
-    transform: scale(1.1) ;
-    transition: all .2s ease-in-out;
-    
+.testcard:hover {
+  transform: scale(1.1);
+  transition: all 0.2s ease-in-out;
 }
-.card-title{
-    color: #fff;
-    font-weight: 500;
-    letter-spacing: 0.15em;
-    margin-bottom: 0.5em;
-    text-transform: uppercase;
-    text-align: center;
+.card-title {
+  color: #fff;
+  font-weight: 500;
+  letter-spacing: 0.15em;
+  margin-bottom: 0.5em;
+  text-transform: uppercase;
+  text-align: center;
 }
-.card-subtitle{
-    color: #fff;
-    font-size: 0.8em;
-    text-align: center;
+.card-subtitle {
+  color: #fff;
+  font-size: 0.8em;
+  text-align: center;
 }
-.testservicerow{
-    /* margin: 1rem; */
+.testservicerow {
+  /* margin: 1rem; */
 }
-.ourtestservices-title{
-    /* text-align: center;
+.ourtestservices-title {
+  /* text-align: center;
     font-family: Noto Serif;
     font-style: bold;
     color:  #241757;
@@ -99,39 +90,36 @@
     margin-top: 4rem;
     font-weight: 600;
     letter-spacing: 0.5px; */
-    text-align: center;
-    font-family: Noto Serif;
-    font-style: Display SemiBold;
-    font-size: 57px;
-    text-align: center;
-    color: #241757;
-    padding-top: 3rem;
-    padding-top: 21px;
-    margin-top: 4rem;
-    margin-bottom: 2rem;
-
-
+  text-align: center;
+  font-family: Noto Serif;
+  font-style: Display SemiBold;
+  font-size: 57px;
+  text-align: center;
+  color: #241757;
+  padding-top: 3rem;
+  padding-top: 21px;
+  margin-top: 4rem;
+  margin-bottom: 2rem;
 }
-.ourtestservices-sub-title{
+.ourtestservices-sub-title {
+  font-family: Noto Serif;
+  font-style: bold;
+  color: #241757;
+  font-size: 18px;
+}
+@media (max-width: 480px) {
+  .ourtestservices-title {
     font-family: Noto Serif;
     font-style: bold;
-    color:  #241757;
-    font-size: 18px;
-
+    color: #241757;
+    font-size: 45px;
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    margin-top: 4rem;
+    font-weight: 500;
+    text-align: center;
+  }
 }
-@media (max-width: 480px){
-    .ourtestservices-title{
-        font-family: Noto Serif;
-        font-style: bold;
-        color:  #241757;
-        font-size: 45px;
-        margin-left: 1rem;
-        margin-bottom: 2rem;
-        margin-top: 4rem;
-        font-weight: 500;
-        text-align: center;
-    
-    
-    }
-
-}
+.over-lay{
+    background-color: palegoldenrod;
+  }

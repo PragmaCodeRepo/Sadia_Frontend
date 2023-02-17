@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
+.wrapper {
+  position: absolute;
+  top: 57%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.wrapper .search_box {
+  width: 500px;
+  background: #fff;
+  border-radius: 5px;
+  height: 65px;
+  display: flex;
+  padding: 10px;
+  box-shadow: 0 8px 6px -10px #b3c6ff;
+}
+@media (max-width: 480px){
+  .wrapper .search_box{
+    width: 362px;
+    margin-top: 250px;
+    box-shadow: 0 12px 6px -10px #b3c6ff;
+  }
+}
+@media (max-height: 800px){
+  .wrapper{
+    top: 60%;
+  }
+  .title-quote{
+    margin-top: 2rem;
+    font-size: 40px;
+  }
+
+}
+
+
+
+
+.wrapper .search_box .dropdown {
+  width: 250px;
+  border-right: 2px solid #dde2f1;
+  color: #9fa3b1;
+  position: relative;
+  cursor: pointer;
+  display: flex;
+}
+.styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
+    background-color: transparent;
+}
