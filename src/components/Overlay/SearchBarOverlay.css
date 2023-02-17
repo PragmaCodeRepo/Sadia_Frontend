@@ -53,7 +53,7 @@
   }
   
   #search-buttonoverlay:hover {
-    background: #241757;
+    /* background: #241757; */
     
   }
   
@@ -90,7 +90,7 @@
 }
 
 .styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
-    /* padding: 2em; */
+    padding: 0em;
     background-color: white;
     max-width: 600px;
     position: relative;
@@ -101,11 +101,3 @@
 }
 
 
-/* .styles_overlay-wrapper__O0Zm8 .styles_overlay-content__1qZR_ {
-  padding: 2em;
-  background-color: transparent;
-  max-width: 868px;
-  position: relative;
-  margin: auto;
-  transition: opacity 0.85s;
-} */
