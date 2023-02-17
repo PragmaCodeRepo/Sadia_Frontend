@@ -17,7 +17,8 @@ const SearchBarOverlay = () => {
     <div className='se'>
         <div className="row" id="searchbaroverlay">
           <input
-            type="number"
+            type="text" 
+                inputmode="numeric"
             placeholder="  Enter your zip code"
             onChange={(e) => setZipcode(e.target.value)}
             className="col"

@@ -71,8 +71,8 @@ const TestService = () => {
               <Bar/>
             </Overlay> */}
             <Modal show={show} onHide={handleClose} style={{marginTop:"17%",marginLeft:"-6rem"}} >
-       
-        <Modal.Body style={{backgroundColor:"#cdcde7",width:"54rem"}}><SearchBarOverlay/></Modal.Body>
+        
+        <Modal.Body style={{backgroundColor:"white", width:"54rem",height:"10rem"}}><div style={{marginTop:"30px",marginLeft:"10px"}}> <SearchBarOverlay/></div></Modal.Body>
         
       </Modal>
           </div>
