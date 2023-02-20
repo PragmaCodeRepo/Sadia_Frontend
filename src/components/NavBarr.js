@@ -43,6 +43,7 @@ const NavBarr = () => {
                   <Nav.Link href="/" id="Home"  >Home</Nav.Link>
                   <Nav.Link href="/aboutus" id="aboutus" >About us</Nav.Link>
                   <Nav.Link href="/contactus" id="contactus" >Contact  us</Nav.Link>
+                  <Nav.Link href="/Partner" id="contactus" >Became a partner</Nav.Link>
                   
                 </Nav>
                 

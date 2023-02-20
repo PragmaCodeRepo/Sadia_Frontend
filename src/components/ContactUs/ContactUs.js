@@ -1,22 +1,15 @@
 import NavBarr from "../NavBarr";
 import "./ContactUs.css";
-import Contactusbanner from "../../assets/Contactusbanner.png";
 import React, { useRef, useState, useEffect } from "react";
 import emailjs from "@emailjs/browser";
-import Thankyou from "./Thankyou";
-import Popup from "../Popup";
 import { Link, useNavigate } from "react-router-dom";
-import Nav from "react-bootstrap/Nav";
 import Footer from "../Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactGA from "react-ga";
 
 const ContactUs = () => {
-  const [fullname, setfullname] = useState("");
-  const [email, setemail] = useState("");
-  const [phonenumber, setphonenumber] = useState("");
-  const [message, setmessage] = useState("");
+ 
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
   }, []);
@@ -24,23 +17,19 @@ const ContactUs = () => {
   const navigate = useNavigate();
   const form = useRef();
   const [done, setDone] = useState(false);
-  const [name, setname] = useState("");
+
 
   const sendEmail = (e) => {
     // tostify
 
-    if (name === "" || phonenumber === "" || email === "" || message === "") {
-      notifyblank();
+  
 
       ;
-    } else if (email.length < 5) {
-     
-      notifyemail();
-    }
+    
 
     //email send
-    else {
-      console.log(setname);
+ 
+      
 
       e.preventDefault();
 
@@ -60,7 +49,7 @@ const ContactUs = () => {
             console.log(error.text);
           }
         );
-    }
+    
   };
   const thankyou = () => {
     console.log("hii");
@@ -83,8 +72,8 @@ const ContactUs = () => {
       {/* contactus form */}
       <div className="formbox">
         <div className="contactus-title">
-          <span className="contactus-main-title mt-5">Contact us</span>
-          <span className="contactus-subtitle">for immediate assistance </span>
+          <span className="contactus-main-titlee mt-5">Contact us</span>
+          <span className="contactus-subtitle">For immediate assistance </span>
           <span
             className="contactus-subtitle"
             style={{ color: "#5380ff", fontStyle: "bold" }}
@@ -108,8 +97,8 @@ const ContactUs = () => {
                   id="name"
                   placeholder="Full Name"
                   class="formbold-form-input"
-                  onChange={(e) => setname(e.target.value)}
-                  // required
+                 
+                  required
                 />
               </div>
               <div class="formbold-mb-5">
@@ -123,7 +112,7 @@ const ContactUs = () => {
                   id="email"
                   placeholder="Enter your email"
                   class="formbold-form-input"
-                  onChange={(e) => setemail(e.target.value)}
+                
                 />
               </div>
               <div class="formbold-mb-5">
@@ -133,12 +122,12 @@ const ContactUs = () => {
                 </label>
                 <input
                   type="text"
-                  name="phone"
+                  name="user_phone"
                   id="phone"
                   placeholder="Enter your phone number"
                   class="formbold-form-input"
-                  onChange={(e) => setphonenumber(e.target.value)}
-                  // required
+                  
+                  required
                 />
               </div>
 
@@ -154,9 +143,9 @@ const ContactUs = () => {
                     id="phone"
                     placeholder="Enter your message"
                     class="formbold-form-input yourmessage"
-                    onChange={(e) => setmessage(e.target.value)}
+                   
 
-                    // required
+                    required
                   />
                 </div>
               </div>
@@ -172,18 +161,7 @@ const ContactUs = () => {
       </div>
 
       <Footer />
-      <ToastContainer
-        position="top-right"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light"
-      />
+      
     </>
   );
 };

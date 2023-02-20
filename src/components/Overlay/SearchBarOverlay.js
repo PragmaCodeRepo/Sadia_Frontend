@@ -35,15 +35,13 @@ const SearchBarOverlay = () => {
               Select your Category
             </option>
 
-            <option value="Marriage">Marriage</option>
-            <option value="Life Coaches">Life Coaches</option>
-            <option value="Child support services">
-              Child support services
-            </option>
-            <option value="Therapist">Therapist </option>
-            <option value="Financial analyses">Financial analyses</option>
-            <option value="Attorneys"> Attorneys</option>
-            <option value="Mediation services"> Mediation services</option>
+            <option value="Life Coach">Life Coach</option>
+            <option value="Therapist">Therapist</option>
+            <option value="Child specialist">
+            Child specialist</option>
+            <option value="Divorce Attorney">Divorce Attorney </option>
+            <option value="Divorce Mediator">Divorce Mediator</option>
+            <option value="Financial Specialist"> Financial Specialist</option>
           </select>
 
           <div className="col ">

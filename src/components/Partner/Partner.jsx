@@ -1,20 +1,59 @@
-import React from 'react'
+import React, { useRef,useState  } from "react";
+import { ToastContainer, toast } from "react-toastify";
+import { Link, useNavigate } from "react-router-dom";
+import emailjs from "@emailjs/browser";
 import "./Partner.css"
-
+import NavBarr from "../NavBarr";
+import Footer from "../Footer";
 const Partner = () => {
+
+  const navigate = useNavigate();
+  const form = useRef();
+  const [done, setDone] = useState(false);
+  const [name, setname] = useState("");
+  const sendEmail = (e) => {
+    
+    //email send
+  
+      console.log(setname);
+
+      e.preventDefault();
+
+      emailjs
+        .sendForm(
+          "service_nk0xn4i",
+          "template_2bqmo96",
+          form.current,
+          "r-nootBn4togO_lU9"
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setDone(true);
+          },
+          (error) => {
+            console.log(error.text);
+          }
+        );
+    
+  };
+  const thankyou = () => {
+    console.log("hii");
+    navigate("/thankyou");
+  };
+  const notifyblank = () => toast("your response is empty please fill details");
+
+  const notifyemail = () => toast("your response is empty please fill details");
   return (
     <>
+    <NavBarr/>
         <header class="hero">
   <div class="hero-inner">
     
     <div class="hero-text">
       <h2>Become a partner, join the community pragma</h2>
       <p>Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam lobortis vitae id ante.</p>
-      <form class="hero-form" action="/">
-        <div class="hero-form-input">
-          <input class="hero-email-input" type="email"  placeholder="Email Address" required/>
-          <input class="hero-form-submit" type="submit"  value="Submit"/>
-        </div>        
+      <form class="hero-form" action="/">       
       </form>
     </div>
     
@@ -25,6 +64,122 @@ const Partner = () => {
     
   </div>
 </header>
+
+<div className="formbox">
+        
+          
+        <div class="formbold-main-wrapper">
+          <div class="formbold-form-wrapper">
+            <form ref={form} onSubmit={sendEmail}>
+              <div class="formbold-mb-5">
+                <label for="name" class="formbold-form-label">
+                  {" "}
+                  Full Name <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="text"
+                  name="user_fullname"
+                  id="name"
+                  placeholder="Full Name"
+                  class="formbold-form-input"
+                 
+                  // required
+                />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="email" class="formbold-form-label">
+                  {" "}
+                  Email Address <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="email"
+                  name="user_email"
+                  id="email"
+                  placeholder="Enter your email"
+                  class="formbold-form-input"
+                  required
+                  
+                />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="phone" class="formbold-form-label">
+                  {" "}
+                  Speciality <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="text"
+                  name="user_speciality"
+                  id="phone"
+                  placeholder="Speciality"
+                  class="formbold-form-input"
+                  required
+                  
+                  
+                  // required
+                />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="phone" class="formbold-form-label">
+                  {" "}
+                  Practices Name <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="text"
+                  name="userPracticesname"
+                  id="phone"
+                  placeholder="Practices Name"
+                  class="formbold-form-input"
+                  
+                  
+                  required
+                />
+              </div>
+              <div class="formbold-mb-5">
+                <label for="phone" class="formbold-form-label">
+                  {" "}
+                  Education <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="text"
+                  name="user_education"
+                  id="phone"
+                  placeholder="Education"
+                  class="formbold-form-input"
+                  
+                  
+                  required
+                />
+              </div>
+              
+              <div class="formbold-mb-5">
+                <label for="phone" class="formbold-form-label">
+                  {" "}
+                  Phone Number <span style={{ color: "red" }}>*</span>{" "}
+                </label>
+                <input
+                  type="text"
+                  name="user_phonenumber"
+                  id="phone"
+                  placeholder="Enter your phone number"
+                  class="formbold-form-input"
+                 
+                  
+                  required
+                />
+              </div>
+
+              
+              <div>
+                <button class="formbold-btn">Become a Partner</button>
+              </div>
+              {/* <span style={{textAlign:"center"}} className="Thankyou-alert">{done && "thanks for contacting us!" }</span> */}
+              {done && thankyou()}
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <Footer/>
     </>
   )
 }

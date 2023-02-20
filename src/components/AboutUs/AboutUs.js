@@ -35,13 +35,13 @@ const AboutUs = () => {
                   services delivery
                 </span>
                 <br />
-                {/* <div className="map-aboutus"> <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2973.6461963837514!2d-88.34103548426374!3d41.8143815773777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x880ee4bc0c771b93%3A0xe86874f5bc4483be!2s472%20Mount%20Ct%2C%20North%20Aurora%2C%20IL%2060542%2C%20USA!5e0!3m2!1sen!2sin!4v1673873081924!5m2!1sen!2sin" ></iframe></div>  */}
+
                 <span className="telephone-icon">
-                  <BsFillTelephoneFill /> &nbsp;630-926-0774{" "}
+                  <BsFillTelephoneFill /> &nbsp;+1 331-707-2779{" "}
                 </span>
-                <span className="telephone-icon">
+                <span className="telephone-icon mb-5">
                   {" "}
-                  <AiTwotoneMail /> &nbsp;Sadianazir@yahoo.com
+                  <AiTwotoneMail /> &nbsp;info@pragma.how
                 </span>
               </div>
             </div>
@@ -54,11 +54,20 @@ const AboutUs = () => {
           </div>
         </div>
         {/* 2nd page */}
+        <div className="our-mission-content mb-5">
+          <div className="our-mission-heading">Our Mission</div>
+          <div className="our-mission-main-content">
+            Our mission is to help our clients have a clear picture of their
+            full divorce process.
+            <br /> This means they can turn to us to guide them through every
+            step of their divorce journey
+          </div>
+        </div>
 
         <div className="aboutus-content">
           <div className="aboutus-content-heading mb-3">About Us</div>
           <div className="aboutus-more-content">
-            Pragma is a one stop platform and services solution to assist in the
+            {/* Pragma is a one stop platform and services solution to assist in the
             divorce process. <br />
             Pragma is a marketplace of highly rated services provider and
             matching them with the customers and providing the information about
@@ -74,11 +83,23 @@ const AboutUs = () => {
             involved parties delivering suboptimal outcomes. Our mission is to
             develop a one-stop platform solution with relevant content, flexible
             for users to navigate and scalable to add additional content and
-            services as we grow Pragma.
+            services as we grow Pragma. */}
+            Pragma is founded by two friends who went through their own divorce
+            and realized that the divorce process in the United States is
+            broken. One key problem with the current system is lack of
+            transparency to allow families to make informed decisions. Most
+            families seeking separation and divorce struggle with where to start
+            and whom to turn for some advice. Depending on who they turn to
+            first can truly set the course for the entire journey that can be
+            costly delivering suboptimal outcomes. We work with our clients to
+            empower them with knowledge to get the confidence for navigating
+            their divorce. Our solutions only provide a team of professionals
+            that meet the highest standards in professionalism, ethics, and
+            services delivery.
           </div>
         </div>
         {/* 4th page  */}
-        {/* <div className="Meet-the team ">
+         <div className="Meet-the team ">
           <div className="Meettheteam-title mt-5">Meet The Team</div>
           <div className="ajnit-sir mt-5">
             <div className="anjit-sir-pic-block">
@@ -118,8 +139,8 @@ const AboutUs = () => {
             <div className="sadia-mam-pic-block">
               <img src={sadia_mam} alt="" className="sadia-mam-pic" />
             </div>
-          </div> */}
-        {/* </div> */}
+          </div> 
+         </div> 
       </div>
       <div className="aboutus-footer ">
         <Footer />

@@ -1,38 +1,20 @@
-import React, { useState,useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import { useNavigate } from "react-router-dom";
-import Navbar from "react-bootstrap/Navbar";
-import Logo from "../assets/logo_bg.png";
 import "./HomePage.css";
-import Nav from "react-bootstrap/Nav";
-import search_icon from "../assets/search_icon.png";
 import Footer from "./Footer";
-import Caro from "./Caro";
-import Diagram from "./DIagram";
-import OurServices from "./OurServices";
-import Popup from "./Popup";
-import Button from "react-bootstrap/Button";
-import Container from "react-bootstrap/Container";
-import Form from "react-bootstrap/Form";
-import NavDropdown from "react-bootstrap/NavDropdown";
-import Offcanvas from "react-bootstrap/Offcanvas";
 import TestService from "./TestService";
 import NavBarr from "./NavBarr";
 import { RiArrowDropDownLine } from "react-icons/ri";
-import Spinner from "./Spinner";
-
 import VideoPlayer from "./Video/VideoPlayer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import AxiosTest from "./AxiosTest";
 import ReactGA from "react-ga";
-import Modall from "./Overlay/Modall";
+
 
 const HomePage = () => {
-  useEffect(()=>{
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname);
- 
-  },[])
-  
+  }, []);
 
   const navigate = useNavigate();
   const [zipcode, setZipcode] = useState("");
@@ -48,22 +30,15 @@ const HomePage = () => {
     } else if (zipcode.length < 5) {
       // alert("Zipcode must be 5 digit");
       notifyzip();
-    }
-    
-     else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
+    } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
   };
   const notify = () =>
     toast("your response is empty please enter category and your zip code");
 
-    const notifyzip = () =>
-    toast("Zipcode must be 5 digits "); 
-    
-    
-   
+  const notifyzip = () => toast("Zipcode must be 5 digits ");
 
   return (
     <>
-    
       <NavBarr />
       <div className="banner">
         {/* <img src={new_bg} alt="" className="banner-image" /> */}
@@ -84,28 +59,18 @@ const HomePage = () => {
               <span className="double-shade">tomorrow</span>{" "}
             </span>
             <br />{" "}
-            {/* <span className="double-shade"> move divorce    </span> */}
+            
           </div>
         </div>
-
-        
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
         <div class="wrapper">
           <div class="search_box">
             <div class="dropdown">
-              {/* <div class="default_option">All</div>  
-            <ul>
-              <li>All</li>
-              <li>Recent</li>
-              <li>Popular</li>
-            </ul> */}
               <select
                 name="dropdown"
                 onChange={(e) => setdropdown(e.target.value)}
-                // className=""
-                // id="category-dropdown"
                 required
               >
                 <option value="select" selected>
@@ -114,18 +79,21 @@ const HomePage = () => {
 
                 <option value="Life Coach">Life Coach</option>
                 <option value="Therapist">Therapist</option>
-               
+
                 <option value="Child Specialist ">Child Specialist </option>
                 <option value="Divorce Attorney">Divorce Attorney</option>
                 <option value="Divorce Mediator"> Divorce Mediator</option>
-                <option value="Financial Specialist"> Financial Specialist</option>
+                <option value="Financial Specialist">
+                  {" "}
+                  Financial Specialist
+                </option>
               </select>
               <RiArrowDropDownLine />
             </div>
 
             <div class="search_field">
               <input
-                type="text" 
+                type="text"
                 inputmode="numeric"
                 class="input"
                 placeholder="Zipcode"
@@ -151,11 +119,9 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
-      <Modall/>
       
-      
-      
-     {/* <AxiosTest/> */}
+
+      {/* <AxiosTest/> */}
       {/* custom alert */}
       <ToastContainer
         position="top-right"

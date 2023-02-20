@@ -8,7 +8,6 @@ import Mediation from "../assets/Mediation.png";
 import LifeCoaches from "../assets/LifeCoach_new.jpg";
 import Financial from "../assets/Financial.png";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
-import Bar from "./Overlay/Bar";
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
 
