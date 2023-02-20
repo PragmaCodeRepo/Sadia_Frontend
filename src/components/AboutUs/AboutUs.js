@@ -99,7 +99,7 @@ const AboutUs = () => {
           </div>
         </div>
         {/* 4th page  */}
-         <div className="Meet-the team ">
+         {/* <div className="Meet-the team ">
           <div className="Meettheteam-title mt-5">Meet The Team</div>
           <div className="ajnit-sir mt-5">
             <div className="anjit-sir-pic-block">
@@ -140,7 +140,7 @@ const AboutUs = () => {
               <img src={sadia_mam} alt="" className="sadia-mam-pic" />
             </div>
           </div> 
-         </div> 
+         </div>  */}
       </div>
       <div className="aboutus-footer ">
         <Footer />

@@ -33,7 +33,7 @@ const HomePage = () => {
     } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
   };
   const notify = () =>
-    toast("your response is empty please enter category and your zip code");
+    toast(" please enter category and your zip code");
 
   const notifyzip = () => toast("Zipcode must be 5 digits ");
 
