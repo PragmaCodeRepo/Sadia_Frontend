@@ -9,6 +9,7 @@ import VideoPlayer from "./Video/VideoPlayer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactGA from "react-ga";
+import SearchBarOverlay from "./Overlay/SearchBarOverlay";
 
 
 const HomePage = () => {

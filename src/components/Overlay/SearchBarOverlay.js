@@ -19,7 +19,7 @@ const SearchBarOverlay = () => {
           <input
             type="text" 
                 inputmode="numeric"
-            placeholder="  Enter your zip code"
+            placeholder="   zip code"
             onChange={(e) => setZipcode(e.target.value)}
             className="col"
             id="zipcode-boxoverlay"
@@ -32,7 +32,7 @@ const SearchBarOverlay = () => {
             required
           >
             <option value="select" selected>
-              Select your Category
+               Category
             </option>
 
             <option value="Life Coach">Life Coach</option>

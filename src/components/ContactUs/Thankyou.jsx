@@ -17,7 +17,7 @@ const Thankyou = () => {
         <div class="wrapper-1 ">
           <div class="wrapper-2">
             {/* <h1>Thank you !</h1> */}
-            <p>Thankyou for contacting us.We will contact you within 24 hour. </p>
+            <p>Thank you for contacting us. We will contact you within 24 hour. </p>
             {/* <p>you should receive a confirmation email soon </p> */}
             <Link to="/">
               <button class="go-home">Home</button>

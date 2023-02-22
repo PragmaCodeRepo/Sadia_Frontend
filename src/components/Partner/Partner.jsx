@@ -1,11 +1,16 @@
-import React, { useRef,useState  } from "react";
+import React, { useEffect, useRef,useState  } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
 import "./Partner.css"
 import NavBarr from "../NavBarr";
 import Footer from "../Footer";
+import ReactGA from "react-ga";
 const Partner = () => {
+  useEffect(()=>{
+    ReactGA.pageview(window.location.pathname);
+ 
+  },[])
 
   const navigate = useNavigate();
   const form = useRef();
@@ -51,8 +56,8 @@ const Partner = () => {
   <div class="hero-inner">
     
     <div class="hero-text">
-      <h2>Become a partner, join the community pragma</h2>
-      <p>Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam lobortis vitae id ante.</p>
+      <h2> Join the  Pragma community</h2>
+      {/* <p>Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam lobortis vitae id ante.</p> */}
       <form class="hero-form" action="/">       
       </form>
     </div>
@@ -121,11 +126,11 @@ const Partner = () => {
               <div class="formbold-mb-5">
                 <label for="phone" class="formbold-form-label">
                   {" "}
-                  Practices Name <span style={{ color: "red" }}>*</span>{" "}
+                  Practice Name <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="text"
-                  name="userPracticesname"
+                  name="user_Practice_name"
                   id="phone"
                   placeholder="Practices Name"
                   class="formbold-form-input"
@@ -137,11 +142,11 @@ const Partner = () => {
               <div class="formbold-mb-5">
                 <label for="phone" class="formbold-form-label">
                   {" "}
-                  Education <span style={{ color: "red" }}>*</span>{" "}
+                  Location <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
                   type="text"
-                  name="user_education"
+                  name="user_location"
                   id="phone"
                   placeholder="Education"
                   class="formbold-form-input"

@@ -72,7 +72,7 @@ const Footer = () => {
             <a href="#">
               <i class="fa-brands fa-twitter"></i>
             </a>
-            <a href="#">
+            <a href="https://www.linkedin.com/company/pragma-international-inc/?viewAsMember=true">
               <i class="fa-brands fa-linkedin"></i>
             </a>
           </div>

@@ -12,6 +12,7 @@ import sadia_mam from "../../assets/sadia_mam.png";
 import Footer from "../Footer";
 import { BsFillTelephoneFill } from "react-icons/bs";
 import { AiTwotoneMail } from "react-icons/ai";
+import VideoPlayer from "../Video/VideoPlayer";
 
 const AboutUs = () => {
   return (
@@ -28,6 +29,15 @@ const AboutUs = () => {
                 <span>A Solution Designed for the</span>{" "}
                 <span>Divorce Process</span>
               </div>
+              <div className="our-mission-content mt-5">
+          <div className="our-mission-heading">Our Mission</div>
+          <div className="our-mission-main-content">
+            Our mission is to help our clients have a clear picture of their
+            full divorce process.This means they can turn to us to guide them through every
+            step of their divorce journey
+            
+          </div>
+        </div>
               <div className="pragma-smalltitle-aboutus">
                 <span>
                   Our solutions are designed to bring together a team of divorce
@@ -36,13 +46,13 @@ const AboutUs = () => {
                 </span>
                 <br />
 
-                <span className="telephone-icon">
+                {/* <span className="telephone-icon">
                   <BsFillTelephoneFill /> &nbsp;+1 331-707-2779{" "}
                 </span>
                 <span className="telephone-icon mb-5">
                   {" "}
                   <AiTwotoneMail /> &nbsp;info@pragma.how
-                </span>
+                </span> */}
               </div>
             </div>
           </div>
@@ -50,19 +60,11 @@ const AboutUs = () => {
           {/* Right side */}
 
           <div className="aboutus1page-right mt-5">
-            <img src={Aboutusvector} alt="" className="aboutusvectorimg" />
+            {/* <img src={Aboutusvector} alt="" className="aboutusvectorimg" /> */}
           </div>
         </div>
         {/* 2nd page */}
-        <div className="our-mission-content mb-5">
-          <div className="our-mission-heading">Our Mission</div>
-          <div className="our-mission-main-content">
-            Our mission is to help our clients have a clear picture of their
-            full divorce process.
-            <br /> This means they can turn to us to guide them through every
-            step of their divorce journey
-          </div>
-        </div>
+        
 
         <div className="aboutus-content">
           <div className="aboutus-content-heading mb-3">About Us</div>
@@ -142,6 +144,7 @@ const AboutUs = () => {
           </div> 
          </div>  */}
       </div>
+      <VideoPlayer/>
       <div className="aboutus-footer ">
         <Footer />
       </div>

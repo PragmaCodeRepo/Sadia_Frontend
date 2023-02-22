@@ -16,7 +16,8 @@ import Partner from "./components/Partner/Partner";
 
 function App() {
   // const countEl=document.getElementById('count');
-  const TRACKING_ID="UA-257352567-1"
+  // const TRACKING_ID="UA-257352567-1"
+  const TRACKING_ID="UA-257495687-1"
   ReactGA.initialize(TRACKING_ID)
   const [loading, setloading] = useState(false)
   useEffect(()=>{
