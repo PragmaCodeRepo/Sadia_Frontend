@@ -25,17 +25,11 @@ const Partner = () => {
       /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
     // validations
-    if (
-      fullname === "" ||
-      email === "" ||
-      speciality === "" ||
-      location === "" ||
-      practicename === "" ||
-      phonenumber === ""
-    ) {
+    if (fullname===""||speciality===""||location===""||practicename===""||phonenumber==="") {
       e.preventDefault();
       notifyblank();
-    } else if (!email.match(validRegex)) {
+    } 
+    else if (!email.match(validRegex)) {
       e.preventDefault();
       notifyemail();
     } else {
@@ -99,6 +93,7 @@ const Partner = () => {
                   id="name"
                   placeholder="Full Name"
                   class="formbold-form-input"
+                  onChange={(e) => setfullname(e.target.value)}
 
                  
                 />
@@ -114,6 +109,7 @@ const Partner = () => {
                   id="email"
                   placeholder="Enter your email"
                   class="formbold-form-input"
+                  onChange={(e) => setemail(e.target.value)}
                  
                 />
               </div>
@@ -128,6 +124,7 @@ const Partner = () => {
                   id="phone"
                   placeholder="Speciality"
                   class="formbold-form-input"
+                  onChange={(e) => setspeciality(e.target.value)}
                   
 
                   
@@ -144,6 +141,7 @@ const Partner = () => {
                   id="phone"
                   placeholder="Practices Name"
                   class="formbold-form-input"
+                  onChange={(e) => setpracticename(e.target.value)}
                   
                 />
               </div>
@@ -158,6 +156,7 @@ const Partner = () => {
                   id="phone"
                   placeholder="Location"
                   class="formbold-form-input"
+                  onChange={(e) => setlocation(e.target.value)}
                   
                 />
               </div>
@@ -173,6 +172,7 @@ const Partner = () => {
                   id="phone"
                   placeholder="Enter your phone number"
                   class="formbold-form-input"
+                  onChange={(e) => setphonenumber(e.target.value)}
                   
                 />
               </div>
