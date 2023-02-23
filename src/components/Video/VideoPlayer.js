@@ -13,7 +13,7 @@ const VideoPlayer = () => {
         </div>
 
         <Video
-          autoPlay
+          // autoPlay
           loop
           className="videoo "
           onCanPlayThrough={() => {
