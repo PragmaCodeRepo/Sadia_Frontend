@@ -58,7 +58,6 @@ const AllProfiles = ({
               src={image}
               className="img-fluid rounded-start "
               style={{
-                
                 borderRadius: "50%",
                 height: "164px",
                 marginTop: "-5px",
@@ -74,13 +73,7 @@ const AllProfiles = ({
                 <p className="profile-title">
                   {first_name} {last_name},{designation}
                 </p>{" "}
-
-                
-    
-  
-                
                 <p className="rating">
-                  
                   <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill />{" "}
                   &nbsp; (review 625){" "}
                 </p>

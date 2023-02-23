@@ -6,69 +6,73 @@ import { Link, useNavigate } from "react-router-dom";
 import Footer from "../Footer";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-import ReactGA from "react-ga";
+
 
 const ContactUs = () => {
- 
-  useEffect(() => {
-    ReactGA.pageview(window.location.pathname);
-  }, []);
+  const [name, setname] = useState("")
+  const [email_address, setemail_address] = useState("")
+  const [phone_number, setphone_number] = useState("")
+  const [message, setmessage] = useState("")
+
+
 
   const navigate = useNavigate();
   const form = useRef();
   const [done, setDone] = useState(false);
 
-
   const sendEmail = (e) => {
+    const validRegex = /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
     // tostify
-
-  
-
-      ;
-    
+    if (name==="" ||email_address==="" ||phone_number==="" ||message==="") {
+      e.preventDefault()
+      notifyblank()
+      
+    }
+    else if (!email_address.match(validRegex)) {
+      e.preventDefault()
+      notifyemail()
+      
+    }
 
     //email send
- 
-      
+    else{
 
-      e.preventDefault();
+    e.preventDefault();
 
-      emailjs
-        .sendForm(
-          "service_nk0xn4i",
-          "template_aqixkz3",
-          form.current,
-          "r-nootBn4togO_lU9"
-        )
-        .then(
-          (result) => {
-            console.log(result.text);
-            setDone(true);
-          },
-          (error) => {
-            console.log(error.text);
-          }
-        );
-    
+    emailjs
+      .sendForm(
+        "service_nk0xn4i",
+        "template_aqixkz3",
+        form.current,
+        "r-nootBn4togO_lU9"
+      )
+      .then(
+        (result) => {
+          console.log(result.text);
+          setDone(true);
+        },
+        (error) => {
+          console.log(error.text);
+        }
+      );
+    }
   };
+
   const thankyou = () => {
     console.log("hii");
     navigate("/thankyou");
   };
 
-  const notifyblank = () => toast("your response is empty please fill details");
+  const notifyblank = () => toast(" Please fill the details");
 
-  const notifyemail = () => toast("your response is empty please fill details");
+  const notifyemail = () => toast("Your email address is invalid");
 
   return (
     <>
       <NavBarr />
       <div className="banner-contact-us">
-        <div className="contactus-banner-image">
-          {/* <span className='contactus-banner-text ' >Contact Us</span> */}
-        </div>
+        <div className="contactus-banner-image"></div>
       </div>
-
       {/* contactus form */}
       <div className="formbox">
         <div className="contactus-title">
@@ -81,7 +85,6 @@ const ContactUs = () => {
             +1 331-707-2779
           </span>
           <span className="contactus-subtitle">or fill out the form below</span>
-          {/* <span className='contactus-sub-title'>Feel Free to contact us any time. We will get back to you as soon as we can!.</span> */}
         </div>
         <div class="formbold-main-wrapper">
           <div class="formbold-form-wrapper">
@@ -97,8 +100,7 @@ const ContactUs = () => {
                   id="name"
                   placeholder="Full Name"
                   class="formbold-form-input"
-                 
-                  required
+                  onChange={(e) => setname(e.target.value)}
                 />
               </div>
               <div class="formbold-mb-5">
@@ -107,12 +109,12 @@ const ContactUs = () => {
                   Email Address <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   name="user_email"
                   id="email"
                   placeholder="Enter your email"
                   class="formbold-form-input"
-                
+                  onChange={(e) => setemail_address(e.target.value)}
                 />
               </div>
               <div class="formbold-mb-5">
@@ -126,8 +128,7 @@ const ContactUs = () => {
                   id="phone"
                   placeholder="Enter your phone number"
                   class="formbold-form-input"
-                  
-                  required
+                  onChange={(e) => setphone_number(e.target.value)}
                 />
               </div>
 
@@ -143,9 +144,7 @@ const ContactUs = () => {
                     id="phone"
                     placeholder="Enter your message"
                     class="formbold-form-input yourmessage"
-                   
-
-                    required
+                    onChange={(e) => setmessage(e.target.value)}
                   />
                 </div>
               </div>
@@ -159,9 +158,20 @@ const ContactUs = () => {
           </div>
         </div>
       </div>
-
-      <Footer />
       
+      <Footer />
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
     </>
   );
 };

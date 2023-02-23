@@ -8,13 +8,13 @@ import Mediation from "../assets/Mediation.png";
 import LifeCoaches from "../assets/LifeCoach_new.jpg";
 import Financial from "../assets/Financial.png";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
-import Button from 'react-bootstrap/Button';
-import Modal from 'react-bootstrap/Modal';
+import Button from "react-bootstrap/Button";
+import Modal from "react-bootstrap/Modal";
 
 const TestService = () => {
   const [show, setShow] = useState(false);
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
   const [isOpen, setOverlay] = useState(false);
 
   const closeOverlay = () => setOverlay(false);
@@ -41,7 +41,7 @@ const TestService = () => {
             <div
               className="card testcard mt-3"
               // onClick={() => {
-                
+
               //   setOverlay(true);
               // }}
               onClick={handleShow}
@@ -69,11 +69,24 @@ const TestService = () => {
               <SearchBarOverlay />
               <Bar/>
             </Overlay> */}
-            <Modal show={show} onHide={handleClose} style={{marginTop:"17%",marginLeft:"-6rem"}} >
-        
-        <Modal.Body style={{backgroundColor:"white", width:"54rem",height:"10rem"}}><div style={{marginTop:"30px",marginLeft:"10px"}}> <SearchBarOverlay/></div></Modal.Body>
-        
-      </Modal>
+            <Modal
+              show={show}
+              onHide={handleClose}
+              style={{ marginTop: "17%", marginLeft: "-6rem" }}
+            >
+              <Modal.Body
+                style={{
+                  backgroundColor: "white",
+                  width: "54rem",
+                  height: "10rem",
+                }}
+              >
+                <div style={{ marginTop: "30px", marginLeft: "10px" }}>
+                  {" "}
+                  <SearchBarOverlay />
+                </div>
+              </Modal.Body>
+            </Modal>
           </div>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
             <div

@@ -70,7 +70,8 @@ const Profile = () => {
   return (
     <>
       <NavBarr />
-      <div style={{ background: "#f3f7f9" }}>
+      <div style={{ background: "#fff" }}>
+        {/* #f3f7f9  yahoo white color*/}
         {!isProfilesFound && <Spinner />}
         {data.length === 0 && isProfilesFound && <NoDataFound />}
         {/* pagination */}

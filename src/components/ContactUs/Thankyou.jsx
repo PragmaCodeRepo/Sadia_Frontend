@@ -1,14 +1,13 @@
-import React,{useEffect} from "react";
+import React, { useEffect } from "react";
 import "./Thankyou.css";
 import NavBarr from "../NavBarr";
 import Footer from "../Footer";
 import { Link } from "react-router-dom";
 import ReactGA from "react-ga";
 const Thankyou = () => {
-  useEffect(()=>{
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname);
- 
-  },[])
+  }, []);
   return (
     <>
       <NavBarr />
@@ -17,7 +16,9 @@ const Thankyou = () => {
         <div class="wrapper-1 ">
           <div class="wrapper-2">
             {/* <h1>Thank you !</h1> */}
-            <p>Thank you for contacting us. We will contact you within 24 hour. </p>
+            <p>
+              Thank you for contacting us. We will contact you within 24 hour.{" "}
+            </p>
             {/* <p>you should receive a confirmation email soon </p> */}
             <Link to="/">
               <button class="go-home">Home</button>
@@ -26,7 +27,8 @@ const Thankyou = () => {
         </div>
       </div>
 
-      <div style={{height:"20rem"}}></div><Footer/>
+      <div style={{ height: "20rem" }}></div>
+      <Footer />
 
       <link
         href="https://fonts.googleapis.com/css?family=Kaushan+Script|Source+Sans+Pro"

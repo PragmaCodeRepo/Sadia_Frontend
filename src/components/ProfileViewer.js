@@ -45,12 +45,10 @@ const Profile = () => {
     context.linkdin_profile = data.linkdin_profile;
     context.designation = data.designation;
     context.speciality = data.speciality;
-    context.practice_names=data.practice_names;
+    context.practice_names = data.practice_names;
     context.state = data.state;
-    context.mapaddress=data.mapaddress;
-    context.rating=data.rating;
-    
-
+    context.mapaddress = data.mapaddress;
+    context.rating = data.rating;
   }
   return (
     <>
@@ -73,8 +71,6 @@ const Profile = () => {
         link={context.link}
         image={context.image}
         mapaddress={context.mapaddress}
-        
-        
       />
     </>
   );

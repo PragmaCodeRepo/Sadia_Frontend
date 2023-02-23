@@ -11,7 +11,6 @@ import "react-toastify/dist/ReactToastify.css";
 import ReactGA from "react-ga";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
 
-
 const HomePage = () => {
   useEffect(() => {
     ReactGA.pageview(window.location.pathname);
@@ -33,8 +32,7 @@ const HomePage = () => {
       notifyzip();
     } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
   };
-  const notify = () =>
-    toast(" please enter category and your zip code");
+  const notify = () => toast(" please enter category and your zip code");
 
   const notifyzip = () => toast("Zipcode must be 5 digits ");
 
@@ -60,7 +58,6 @@ const HomePage = () => {
               <span className="double-shade">tomorrow</span>{" "}
             </span>
             <br />{" "}
-            
           </div>
         </div>
 
@@ -120,7 +117,6 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
-      
 
       {/* <AxiosTest/> */}
       {/* custom alert */}

@@ -1,27 +1,45 @@
-import React, { useEffect, useRef,useState  } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import { Link, useNavigate } from "react-router-dom";
 import emailjs from "@emailjs/browser";
-import "./Partner.css"
+import "./Partner.css";
 import NavBarr from "../NavBarr";
 import Footer from "../Footer";
 import ReactGA from "react-ga";
 const Partner = () => {
-  useEffect(()=>{
+  useEffect(() => {
     ReactGA.pageview(window.location.pathname);
- 
-  },[])
+  }, []);
 
   const navigate = useNavigate();
   const form = useRef();
   const [done, setDone] = useState(false);
-  const [name, setname] = useState("");
+  const [fullname, setfullname] = useState("");
+  const [email, setemail] = useState("");
+  const [speciality, setspeciality] = useState("");
+  const [location, setlocation] = useState("");
+  const [practicename, setpracticename] = useState("");
+  const [phonenumber, setphonenumber] = useState("");
   const sendEmail = (e) => {
-    
-    //email send
-  
-      console.log(setname);
+    const validRegex =
+      /^[a-zA-Z0-9.!#$%&'*+/=?^_`{|}~-]+@[a-zA-Z0-9-]+(?:\.[a-zA-Z0-9-]+)*$/;
 
+    // validations
+    if (
+      fullname === "" ||
+      email === "" ||
+      speciality === "" ||
+      location === "" ||
+      practicename === "" ||
+      phonenumber === ""
+    ) {
+      e.preventDefault();
+      notifyblank();
+    } else if (!email.match(validRegex)) {
+      e.preventDefault();
+      notifyemail();
+    } else {
+      //email send
       e.preventDefault();
 
       emailjs
@@ -40,39 +58,33 @@ const Partner = () => {
             console.log(error.text);
           }
         );
-    
+    }
   };
   const thankyou = () => {
     console.log("hii");
     navigate("/thankyou");
   };
-  const notifyblank = () => toast("your response is empty please fill details");
+  const notifyblank = () => toast(" Please fill details");
 
-  const notifyemail = () => toast("your response is empty please fill details");
+  const notifyemail = () => toast("your email is invalid");
   return (
     <>
-    <NavBarr/>
-        <header class="hero">
-  <div class="hero-inner">
-    
-    <div class="hero-text">
-      <h2> Join the  Pragma community</h2>
-      {/* <p>Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam lobortis vitae id ante.</p> */}
-      <form class="hero-form" action="/">       
-      </form>
-    </div>
-    
-    <div class="hero-image">
-     
-      <img src="https://assets.codepen.io/495197/undraw_Newsletter_re_wrob.svg" />
-    </div>
-    
-  </div>
-</header>
+      <NavBarr />
+      <header class="hero">
+        <div class="hero-inner">
+          <div class="hero-text">
+            <h2> Join the Pragma community</h2>
+            {/* <p>Donec lobortis magna at ligula tristique maximus. Suspendisse lacinia ligula lacus. Nunc id risus a dui bibendum finibus tincidunt eu magna. Suspendisse a dictum neque. Suspendisse sit amet diam et libero posuere pharetra. Sed vel magna nec dolor aliquam lobortis vitae id ante.</p> */}
+            <form class="hero-form" action="/"></form>
+          </div>
 
-<div className="formbox">
-        
-          
+          <div class="hero-image">
+            <img src="https://assets.codepen.io/495197/undraw_Newsletter_re_wrob.svg" />
+          </div>
+        </div>
+      </header>
+
+      <div className="formbox">
         <div class="formbold-main-wrapper">
           <div class="formbold-form-wrapper">
             <form ref={form} onSubmit={sendEmail}>
@@ -87,8 +99,8 @@ const Partner = () => {
                   id="name"
                   placeholder="Full Name"
                   class="formbold-form-input"
+
                  
-                  // required
                 />
               </div>
               <div class="formbold-mb-5">
@@ -97,13 +109,12 @@ const Partner = () => {
                   Email Address <span style={{ color: "red" }}>*</span>{" "}
                 </label>
                 <input
-                  type="email"
+                  type="text"
                   name="user_email"
                   id="email"
                   placeholder="Enter your email"
                   class="formbold-form-input"
-                  required
-                  
+                 
                 />
               </div>
               <div class="formbold-mb-5">
@@ -117,10 +128,9 @@ const Partner = () => {
                   id="phone"
                   placeholder="Speciality"
                   class="formbold-form-input"
-                  required
                   
+
                   
-                  // required
                 />
               </div>
               <div class="formbold-mb-5">
@@ -135,8 +145,6 @@ const Partner = () => {
                   placeholder="Practices Name"
                   class="formbold-form-input"
                   
-                  
-                  required
                 />
               </div>
               <div class="formbold-mb-5">
@@ -148,14 +156,12 @@ const Partner = () => {
                   type="text"
                   name="user_location"
                   id="phone"
-                  placeholder="Education"
+                  placeholder="Location"
                   class="formbold-form-input"
                   
-                  
-                  required
                 />
               </div>
-              
+
               <div class="formbold-mb-5">
                 <label for="phone" class="formbold-form-label">
                   {" "}
@@ -167,13 +173,10 @@ const Partner = () => {
                   id="phone"
                   placeholder="Enter your phone number"
                   class="formbold-form-input"
-                 
                   
-                  required
                 />
               </div>
 
-              
               <div>
                 <button class="formbold-btn">Become a Partner</button>
               </div>
@@ -183,10 +186,21 @@ const Partner = () => {
           </div>
         </div>
       </div>
-
-      <Footer/>
+      <ToastContainer
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light"
+      />
+      <Footer />
     </>
-  )
-}
+  );
+};
 
-export default Partner
+export default Partner;

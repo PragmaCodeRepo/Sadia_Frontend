@@ -30,14 +30,13 @@ const AboutUs = () => {
                 <span>Divorce Process</span>
               </div>
               <div className="our-mission-content mt-5">
-          <div className="our-mission-heading">Our Mission</div>
-          <div className="our-mission-main-content">
-            Our mission is to help our clients have a clear picture of their
-            full divorce process.This means they can turn to us to guide them through every
-            step of their divorce journey
-            
-          </div>
-        </div>
+                <div className="our-mission-heading">Our Mission</div>
+                <div className="our-mission-main-content">
+                  Our mission is to help our clients have a clear picture of
+                  their full divorce process.This means they can turn to us to
+                  guide them through every step of their divorce journey
+                </div>
+              </div>
               <div className="pragma-smalltitle-aboutus">
                 <span>
                   Our solutions are designed to bring together a team of divorce
@@ -64,7 +63,6 @@ const AboutUs = () => {
           </div>
         </div>
         {/* 2nd page */}
-        
 
         <div className="aboutus-content">
           <div className="aboutus-content-heading mb-3">About Us</div>
@@ -101,7 +99,7 @@ const AboutUs = () => {
           </div>
         </div>
         {/* 4th page  */}
-         {/* <div className="Meet-the team ">
+        {/* <div className="Meet-the team ">
           <div className="Meettheteam-title mt-5">Meet The Team</div>
           <div className="ajnit-sir mt-5">
             <div className="anjit-sir-pic-block">

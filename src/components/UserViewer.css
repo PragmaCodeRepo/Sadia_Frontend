@@ -1,357 +1,320 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat&display=swap");
-.single_profile_bannerr{
-    position: absolute;
-    opacity: 0.5;
-    /* background-size: cover; */
+.single_profile_bannerr {
+  position: absolute;
+  opacity: 0.5;
+  /* background-size: cover; */
+  width: 100%;
+  height: 18rem;
+}
+@media (max-width: 480px) {
+  .single_profile_bannerr {
     width: 100%;
-    height: 18rem;
-   
-    
-}
-@media (max-width: 480px){
-    .single_profile_bannerr{
-        width: 100%;
-        height: 16rem;
-       
-        
-    }
-    .Introduction{
-        font-size: 14px;
-        letter-spacing: 0;
-    }
-    .bannertext {
-        color: #241757;
-        position: absolute;
-        /* width: auto; */
-        height: 35px;
-        /* left: 595px; */
-        top: 204px;
-        font-family: 'Noto Serif';
-        font-style: normal;
-        font-weight: 300;
-        font-size: 41px;
-        /* line-height: 35px; */
-        /* margin-left: 3rem; */
-    }
-    
-    .buttons {
-        display: flex;
-        /* flex-direction: row; */
-        /* justify-content: space-between; */
-        flex: wrap;
-        flex-wrap: wrap;
-        
-    }
-    .single-profile-card{
-        margin-left: 6rem;
-    }
-    .card-content-sec {
-        margin-top: 25px;
-        display: flex;
-        flex-direction: column;
-        margin-left: 78px;
-    }
-    .imageplusemail {
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        margin-left: 82px;
-    }
-    .office-map{
-        margin-top: 10px;
-        align-items: center;
-        /* margin-left: 95px; */
-    }
-    
-   
-
-    
-}
-.background-single-profile{
-    /* background-color: rgb(224, 253, 253); */
-    color:  #241757;
-    /* position: absolute; */
-    
-    
-
-}
-.NavbarSingleProfile{
-    box-shadow: 0px 4px 24px 14px rgba(0, 0, 0, 0.1);
-}
-.bannertext{
-    color:  #241757;
+    height: 16rem;
+  }
+  .Introduction {
+    font-size: 14px;
+    letter-spacing: 0;
+  }
+  .bannertext {
+    color: #241757;
     position: absolute;
-width:100%;
-height: 35px;
-/* left: 595px; */
-top: 204px;
-text-align: center;
+    /* width: auto; */
+    height: 35px;
+    /* left: 595px; */
+    top: 204px;
+    font-family: "Noto Serif";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 41px;
+    /* line-height: 35px; */
+    /* margin-left: 3rem; */
+  }
 
-
-font-family: 'Noto Serif';
-font-style: normal;
-font-weight: 700;
-font-size: 30px;
-line-height: 35px;
-
-}
-
-.single-profile-image {
-    /* width: 167px; */
-    /* height: 160px; */
-    /* border-radius: 50%; */
-    /* border: 2px solid #5380ff; */
-    /* filter: drop-shadow(0 0 8px #5380ff); */
-    /* position: absolute; */
-    margin-top: -2rem;
-    border: 5px solid #7a5eeb;
-    padding: 0.5px;
-    border-radius: 50%;
-    border-top-color: #5380ff;
-    border-left-color: #5380ff;
-    width: 170px;
-    height: 160px;
-    filter: grayscale(100%);
-    -webkit-filter: grayscale(0);
-    
-    
-}
-.single-profile-image:hover{
-    filter: none;
-    
-    -webkit-filter: grayscale(100%);
-}
-
-
-.imageplusemail{
+  .buttons {
     display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+    /* flex-direction: row; */
+    /* justify-content: space-between; */
+    flex: wrap;
     flex-wrap: wrap;
-}
-.single-profile-mail{
-    margin-top: 10px;
-    color: #241757;
-    /* margin-left:31rem; */
-    font-size: 18px;
-    font-weight: 400;
-
-}
-.single-profile-phone{
-    margin-top: 10px;
-    color: #241757;
-    font-size: 18px;
-    font-weight: 400;
-
-}
-.single-profile-mail svg{
-    fill: #5380ff;
-    font-family: Noto Serif;
-    height: 25px;
-    width: auto;
-}
-.single-profile-phone svg{
-    fill: #5380ff;
-    height: 21px;
-    width: auto;
-}
-.card-content-sec{
+  }
+  .single-profile-card {
+    margin-left: 6rem;
+  }
+  .card-content-sec {
     margin-top: 25px;
     display: flex;
     flex-direction: column;
-}
-.single-profile-name{
-    color: #241757;
-    font-family: Spartan;
-    font-style: Bold;
-    font-size: 30px;
-    font-weight: 400;
-
-}
-.single-profile-designation-name{
-    color: #5380ff;
-    font-family: Spartan;
-    font-style: Bold;
-    font-size: 30px;
-    font-weight: 400;
-
-}
-.single-profile-practices-names{
-
-font-family: 'Spartan';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-color: #241757;
-}
-.single-profile-city{
-    font-family: 'Spartan';
-font-style: bold;
-font-weight: 00;
-font-size: 20px;
-line-height: 25px;
-color: #241757;
-
-}
-.single-profile-state{
-    font-family: 'Spartan';
-font-style: normal;
-font-weight: 500;
-font-size: 18px;
-line-height: 25px;
-color: #241757;
-text-transform: capitalize;
-
-}
-.Single-Profile_rating svg{
-    color: #5380ff;
-    height: auto;
-    width: 25px;
-
-}
-.Single-Profile_rating{
-    color: #241757;
-    font-weight: 500;
-font-size: 18px;
-
-}
-.buttons {
+    margin-left: 78px;
+  }
+  .imageplusemail {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    justify-content: center;
-    gap: 18px;
-}
-.buttonn{
-width: 241px;
-height: 50px;
-border: 1px solid #E2E2F5;
-border-radius: 5px;
-color: #241757;
-font-size: 18px;
-font-style: bolder;
-
-}
-.buttonn:hover{
-    /* background-color: #5380ff; */
-
-}
-.Introduction{
-    height: auto;
-    /* margin-top: 50px; */
-    /* background: #F4FAFF; */
-    background-color: #96adf12e;
-border: 1px solid #E0E0E0;
-border-radius: 15px;
-/* letter-spacing: 1.5px; */
-color: #241757;
-font-family: 'Montserrat', sans-serif;
-font-style: bolder;
-font-size: 14px;
-
-}
-.intro-text{
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.Education{
-    height: 70px;
-    margin-top: 50px;
-    /* background: #F4FAFF; */
-    background-color: #96adf12e;
-border: 1px solid #E0E0E0;
-border-radius: 15px;
-letter-spacing: 1.5px;
-color: #241757;
-font-family: 'Montserrat', sans-serif;
-font-size: 17px;
-}
-.education-text{
-    margin-top: 20px;
-    text-align: center;
-}
-
-.Speciality{
-    text-align: center;
-    height: 70px;
-    margin-top: 50px;
-    /* background: #F4FAFF; */
-    background-color: #96adf12e;
-border: 1px solid #E0E0E0;
-border-radius: 15px;
-letter-spacing: 1.5px;
-color: #241757;
-font-family: 'Montserrat', sans-serif;
-font-size: 17px;
-}
-.speciality-text{
-    margin-top: 20px;
-    text-align: center;
-}
-.office-location{
-    height: 350px;
-    margin-top: 50px;
-    background: #F4FAFF;
-    background-color: #96adf12e;
-border: 1px solid #E0E0E0;
-border-radius: 15px;
-letter-spacing: 1.5px;
-color: #241757;
-margin-bottom: 18px;
-}
-.office-map{
-    margin-top: 20px;
+    flex-wrap: wrap;
+    margin-left: 82px;
+  }
+  .office-map {
+    margin-top: 10px;
     align-items: center;
     /* margin-left: 95px; */
-    display: flex;
-    justify-content: center;
+  }
+}
+.background-single-profile {
+  /* background-color: rgb(224, 253, 253); */
+  color: #241757;
+  /* position: absolute; */
+}
+.NavbarSingleProfile {
+  box-shadow: 0px 4px 24px 14px rgba(0, 0, 0, 0.1);
+}
+.bannertext {
+  color: #241757;
+  position: absolute;
+  width: 100%;
+  height: 35px;
+  /* left: 595px; */
+  top: 204px;
+  text-align: center;
+
+  font-family: "Noto Serif";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 35px;
 }
 
-.color{
-    background-color: red;
+.single-profile-image {
+  /* width: 167px; */
+  /* height: 160px; */
+  /* border-radius: 50%; */
+  /* border: 2px solid #5380ff; */
+  /* filter: drop-shadow(0 0 8px #5380ff); */
+  /* position: absolute; */
+  margin-top: -2rem;
+  border: 5px solid #7a5eeb;
+  padding: 0.5px;
+  border-radius: 50%;
+  border-top-color: #5380ff;
+  border-left-color: #5380ff;
+  width: 170px;
+  height: 160px;
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(0);
+}
+.single-profile-image:hover {
+  filter: none;
+
+  -webkit-filter: grayscale(100%);
 }
 
-
-hr{
-    color: #0d34a0;
+.imageplusemail {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-.cont2{
-    background: #2e61efb8;
-    color: #fff;
-    
+.single-profile-mail {
+  margin-top: 10px;
+  color: #241757;
+  /* margin-left:31rem; */
+  font-size: 18px;
+  font-weight: 400;
+}
+.single-profile-phone {
+  margin-top: 10px;
+  color: #241757;
+  font-size: 18px;
+  font-weight: 400;
+}
+.single-profile-mail svg {
+  fill: #5380ff;
+  font-family: Noto Serif;
+  height: 25px;
+  width: auto;
+}
+.single-profile-phone svg {
+  fill: #5380ff;
+  height: 21px;
+  width: auto;
+}
+.card-content-sec {
+  margin-top: 25px;
+  display: flex;
+  flex-direction: column;
+}
+.single-profile-name {
+  color: #241757;
+  font-family: Spartan;
+  font-style: Bold;
+  font-size: 30px;
+  font-weight: 400;
+}
+.single-profile-designation-name {
+  color: #5380ff;
+  font-family: Spartan;
+  font-style: Bold;
+  font-size: 30px;
+  font-weight: 400;
+}
+.single-profile-practices-names {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #241757;
+}
+.single-profile-city {
+  font-family: "Spartan";
+  font-style: bold;
+  font-weight: 00;
+  font-size: 20px;
+  line-height: 25px;
+  color: #241757;
+}
+.single-profile-state {
+  font-family: "Spartan";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 25px;
+  color: #241757;
+  text-transform: capitalize;
+}
+.Single-Profile_rating svg {
+  color: #5380ff;
+  height: auto;
+  width: 25px;
+}
+.Single-Profile_rating {
+  color: #241757;
+  font-weight: 500;
+  font-size: 18px;
+}
+.buttons {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  justify-content: center;
+  gap: 18px;
+}
+.buttonn {
+  width: 241px;
+  height: 50px;
+  border: 1px solid #e2e2f5;
+  border-radius: 5px;
+  color: #241757;
+  font-size: 18px;
+  font-style: bolder;
+}
+.buttonn:hover {
+  /* background-color: #5380ff; */
+}
+.Introduction {
+  height: auto;
+  /* margin-top: 50px; */
+  /* background: #F4FAFF; */
+  background-color: #96adf12e;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  /* letter-spacing: 1.5px; */
+  color: #241757;
+  font-family: "Montserrat", sans-serif;
+  font-style: bolder;
+  font-size: 14px;
+}
+.intro-text {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
+.Education {
+  height: 70px;
+  margin-top: 50px;
+  /* background: #F4FAFF; */
+  background-color: #96adf12e;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  letter-spacing: 1.5px;
+  color: #241757;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.education-text {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.Speciality {
+  text-align: center;
+  height: 70px;
+  margin-top: 50px;
+  /* background: #F4FAFF; */
+  background-color: #96adf12e;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  letter-spacing: 1.5px;
+  color: #241757;
+  font-family: "Montserrat", sans-serif;
+  font-size: 17px;
+}
+.speciality-text {
+  margin-top: 20px;
+  text-align: center;
+}
+.office-location {
+  height: 350px;
+  margin-top: 50px;
+  background: #f4faff;
+  background-color: #96adf12e;
+  border: 1px solid #e0e0e0;
+  border-radius: 15px;
+  letter-spacing: 1.5px;
+  color: #241757;
+  margin-bottom: 18px;
+}
+.office-map {
+  margin-top: 20px;
+  align-items: center;
+  /* margin-left: 95px; */
+  display: flex;
+  justify-content: center;
+}
+
+.color {
+  background-color: red;
+}
+
+hr {
+  color: #0d34a0;
+}
+.cont2 {
+  background: #2e61efb8;
+  color: #fff;
+}
 
 .button-css {
-    background-color: #5380ff;
-    color: #fff;
+  background-color: #5380ff;
+  color: #fff;
 }
 
-
-.mail-plus-phone-plus-linkdin{
-    display: flex;
-    justify-content: space-between;
-    gap: 11px;
-    flex: wrap;
-    flex-wrap: wrap;
+.mail-plus-phone-plus-linkdin {
+  display: flex;
+  justify-content: space-between;
+  gap: 11px;
+  flex: wrap;
+  flex-wrap: wrap;
 }
-.linkdin-icon svg{
-    height: auto;
-    width: 24px;
-    fill: #5380ff;
-    margin-top: 8px;
-    cursor: pointer;
-}
-
-@media (max-width: 480px){
-    .linkdin-icon svg{
-        margin-left: -64px;
-
-    }
+.linkdin-icon svg {
+  height: auto;
+  width: 24px;
+  fill: #5380ff;
+  margin-top: 8px;
+  cursor: pointer;
 }
 
-    
-  
+@media (max-width: 480px) {
+  .linkdin-icon svg {
+    margin-left: -64px;
+  }
+}

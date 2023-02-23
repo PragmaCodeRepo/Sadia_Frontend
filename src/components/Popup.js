@@ -1,44 +1,40 @@
-import React,{useState} from 'react'
+import React, { useState } from "react";
 import Overlay from "react-overlay-component";
-import Caro from './Caro';
-import Thankyou from './ContactUs/Thankyou';
-import NoDataFound from './NoDataFound';
-import SearchBarOverlay from './Overlay/SearchBarOverlay';
-
+import Caro from "./Caro";
+import Thankyou from "./ContactUs/Thankyou";
+import NoDataFound from "./NoDataFound";
+import SearchBarOverlay from "./Overlay/SearchBarOverlay";
 
 const Popup = (props) => {
-    const [isOpen, setOverlay] = useState(false);
+  const [isOpen, setOverlay] = useState(false);
 
-    const closeOverlay = () => setOverlay(false);
+  const closeOverlay = () => setOverlay(false);
 
-    const configs = {
-        animate: true,
-        // clickDismiss: false,
-        // escapeDismiss: false,
-        // focusOutline: false,
-    };
-    // if(props.flag === 'haaa') 
-    // {
-    //     console.log("object")
-    //     setOverlay(true)
-    // }
+  const configs = {
+    animate: true,
+    // clickDismiss: false,
+    // escapeDismiss: false,
+    // focusOutline: false,
+  };
+  // if(props.flag === 'haaa')
+  // {
+  //     console.log("object")
+  //     setOverlay(true)
+  // }
   return (
     <div>
-    <button
+      <button
         className="primary"
         onClick={() => {
-            setOverlay(true);
+          setOverlay(true);
         }}
-    >
+      >
         open modal
-    </button>
-    
-    
-    
+      </button>
 
-    <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
+      <Overlay configs={configs} isOpen={isOpen} closeOverlay={closeOverlay}>
         {/* <Caro/> */}
-        <Thankyou/>
+        <Thankyou />
 
         {/* <button
             className="danger"
@@ -48,9 +44,9 @@ const Popup = (props) => {
         >
             close modal
         </button> */}
-    </Overlay>
-</div>
-  )
-}
+      </Overlay>
+    </div>
+  );
+};
 
-export default Popup
+export default Popup;
