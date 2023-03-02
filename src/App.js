@@ -12,6 +12,13 @@ import { useEffect, useState } from "react";
 import Spinner from "./components/Spinner";
 import ReactGA from "react-ga";
 import Partner from "./components/Partner/Partner";
+import Marriage from "./components/Categories/Marriage";
+import Therapist from "./components/Categories/Therapist";
+import Lwayers from "./components/Categories/Lwayers";
+import ChildSupport from "./components/Categories/ChildSupport";
+import Mediation from "./components/Categories/Mediation";
+import Financial from "./components/Categories/Financial";
+import Lifecoach from "./components/Categories/Lifecoach";
 
 function App() {
   // const countEl=document.getElementById('count');
@@ -50,6 +57,13 @@ function App() {
           <Route path="/faq" element={<FAQ />}></Route>
           <Route path="/contactus" element={<ContactUs />}></Route>
           <Route path="/Partner" element={<Partner />}></Route>
+          <Route path="/marriagecounsellor" element={<Marriage/>}></Route>
+          <Route path="/therapist" element={<Therapist/>}></Route>
+          <Route path="/lawyers" element={<Lwayers/>}></Route>
+          <Route path="/childsupport" element={<ChildSupport/>}></Route>
+          <Route path="/mediation" element={<Mediation/>}></Route>
+          <Route path="/financial" element={<Financial/>}></Route>
+          <Route path="/lifecoach" element={<Lifecoach/>}></Route>
           <Route path="/zipcodeprofile">
             <Route path=":code" element={<ZipcodeProfile />} />
           </Route>

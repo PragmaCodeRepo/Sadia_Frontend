@@ -10,6 +10,7 @@ import Financial from "../assets/Financial.png";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import { Link } from "react-router-dom";
 
 const TestService = () => {
   const [show, setShow] = useState(false);
@@ -38,13 +39,15 @@ const TestService = () => {
       <div className="container">
         <div className="row testservicerow" style={{ marginTop: "1rem" }}>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+          <Link to="/marriagecounsellor">
             <div
               className="card testcard mt-3"
               // onClick={() => {
 
               //   setOverlay(true);
               // }}
-              onClick={handleShow}
+              // onClick={handleShow}
+              
             >
               <img
                 className="card-img"
@@ -58,6 +61,7 @@ const TestService = () => {
                 <div className="link d-flex"></div>
               </div>
             </div>
+            </Link>
             {/* <Overlay
             className='over-lay'
               configs={configs}
@@ -89,6 +93,7 @@ const TestService = () => {
             </Modal>
           </div>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+          <Link to="/lawyers">
             <div
               className="card testcard mt-3"
               // onClick={() => {
@@ -104,14 +109,16 @@ const TestService = () => {
                 <div className="link d-flex"></div>
               </div>
             </div>
+            </Link>
           </div>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+          <Link to="/childsupport">
             <div
               className="card testcard mt-3"
               // onClick={() => {
               //   setOverlay(true);
               // }}
-              onClick={handleShow}
+              // onClick={handleShow}
             >
               <img className="card-img" src={ChildSupport} alt="Bologna" />
               <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
@@ -121,12 +128,14 @@ const TestService = () => {
                 <div className="link d-flex"></div>
               </div>
             </div>
+            </Link>
           </div>
           <br />
           <br />
           <div className="container">
             <div className="row ">
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+              <Link to="/mediation">
                 <div
                   className="card testcard mt-4"
                   // onClick={() => {
@@ -142,8 +151,10 @@ const TestService = () => {
                     <div className="link d-flex"></div>
                   </div>
                 </div>
+                </Link>
               </div>
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+              <Link to="/lifecoach">
                 <div
                   className="card testcard mt-4"
                   // onClick={() => {
@@ -159,8 +170,10 @@ const TestService = () => {
                     <div className="link d-flex"></div>
                   </div>
                 </div>
+                </Link>
               </div>
               <div className="col-12 col-sm-8 col-md-6 col-lg-4">
+              <Link to="/financial">
                 <div
                   className="card testcard mt-4"
                   // onClick={() => {
@@ -180,6 +193,7 @@ const TestService = () => {
                     <div className="link d-flex"></div>
                   </div>
                 </div>
+                </Link>
               </div>
             </div>
           </div>
