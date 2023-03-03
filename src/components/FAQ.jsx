@@ -40,7 +40,7 @@ const FAQ = () => {
             <summary>
             What is a parenting plan? <span class="faq-open-icon">+</span>
             </summary>
-            <span class="faq-card-spoiler">A parenting plan is a written agreement that outlines how divorced or separated parents will share custody and make decisions about their children's upbringing.</span>
+            <span class="faq-card-spoiler">A parentings plan is a written agreement that outlines how divorced or separated parents will share custody and make decisions about their children's upbringing.</span>
           </details>
           <details class="faq-card">
             <summary>
