@@ -54,19 +54,9 @@ const Financial = () => {
 </section>
 {/* 2nd section */}
 <div className='secondsection row'>
-  <div className='heading1 col  mt-5 '>Financial Analysis Experts<br/>
+  <div className='heading1 col  mt-5 '>Financial Consultants<br/>
   <span className=' '>
-  <p className=' summary-text1 mt-3'>Financial analysis experts are professionals who specialize in evaluating financial data and making recommendations based on their findings. Here are some topics related to financial analysis that you may find helpful:
-
-Financial statement analysis - A discussion of the various financial statements, such as the balance sheet, income statement, and cash flow statement, and how to analyze them to gain insights into a company's financial health.
-
-Ratio analysis - An explanation of the different financial ratios, such as liquidity ratios, profitability ratios, and solvency ratios, and how to use them to assess a company's performance and make informed investment decisions.
-
-Valuation techniques - A guide to the different methods used to value a company, including discounted cash flow analysis, price-to-earnings ratio, and enterprise value.
-
-Industry analysis - An overview of how to analyze an industry to identify trends and opportunities, and to evaluate the performance of individual companies within the industry.
-
-Risk analysis - A discussion of how to identify and assess different types of risks, such as market risk, credit risk, and operational risk, and how to mitigate these risks through financial instruments such as derivatives.
+  <p className=' summary-text1 mt-3'>This section connects you with financial consultants to help you navigate financial issues during your divorce. These professionals can help you understand your financial position before and after the divorce.
 </p>
 
 </span></div>

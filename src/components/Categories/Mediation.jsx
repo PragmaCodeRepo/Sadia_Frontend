@@ -54,13 +54,9 @@ const Mediation = () => {
 </section>
 {/* 2nd section */}
 <div className='secondsection row'>
-  <div className='heading1 col  mt-5 '>Mediation<br/>
+  <div className='heading1 col  mt-5 '>Mediators<br/>
   <span className=' '>
-  <p className=' summary-text1 mt-3'>Benefits of mediation. A discussion of the benefits of mediation over traditional litigation, including cost savings, time savings, and the preservation of relationships.
-
-When to use mediation. A guide to when mediation is appropriate, including situations where parties have ongoing relationships, want to preserve privacy, or are looking for a mutually beneficial solution.
-
-Finding a mediator. Tips for finding a qualified mediator, including looking for someone with relevant experience, a strong reputation, and a commitment to neutrality.
+  <p className=' summary-text1 mt-3'>This section is to help you connect with professionals to help you achieve your personal and professional goals by providing guidance, support, and motivation.
 </p>
 
 </span></div>
