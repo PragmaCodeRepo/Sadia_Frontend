@@ -4,29 +4,16 @@ import "./Therapist.css";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import SearchButton from "../Button/SearchButton";
 
 const Lwayers = () => {
-  const [zipcode, setZipcode] = useState("");
+  
   const navigate = useNavigate();
   const submitHandler = (e) => {
-    if (zipcode === "") {
-      notify();
+    e.preventDefault();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else {
-      e.preventDefault();
-      console.log(zipcode);
-
-      navigate(`/zipcodeProfile/${zipcode}-Therapist`);
-    }
+    navigate(`/zipcodeProfile/60290-Therapist`);
   };
-  const notify = () => toast(" please enter category and your zip code");
-
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
   return (
     <>
       <div>
@@ -38,21 +25,11 @@ const Lwayers = () => {
             className="backgroundimg"
           />
           <div class="overlay">
-            <h2> Top Lawyers Near Me!</h2>
+            <h2>  Lawyers  in Chicagoland area</h2>
             <p></p>
             {/* bar */}
-            <div class="wrap">
-              <div class="search">
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="Enter your zip code"
-                  onChange={(e) => setZipcode(e.target.value)}
-                />
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search" onClick={submitHandler}></i>
-                </button>
-              </div>
+            <div className="SeachButtonforcategories" onClick={submitHandler}>
+              <SearchButton />
             </div>
           </div>
         </section>
@@ -62,13 +39,13 @@ const Lwayers = () => {
             Lawyers
             <br />
             <span className=" ">
-              <p className=" summary-text1 mt-3">
-                This section is to guide you navigate through options<br/> for the
-                legal representation for your divorce proceedings. <br/>During your
-                first consult, be sure to ask about issues<br/> such as property
-                division, child custody and support, and alimony.<br/> In addition,
-                ask about the divorce process, steps involved in <br/>obtaining a
-                divorce and different types of divorce, such as <br/>contested and
+              <p className=" summary-text1 mt-3 container ">
+                This section is to guide you navigate through options for the
+                legal representation for your divorce proceedings.During your
+                first consult, be sure to ask about issuessuch as property
+                division, child custody and support, and alimony. In addition,
+                ask about the divorce process, steps involved in obtaining a
+                divorce and different types of divorce, such as contested and
                 uncontested divorce.
               </p>
             </span>

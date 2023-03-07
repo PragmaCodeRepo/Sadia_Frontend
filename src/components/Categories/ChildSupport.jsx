@@ -4,29 +4,17 @@ import "./Therapist.css";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import SearchButton from "../Button/SearchButton";
 
 const ChildSupport = () => {
-  const [zipcode, setZipcode] = useState("");
+  
   const navigate = useNavigate();
   const submitHandler = (e) => {
-    if (zipcode === "") {
-      notify();
+    e.preventDefault();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else {
-      e.preventDefault();
-      console.log(zipcode);
-
-      navigate(`/zipcodeProfile/${zipcode}-Therapist`);
-    }
+    navigate(`/zipcodeProfile/60290-Therapist`);
   };
-  const notify = () => toast(" please enter  your zip code");
-
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
+  
   return (
     <>
       <div>
@@ -38,21 +26,11 @@ const ChildSupport = () => {
             className="backgroundimg"
           />
           <div class="overlay">
-            <h2> Top Child Support services Near Me!</h2>
+            <h2>  Child Support services  in Chicagoland area </h2>
             <p></p>
             {/* bar */}
-            <div class="wrap">
-              <div class="search">
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="Enter your zip code"
-                  onChange={(e) => setZipcode(e.target.value)}
-                />
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search" onClick={submitHandler}></i>
-                </button>
-              </div>
+            <div className="SeachButtonforcategories" onClick={submitHandler}>
+              <SearchButton />
             </div>
           </div>
         </section>
@@ -62,7 +40,7 @@ const ChildSupport = () => {
             Child Support Services
             <br />
             <span className=" ">
-              <p className=" summary-text1 mt-3 mx-5">
+              <p className=" summary-text1 container mt-3 ">
                 This section provides you information on various programs And
                 services offered by the government and private organizations to
                 help you provide financial support for your children.

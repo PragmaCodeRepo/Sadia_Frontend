@@ -103,7 +103,7 @@
     font-weight: 600;
     font-size: 30px;
     letter-spacing: 0.02em;
-    text-transform: capitalize;
+    /* text-transform: capitalize; */
     /* padding-top: 2rem; */
     color: #241757;
   }
@@ -111,8 +111,9 @@
     color: grey;
     font-size: 15px;
     font-weight: 400;
-    letter-spacing: 1px;
-    text-transform: capitalize;
+    /* letter-spacing: 1px; */
+    /* text-transform: capitalize; */
+    text-align: left;
   }
   @media (max-width: 480px){
     .image1{
@@ -120,7 +121,15 @@
       height: 29vh;
       margin-left: 31px;
     }
+   
     .showcase h2{
-      margin-top: 71px;
+      margin-top: 202px;
+    font-size: 40px;
+}
     }
-  }
+  
+
+    .SeachButtonforcategories{
+      display: flex;
+      justify-content: center;
+    }

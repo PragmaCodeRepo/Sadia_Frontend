@@ -1,33 +1,19 @@
 import React, { useState } from "react";
 import NavBarr from "../NavBarr";
 import "./Marriage.css";
-import ring from "../../assets/ring.jpg";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
-import { ToastContainer, toast } from "react-toastify";
+
+import SearchButton from "../Button/SearchButton";
 
 const Marriage = () => {
-  const [zipcode, setZipcode] = useState("");
   const navigate = useNavigate();
   const submitHandler = (e) => {
-    if (zipcode === "") {
-      notify();
+    e.preventDefault();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else {
-      e.preventDefault();
-      console.log(zipcode);
-
-      navigate(`/zipcodeProfile/${zipcode}-Therapist`);
-    }
+    navigate(`/zipcodeProfile/60290-Therapist`);
   };
-  const notify = () => toast(" please enter category and your zip code");
 
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
   return (
     <>
       <div>
@@ -39,33 +25,25 @@ const Marriage = () => {
             alt="Picture"
           />
           <div class="overlay">
-            <h2> Top Marriage Counsellors Near Me!</h2>
+            <h2> Marriage Counselors in chicagoland area</h2>
             <p></p>
             {/* bar */}
-            <div class="wrap">
-              <div class="search">
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="Enter your zip code"
-                  onChange={(e) => setZipcode(e.target.value)}
-                />
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search" onClick={submitHandler}></i>
-                </button>
-              </div>
+            <div className="SeachButtonforcategories" onClick={submitHandler}>
+              <SearchButton />
             </div>
           </div>
         </section>
         {/* 2nd section */}
         <div className="secondsection row">
           <div className="heading1 col  mt-5 ">
-          Marriage Counselors
+            Marriage Counselors
             <br />
-            <span className="summary-text ">
-              This section is to help you connect with trained professionals<br/> to
-              help you resolve conflicts, improve communication,<br/> and strengthen
-              your relationship via therapy.
+            <span>
+              <p className="summary-text1 mt-3 container ">
+                This section is to help you connect with trained professionals
+                to help you resolve conflicts, improve communication, and
+                strengthen your relationship via therapy.
+              </p>
             </span>
           </div>
           <div className=" col">
@@ -79,18 +57,6 @@ const Marriage = () => {
         </div>
 
         <Footer />
-        <ToastContainer
-          position="top-right"
-          autoClose={5000}
-          hideProgressBar={false}
-          newestOnTop={false}
-          closeOnClick
-          rtl={false}
-          pauseOnFocusLoss
-          draggable
-          pauseOnHover
-          theme="light"
-        />
       </div>
     </>
   );

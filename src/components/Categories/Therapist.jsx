@@ -37,7 +37,7 @@ const Therapist = () => {
     <section class="showcase">
     <img src="https://img.freepik.com/free-photo/mid-shot-woman-therapist-taking-notes-clipboard_23-2148759120.jpg?w=1380&t=st=1677588888~exp=1677589488~hmac=103f50d0efb0639210e365019215dfde4115541bb3c18286bec414236d7fd5e6" className='backgroundimg'/>
   <div class="overlay">
-    <h2> Therapist Near Me!</h2>
+    <h2> Therapist  in Chicagoland area</h2>
     <p>
       
     </p>
@@ -56,7 +56,7 @@ const Therapist = () => {
 <div className='secondsection row'>
   <div className='heading1 col  mt-5 '>Therapists<br/>
   <span className=' '>
-  <p className=' summary-text1 mt-3'>Diagnoses and treats mental health disorders. Creates individualized treatment plans according to patient needs and circumstances. Meets with patients regularly to provide counseling, treatment and adjust treatment plans as necessary. Conducts ongoing assessments of patient progress.Establishes positive, trusting rapport with patients.
+  <p className=' summary-text1 mt-3 container'>Diagnoses and treats mental health disorders. Creates individualized treatment plans according to patient needs and circumstances. Meets with patients regularly to provide counseling, treatment and adjust treatment plans as necessary. Conducts ongoing assessments of patient progress.Establishes positive, trusting rapport with patients.
 Diagnoses and treats mental health disorders.
 Creates individualized treatment plans according to patient needs and circumstances.
 Meets with patients regularly to provide counseling, treatment and adjust treatment plans as necessary.

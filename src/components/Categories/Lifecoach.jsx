@@ -4,30 +4,38 @@ import "./Therapist.css";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import SearchButton from "../Button/SearchButton";
 
 const Lifecoach = () => {
-  const [zipcode, setZipcode] = useState("");
+  // const [zipcode, setZipcode] = useState("");
+  
+  // const submitHandler = (e) => {
+  //   if (zipcode === "") {
+  //     notify();
+
+  //     // alert("your response is blank please enter category and your zipcode ");
+  //     // window.location.reload();
+  //   } else if (zipcode.length < 5) {
+  //     // alert("Zipcode must be 5 digit");
+  //     notifyzip();
+  //   } else {
+  //     e.preventDefault();
+  //     console.log(zipcode);
+
+  //     navigate(`/zipcodeProfile/${zipcode}-Therapist`);
+  //   }
+  // };
+
+  // const notify = () => toast(" please enter  your zip code");
+
+  // const notifyzip = () => toast("Zipcode must be 5 digits ");
+
   const navigate = useNavigate();
   const submitHandler = (e) => {
-    if (zipcode === "") {
-      notify();
+    e.preventDefault();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else {
-      e.preventDefault();
-      console.log(zipcode);
-
-      navigate(`/zipcodeProfile/${zipcode}-Therapist`);
-    }
+    navigate(`/zipcodeProfile/60290-Therapist`);
   };
-
-  const notify = () => toast(" please enter  your zip code");
-
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
   return (
     <>
       <div>
@@ -39,10 +47,10 @@ const Lifecoach = () => {
             className="backgroundimg"
           />
           <div class="overlay">
-            <h2> Top Life Coach services Near Me!</h2>
+            <h2> Life Coach in Chicagoland area</h2>
             <p></p>
             {/* bar */}
-            <div class="wrap">
+            {/* <div class="wrap">
               <div class="search">
                 <input
                   type="text"
@@ -54,7 +62,12 @@ const Lifecoach = () => {
                   <i class="fa fa-search" onClick={submitHandler}></i>
                 </button>
               </div>
+            </div> */}
+{/* new hover me button */}
+<div className="SeachButtonforcategories" onClick={submitHandler}>
+              <SearchButton />
             </div>
+
           </div>
         </section>
         {/* 2nd section */}
@@ -63,7 +76,7 @@ const Lifecoach = () => {
             Life Coaches
             <br />
             <span className=" ">
-              <p className=" summary-text1 mt-3 mx-5">
+              <p className=" summary-text1 mt-3 container">
                 This section is to help you connect with professionals to help
                 you achieve your personal and professional goals by providing
                 guidance, support, and motivation.

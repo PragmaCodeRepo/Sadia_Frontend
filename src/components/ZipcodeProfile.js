@@ -20,6 +20,7 @@ const Profile = () => {
   const usersPerPage = 5;
   const pagesVisited = pageNumber * usersPerPage;
   const checkProfile = (profile) => {
+    console.log(profile)
     if (
       profile["zip_code"] === +zipcode &&
       profile["speciality"] === speciality

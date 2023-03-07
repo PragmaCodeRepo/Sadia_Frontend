@@ -10,6 +10,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import ReactGA from "react-ga";
 import SearchBarOverlay from "./Overlay/SearchBarOverlay";
+import SearchButton from "./Button/SearchButton";
 
 const HomePage = () => {
   useEffect(() => {
@@ -17,24 +18,24 @@ const HomePage = () => {
   }, []);
 
   const navigate = useNavigate();
-  const [zipcode, setZipcode] = useState("");
-  const [dropdown, setdropdown] = useState("");
-  const submitHandler = (e) => {
-    e.preventDefault();
+  // const [zipcode, setZipcode] = useState("");
+  // const [dropdown, setdropdown] = useState("");
+  // const submitHandler = (e) => {
+  //   e.preventDefault();
 
-    if (zipcode === "" || dropdown === "Select Category") {
-      notify();
+  //   if (zipcode === "" || dropdown === "Select Category") {
+  //     notify();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
-  };
-  const notify = () => toast(" please enter category and your zip code");
+  //     // alert("your response is blank please enter category and your zipcode ");
+  //     // window.location.reload();
+  //   } else if (zipcode.length < 5) {
+  //     // alert("Zipcode must be 5 digit");
+  //     notifyzip();
+  //   } else navigate(`/zipcodeProfile/${zipcode}-${dropdown}`);
+  // };
+  // const notify = () => toast(" please enter category and your zip code");
 
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
+  // const notifyzip = () => toast("Zipcode must be 5 digits ");
 
   return (
     <>
@@ -63,7 +64,7 @@ const HomePage = () => {
 
         <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
 
-        <div class="wrapper">
+        {/* <div class="wrapper">
           <div class="search_box">
             <div class="dropdown">
               <select
@@ -101,7 +102,7 @@ const HomePage = () => {
               <i class="fas fa-search" onClick={submitHandler}></i>
             </div>
           </div>
-        </div>
+        </div> */}
       </div>
 
       {/* Our services section */}
@@ -117,6 +118,7 @@ const HomePage = () => {
 
       {/* <Caro /> */}
       <Footer />
+     
       
       {/* <AxiosTest/> */}
       {/* custom alert */}
