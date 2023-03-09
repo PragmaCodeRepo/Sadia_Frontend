@@ -77,7 +77,7 @@ const Lifecoach = () => {
             <br />
             <span className=" ">
               <p className=" summary-text1 mt-3 container">
-                This section is to help you connect with professionals to help
+                This section is to help you connect with life coaches to help
                 you achieve your personal and professional goals by providing
                 guidance, support, and motivation.
               </p>

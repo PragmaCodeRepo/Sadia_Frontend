@@ -47,7 +47,7 @@ const Financial = () => {
             className="backgroundimg"
           />
           <div class="overlay">
-            <h2> Financial Planners in Chicagoland area</h2>
+            <h2> Financial Consultants in Chicagoland area</h2>
             <p></p>
             {/* bar */}
             {/* <div class="wrap">

@@ -40,9 +40,9 @@ const Marriage = () => {
             <br />
             <span>
               <p className="summary-text1 mt-3 container ">
-                This section is to help you connect with trained professionals
+                This section is to help you connect with marriage counselors
                 to help you resolve conflicts, improve communication, and
-                strengthen your relationship via therapy.
+                strengthen your relationship.
               </p>
             </span>
           </div>

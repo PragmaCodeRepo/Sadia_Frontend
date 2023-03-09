@@ -41,12 +41,11 @@ const Lwayers = () => {
             <span className=" ">
               <p className=" summary-text1 mt-3 container ">
                 This section is to guide you navigate through options for the
-                legal representation for your divorce proceedings.During your
-                first consult, be sure to ask about issuessuch as property
-                division, child custody and support, and alimony. In addition,
-                ask about the divorce process, steps involved in obtaining a
+                legal representation for your divorce proceedings. During your
+                first consult, be sure to ask about divorce process, steps involved in obtaining a
                 divorce and different types of divorce, such as contested and
-                uncontested divorce.
+                uncontested divorce. In addition, ask about issues such as property
+                division, child custody and support, and alimony. 
               </p>
             </span>
           </div>
