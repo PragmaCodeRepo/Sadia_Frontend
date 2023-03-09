@@ -34,7 +34,7 @@ const Lifecoach = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    navigate(`/zipcodeProfile/60290-Therapist`);
+    navigate(`/zipcodeProfile/60290-LifeCoach`);
   };
   return (
     <>
@@ -87,7 +87,7 @@ const Lifecoach = () => {
             {" "}
             <img
               src="https://img.freepik.com/free-vector/young-man-practicing-yoga-exercises-mental-body-health_74855-20437.jpg?w=1380&t=st=1677658301~exp=1677658901~hmac=502ea7ac4fd4c83b9b1c8779b969288833b3a85f11ee8beb6641f2198a1fa4ca"
-              className="image2 mt-5 mb-5 "
+              className="image2 mt-5 mb-5 mx-5"
               alt=""
             />{" "}
           </div>

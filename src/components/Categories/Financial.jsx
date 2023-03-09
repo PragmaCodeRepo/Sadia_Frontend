@@ -85,7 +85,7 @@ const Financial = () => {
             {" "}
             <img
               src="https://img.freepik.com/free-vector/investor-with-laptop-monitoring-growth-dividends-trader-sitting-stack-money-investing-capital-analyzing-profit-graphs-vector-illustration-finance-stock-trading-investment_74855-8432.jpg?w=1380&t=st=1677654812~exp=1677655412~hmac=e4cee7307e9864e94e05174210444002c3d03e0ebcf44f3266802650746aab12"
-              className="image2 mt-5 mb-5 "
+              className="image2 mt-5 mb-5 mx-5"
               alt=""
             />{" "}
           </div>

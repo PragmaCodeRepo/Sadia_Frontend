@@ -51,7 +51,7 @@ const ChildSupport = () => {
             {" "}
             <img
               src="https://img.freepik.com/free-photo/happy-mother-enjoying-while-spending-time-with-her-small-son-home_637285-10990.jpg?w=1380&t=st=1677651940~exp=1677652540~hmac=8c56824a133f4523316339599a7e55d97866efc92166304f41fe38ba90f3e3be"
-              className="image2 mt-5 mb-5 "
+              className="image2 mt-5 mb-5 mx-5 "
               alt=""
             />{" "}
           </div>

@@ -19,6 +19,7 @@ const VideoPlayer = () => {
           onCanPlayThrough={() => {
             console.log("video play");
           }}
+          playsInline
         >
           <source src={pragmaintro} type="video/webm" />
         </Video>

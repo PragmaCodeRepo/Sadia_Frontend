@@ -52,7 +52,7 @@ const Mediation = () => {
             {" "}
             <img
               src="https://img.freepik.com/free-photo/three-business-professionals-working-together-office_23-2147857317.jpg?w=1380&t=st=1677737984~exp=1677738584~hmac=e2ec9cba5f73f06b53dcb11d1deb23bde279b56154c8017593a5e315c23848ef"
-              className="image2 mt-5 mb-5 "
+              className="image2 mt-5 mb-5 mx-5 "
               alt=""
             />{" "}
           </div>

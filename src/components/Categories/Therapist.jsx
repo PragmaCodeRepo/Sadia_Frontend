@@ -68,7 +68,7 @@ Follows all safety protocols and maintains client confidentiality.
 </p>
 
 </span></div>
-  <div className=' col'> <img src="https://img.freepik.com/free-photo/medium-shot-woman-sitting-couch_23-2149927564.jpg?w=1380&t=st=1677589483~exp=1677590083~hmac=35b68de69a5806769fa59bd310324adcd0b1bad5cceb5d3d920e8e712cb7c601" className='image2 mt-5 mb-5 ' alt=""/> </div>
+  <div className=' col mt-5 mb-5 mx-5'> <img src="https://img.freepik.com/free-photo/medium-shot-woman-sitting-couch_23-2149927564.jpg?w=1380&t=st=1677589483~exp=1677590083~hmac=35b68de69a5806769fa59bd310324adcd0b1bad5cceb5d3d920e8e712cb7c601" className='image2 mt-5 mb-5 ' alt=""/> </div>
 </div>
 
  <Footer/>

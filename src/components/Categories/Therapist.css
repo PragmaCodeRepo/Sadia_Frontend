@@ -97,6 +97,7 @@
     height: 45vh;
     border-radius: 5px;
     box-shadow: rgb(149 157 165 / 72%) 0px 8px 126px;
+    width: 50vh;
   }
   
   
@@ -125,7 +126,9 @@
   @media (max-width: 480px){
     .image2{
       
-      height: 33vh;
+      height: 30vh;
+      width: 41vh;
+  
     }
     .showcase h2{
       margin-top: 202px;
