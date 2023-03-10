@@ -73,10 +73,10 @@ const AllProfiles = ({
                 <p className="profile-title">
                   {first_name} {last_name},{designation}
                 </p>{" "}
-                <p className="rating">
+                {/* <p className="rating">
                   <BsStarFill /> <BsStarFill /> <BsStarFill /> <BsStarFill />{" "}
                   &nbsp; (review 625){" "}
-                </p>
+                </p> */}
                 <p className="profile-speciality">
                   {speciality} <br />{" "}
                   <small className="text-muted" style={{ fontSize: "13px" }}>

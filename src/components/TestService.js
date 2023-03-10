@@ -4,6 +4,7 @@ import "./TestService.css";
 import Marriage_Counsellor from "../assets/MarriageCounsellor.png";
 import Lawyers from "../assets/Attorneys.png";
 import ChildSupport from "../assets/ChildSupport.png";
+import therapistss from "../assets/therapistss.jpg";
 import Mediation from "../assets/Mediation.png";
 import LifeCoaches from "../assets/LifeCoach_new.jpg";
 import Financial from "../assets/Financial.png";
@@ -31,9 +32,9 @@ const TestService = () => {
       <div className="ourtestservices-title">
         Our Services
         <br />
-        {/* <p className="ourtestservices-sub-title">
-            Find a right resource for all your divorce needs
-          </p> */}
+        <p className="ourtestservices-sub-title">
+            Currently we are only serving in chichagoland area ✨
+          </p>
       </div>
 
       <div className="container">
@@ -112,7 +113,7 @@ const TestService = () => {
             </Link>
           </div>
           <div className="col-12 col-sm-8 col-md-6 col-lg-4">
-          <Link to="/childsupport">
+          <Link to="/therapist">
             <div
               className="card testcard mt-3"
               // onClick={() => {
@@ -120,9 +121,9 @@ const TestService = () => {
               // }}
               // onClick={handleShow}
             >
-              <img className="card-img" src={ChildSupport} alt="Bologna" />
+              <img className="card-img" src={therapistss} alt="Bologna" />
               <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
-                <h4 className="card-title">Child Support</h4>
+                <h4 className="card-title">Therapists</h4>
                 {/* <h6 className="card-subtitle mb-2">Top-rated counsellors are here</h6> */}
                 <p className="card-text"> </p>
                 <div className="link d-flex"></div>
@@ -187,7 +188,7 @@ const TestService = () => {
                     alt="Bologna"
                   />
                   <div className="card-img-overlay text-white d-flex flex-column justify-content-center">
-                    <h4 className="card-title">Financial Planning</h4>
+                    <h4 className="card-title">Financial Consulants</h4>
                     {/* <h6 className="card-subtitle mb-2">Top-rated Financial Planners are here </h6> */}
                     <p className="card-text"> </p>
                     <div className="link d-flex"></div>

@@ -14,14 +14,15 @@ const VideoPlayer = () => {
 
         <Video
           // autoPlay
+          playsInline
           loop
           className="videoo "
           onCanPlayThrough={() => {
             console.log("video play");
           }}
-          playsInline
+          
         >
-          <source src={pragmaintro} type="video/webm" />
+          <source src={pragmaintro} type="video/mp4" />
         </Video>
       </div>
     </>

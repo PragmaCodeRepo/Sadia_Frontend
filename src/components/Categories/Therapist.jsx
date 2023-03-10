@@ -56,15 +56,7 @@ const Therapist = () => {
 <div className='secondsection row'>
   <div className='heading1 col  mt-5 '>Therapists<br/>
   <span className=' '>
-  <p className=' summary-text1 mt-3 container'>Diagnoses and treats mental health disorders. Creates individualized treatment plans according to patient needs and circumstances. Meets with patients regularly to provide counseling, treatment and adjust treatment plans as necessary. Conducts ongoing assessments of patient progress.Establishes positive, trusting rapport with patients.
-Diagnoses and treats mental health disorders.
-Creates individualized treatment plans according to patient needs and circumstances.
-Meets with patients regularly to provide counseling, treatment and adjust treatment plans as necessary.
-Conducts ongoing assessments of patient progress.
-Involves and advises family members when appropriate.
-Refers patients to outside specialists or agencies when necessary.
-Maintains thorough records of patient meetings and progress.
-Follows all safety protocols and maintains client confidentiality.
+  <p className=' summary-text1 mt-3 container'>This section is to help you connect with  Therapist professionals to help you achieve your personal and professional goals by providing guidance, support, and motivation.
 </p>
 
 </span></div>
