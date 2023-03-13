@@ -1,6 +1,7 @@
 body {
   background-color: antiquewhite;
   font-family: "Noto Serif";
+  scroll-behavior: smooth;
 }
 
 /* #root{
@@ -15,4 +16,3 @@ body {
   margin: auto;
   transition: opacity 0.85s;
 } */
-

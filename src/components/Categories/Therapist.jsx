@@ -1,32 +1,23 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import NavBarr from "../NavBarr";
 import "./Therapist.css";
 import Footer from "../Footer";
 import { useNavigate } from "react-router-dom";
 import { ToastContainer, toast } from "react-toastify";
+import SearchButton from "../Button/SearchButton";
 
 const Therapist = () => {
   const [zipcode, setZipcode] = useState("");
   const navigate = useNavigate();
   const submitHandler = (e) => {
-    if (zipcode === "") {
-      notify();
+    e.preventDefault();
 
-      // alert("your response is blank please enter category and your zipcode ");
-      // window.location.reload();
-    } else if (zipcode.length < 5) {
-      // alert("Zipcode must be 5 digit");
-      notifyzip();
-    } else {
-      e.preventDefault();
-      console.log(zipcode);
-
-      navigate(`/zipcodeProfile/${zipcode}-Therapist`);
-    }
+    navigate(`/zipcodeProfile/60290-Therapist`);
   };
-  const notify = () => toast(" please enter category and your zip code");
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
 
-  const notifyzip = () => toast("Zipcode must be 5 digits ");
   return (
     <>
       <div>
@@ -41,18 +32,8 @@ const Therapist = () => {
             <h2> Therapists in Chicagoland area</h2>
             <p></p>
             {/* bar */}
-            <div class="wrap">
-              <div class="search">
-                <input
-                  type="text"
-                  class="searchTerm"
-                  placeholder="Enter your zip code"
-                  onChange={(e) => setZipcode(e.target.value)}
-                />
-                <button type="submit" class="searchButton">
-                  <i class="fa fa-search" onClick={submitHandler}></i>
-                </button>
-              </div>
+            <div className="SeachButtonforcategories" onClick={submitHandler}>
+              <SearchButton />
             </div>
           </div>
         </section>
@@ -63,9 +44,20 @@ const Therapist = () => {
             <br />
             <span className=" ">
               <p className=" summary-text1 mt-3 container">
-                This section is to help you connect with therapists
-                to help you achieve your personal and professional goals by
-                providing guidance, support, and motivation.
+                This section provides information on mental health professionals
+                who can help you navigate the emotional and psychological
+                challenges of divorce. A divorce therapist can help with the
+                following: <ul> <li> Help manage the emotional challenges of divorce,
+                including grief, anger, and depression.</li> <li>Assist in developing
+                effective communication skills to help navigate difficult
+                conversations with spouse or co-parent.</li> <li> Provide guidance and
+                support to you as a parent as you navigate the challenges of
+                co-parenting.</li>   <li>Assist in developing strategies for managing
+                conflict and negotiating settlements during the divorce process.</li> 
+                <li>Help develop a plan for moving forward and rebuilding lives
+                after divorce.</li>
+                 
+                </ul>
               </p>
             </span>
           </div>

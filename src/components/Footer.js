@@ -20,12 +20,14 @@ const Footer = () => {
     <>
       <footer class="footer-distributed">
         <div class="footer-left">
+          
           <div className="pragma_text-with-logo">
             <img src={logo_with_rectangle} alt="" className="logo" />
             <h3>
               <span style={{ fontSize: "45px" }}>Pragma</span>
             </h3>
           </div>
+          
 
           <p class="footer-links">
             {/* <a href="#" >Home</a> */}

@@ -33,7 +33,7 @@ const TestService = () => {
         Our Services
         <br />
         <p className="ourtestservices-sub-title">
-            Currently we are only serving Chicagoland area ✨
+            Currently we are only serving Chicagoland area 🏢
           </p>
       </div>
 

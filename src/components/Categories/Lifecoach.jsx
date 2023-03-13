@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import NavBarr from "../NavBarr";
 import "./Therapist.css";
 import Footer from "../Footer";
@@ -34,8 +34,11 @@ const Lifecoach = () => {
   const submitHandler = (e) => {
     e.preventDefault();
 
-    navigate(`/zipcodeProfile/60290-LifeCoach`);
+    navigate(`/zipcodeProfile/60290-Life Coach`);
   };
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
   return (
     <>
       <div>
